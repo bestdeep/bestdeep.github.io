@@ -6,7 +6,7 @@ A static page with no build step: `index.html`, `assets/`, and two content files
 
 ## What it shows
 
-- An opening poem to the lucky star, centred at the top in Fraunces italic, whose line initials spell LUCKY STAR
+- An opening poem to the lucky star, centred at the top in large Fraunces italic, whose line initials spell LUCKY STAR; its lines sway in a slow wave and a gold glint runs down the initials (still under reduced motion)
 - A header with a constellation of projects: each star is one project, grouped by area; selecting a star jumps to it
 - Projects by area (the area bars double as a filter), selected work, and every other project grouped by area, each described as a one-line idea, with search
 - Toolbox (skills) and contact links (email and Telegram)

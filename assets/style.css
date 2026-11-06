@@ -247,11 +247,26 @@ h2 {
 .stanza {
   display: grid; gap: 2px;
   font-family: var(--serif); font-style: italic; font-weight: 400;
-  font-size: 23px; line-height: 1.5; color: var(--ink-2);
-  font-variation-settings: "opsz" 28, "SOFT" 100;
+  font-size: clamp(16px, calc(2.4vw + 6px), 34px); line-height: 1.45; color: var(--ink-2);
+  font-variation-settings: "opsz" 36, "SOFT" 100;
 }
 .stanza .line { display: block; padding-left: 1em; text-indent: -1em; }
-.stanza .initial { font-style: normal; font-weight: 700; font-size: 1.14em; color: var(--heading); font-variation-settings: "opsz" 36, "SOFT" 100; }
+.stanza .initial { font-style: normal; font-weight: 700; font-size: 1.14em; color: var(--heading); font-variation-settings: "opsz" 48, "SOFT" 100; }
+
+/* The poem flows: each line sways a beat behind the one above, so a slow wave rolls down
+   the verse, and a gold glint passes down the initials, L to R, like the star going by. */
+@media (prefers-reduced-motion: no-preference) {
+  .stanza .line { --sway: 7px; will-change: transform; animation: sway 9s ease-in-out infinite; animation-delay: calc(var(--n) * -0.55s); }
+  .stanza .initial { animation: glint 9s ease-in-out infinite; animation-delay: calc(var(--n) * 0.32s); }
+}
+@keyframes sway {
+  0%, 100% { transform: translate(calc(var(--sway) * -1), 1px); }
+  50% { transform: translate(var(--sway), -1px); }
+}
+@keyframes glint {
+  0%, 12%, 100% { text-shadow: none; }
+  5% { text-shadow: 0 0 6px var(--lucky-glow), 0 0 18px var(--lucky-glow); }
+}
 
 /* Contact --------------------------------------------------------------- */
 .contact { padding: 120px 0 40px; }
@@ -299,8 +314,9 @@ h2 {
   .contact-panel { padding: 32px 22px 36px; border-radius: 22px; }
   .channels { grid-template-columns: 1fr; gap: 20px; }
   .channels a { font-size: 21px; }
-  .stanza { font-size: 16px; }
+  .stanza .line { --sway: 3px; }
   .poem-top { padding-top: 24px; }
+  .stanza { font-size: 16px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .flash, .feature:target, .entry:target { animation: none; } }
 @media (forced-colors: active) { .sky-bg { display: none; } .area-row .bar-fill, .star { forced-color-adjust: none; } }

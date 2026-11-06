@@ -231,8 +231,9 @@ function renderPoem() {
   const section = document.getElementById("poem");
   if (!poem) { section.hidden = true; return; }
   section.setAttribute("aria-label", poem.title);
+  let n = 0;  // running line index across stanzas, so the wave and the glint travel through the whole poem
   document.getElementById("poem-text").replaceChildren(...poem.stanzas.map((stanza) => el("p", { class: "stanza" },
-    stanza.map((line) => el("span", { class: "line" }, [el("span", { class: "initial", text: line[0] }), line.slice(1)])))));
+    stanza.map((line) => el("span", { class: "line", style: `--n:${n++}` }, [el("span", { class: "initial", text: line[0] }), line.slice(1)])))));
 }
 function renderSkills() {
   document.getElementById("skills").replaceChildren(...state.site.skills.map((g) =>
