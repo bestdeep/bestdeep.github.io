@@ -8,7 +8,7 @@
   if (!canvas || !canvas.getContext) return;
   const ctx = canvas.getContext("2d");
   const still = matchMedia("(prefers-reduced-motion: reduce)");
-  let W = 0, H = 0, dust = [], trail = [], shot = null, nextShot = 2600, colors = {}, raf = 0, last = 0;
+  let W = 0, H = 0, k = 1, dust = [], trail = [], shot = null, nextShot = 2600, colors = {}, raf = 0, last = 0;
 
   function readColors() {
     const cs = getComputedStyle(document.documentElement);
@@ -19,13 +19,15 @@
   function resize() {
     const dpr = Math.min(2, window.devicePixelRatio || 1);
     W = innerWidth; H = innerHeight;
+    // Same factor the stylesheet uses for big screens, so the sky scales with the page.
+    k = parseFloat(getComputedStyle(document.documentElement).fontSize) / 16 || 1;
     canvas.width = Math.round(W * dpr);
     canvas.height = Math.round(H * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    const n = Math.round(Math.min(190, Math.max(60, (W * H) / 7000)));
+    const n = Math.round(Math.min(190 * k, Math.max(60, (W * H) / (7000 * k * k))));
     dust = Array.from({ length: n }, () => ({
       x: Math.random() * W, y: Math.random() * H,
-      r: 0.8 + Math.random() ** 2 * 2.4,
+      r: (0.8 + Math.random() ** 2 * 2.4) * k,
       speed: 0.12 + Math.random() * 0.35,
       phase: Math.random() * Math.PI * 2,
       tw: 0.4 + Math.random() * 1.2,
@@ -36,7 +38,7 @@
 
   // A gentle rightward current that bends in slow waves.
   function flow(x, y, t) {
-    const a = Math.sin(y * 0.0045 + t * 0.00012) * 0.55 + Math.sin(x * 0.0021 - t * 0.00008) * 0.35;
+    const a = Math.sin((y * 0.0045) / k + t * 0.00012) * 0.55 + Math.sin((x * 0.0021) / k - t * 0.00008) * 0.35;
     return [Math.cos(a), Math.sin(a) * 0.7];
   }
 
@@ -63,7 +65,7 @@
   // The lucky star crosses the upper sky once a minute on a soft wave.
   function luckyAt(t) {
     const u = (t / 60000) % 1;
-    return [-90 + u * (W + 180), H * 0.24 + Math.sin(u * Math.PI * 3) * H * 0.07 + Math.sin(t * 0.0007) * 6];
+    return [-90 * k + u * (W + 180 * k), H * 0.24 + Math.sin(u * Math.PI * 3) * H * 0.07 + Math.sin(t * 0.0007) * 6 * k];
   }
 
   function draw(t, dt) {
@@ -74,8 +76,8 @@
     for (const p of dust) {
       if (dt) {
         const [vx, vy] = flow(p.x, p.y, t);
-        p.x += vx * p.speed * dt * 0.075;
-        p.y += vy * p.speed * dt * 0.075;
+        p.x += vx * p.speed * dt * 0.075 * k;
+        p.y += vy * p.speed * dt * 0.075 * k;
         if (p.x > W + 12) { p.x = -12; p.y = Math.random() * H; }
         else if (p.x < -12) p.x = W + 12;
         if (p.y > H + 12) p.y = -12;
@@ -95,14 +97,14 @@
       const age = t - shot.born, life = 950;
       if (age > life) shot = null;
       else {
-        const vx = -0.62, vy = 0.45, hx = shot.x + vx * age, hy = shot.y + vy * age;
-        const len = 150 * Math.sin((Math.PI * age) / life);
+        const vx = -0.62 * k, vy = 0.45 * k, hx = shot.x + vx * age, hy = shot.y + vy * age;
+        const len = 150 * k * Math.sin((Math.PI * age) / life);
         const g = ctx.createLinearGradient(hx, hy, hx - vx * len, hy - vy * len);
         g.addColorStop(0, colors.lucky);
         g.addColorStop(1, "rgba(255, 255, 255, 0)");
         ctx.globalAlpha = 0.9 * calm;
         ctx.strokeStyle = g;
-        ctx.lineWidth = 1.8;
+        ctx.lineWidth = 1.8 * k;
         ctx.lineCap = "round";
         ctx.beginPath();
         ctx.moveTo(hx, hy);
@@ -113,12 +115,12 @@
 
     const [lx, ly] = luckyAt(t);
     if (dt) {
-      trail.push({ x: lx - 6 + (Math.random() - 0.5) * 16, y: ly + (Math.random() - 0.5) * 16, r: 0.8 + Math.random() * 1.8, life: 1 });
+      trail.push({ x: lx - 6 * k + (Math.random() - 0.5) * 16 * k, y: ly + (Math.random() - 0.5) * 16 * k, r: (0.8 + Math.random() * 1.8) * k, life: 1 });
       if (trail.length > 280) trail.shift();
     }
     ctx.fillStyle = colors.lucky;
     for (const s of trail) {
-      if (dt) { s.life -= dt / 4200; s.y += dt * 0.003; }
+      if (dt) { s.life -= dt / 4200; s.y += dt * 0.003 * k; }
       if (s.life <= 0) continue;
       ctx.globalAlpha = s.life * 0.75 * calm;
       if (s.r > 1.8) sparkle(s.x, s.y, s.r * 0.6);
@@ -126,18 +128,18 @@
     }
     trail = trail.filter((s) => s.life > 0);
 
-    const glow = ctx.createRadialGradient(lx, ly, 0, lx, ly, 76);
+    const glow = ctx.createRadialGradient(lx, ly, 0, lx, ly, 76 * k);
     glow.addColorStop(0, colors.glow);
     glow.addColorStop(1, "rgba(255, 255, 255, 0)");
     ctx.globalAlpha = calm;
     ctx.fillStyle = glow;
     ctx.beginPath();
-    ctx.arc(lx, ly, 76, 0, Math.PI * 2);
+    ctx.arc(lx, ly, 76 * k, 0, Math.PI * 2);
     ctx.fill();
-    starPath(lx, ly, 22, t * 0.00022);
+    starPath(lx, ly, 22 * k, t * 0.00022);
     ctx.fillStyle = colors.lucky;
     ctx.fill();
-    ctx.lineWidth = 1.4;
+    ctx.lineWidth = 1.4 * k;
     ctx.lineJoin = "round";
     ctx.strokeStyle = colors.edge;
     ctx.stroke();

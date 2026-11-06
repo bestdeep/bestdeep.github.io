@@ -23,6 +23,8 @@ function svg(tag, attrs = {}, text) {
 }
 const plural = (n, word) => `${n} ${n === 1 ? word : word + "s"}`;
 const slug = (s) => "p-" + s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+// The stylesheet scales the base size on big screens; drawings in px follow the same factor.
+const uiScale = () => parseFloat(getComputedStyle(document.documentElement).fontSize) / 16 || 1;
 const areaLabel = (id) => state.site.areas.find((a) => a.id === id)?.label ?? id;
 function icon(name) {
   const paths = {
@@ -91,16 +93,16 @@ function renderHeader() {
 function renderConstellation() {
   const host = document.getElementById("constellation");
   const areas = state.site.areas.filter((a) => state.projects.some((p) => p.area === a.id));
-  const W = Math.max(host.clientWidth, 300), wide = W > 720;
+  const W = Math.max(host.clientWidth, 300), wide = W > 720, k = uiScale();
   const cols = wide ? areas.length : 2, rows = Math.ceil(areas.length / cols);
-  const cellW = W / cols, cellH = wide ? 250 : 180, labelH = 30, minD = wide ? 30 : 22;
+  const cellW = W / cols, cellH = (wide ? 250 : 180) * k, labelH = 30 * k, minD = (wide ? 30 : 22) * k;
   const s = svg("svg", { viewBox: `0 0 ${W} ${rows * cellH}`, role: "img", "aria-label": `${state.projects.length} projects drawn as stars in ${areas.length} constellations, one per area` });
   const lines = svg("g"), stars = svg("g"), hits = svg("g"), labels = svg("g");
   const placed = [];
 
   areas.forEach((a, k) => {
     const col = k % cols, row = Math.floor(k / cols);
-    const cx = col * cellW + cellW / 2, cy = row * cellH + (cellH - labelH) / 2 + 4;
+    const cx = col * cellW + cellW / 2, cy = row * cellH + (cellH - labelH) / 2 + 4 * k;
     const rx = cellW * 0.36, ry = (cellH - labelH) * 0.4;
     const group = [];
     for (const p of state.projects.filter((q) => q.area === a.id)) {
@@ -112,7 +114,7 @@ function renderConstellation() {
         y = cy + Math.sin(ang) * ry * rad;
         if (group.every((g) => Math.hypot(g.x - x, g.y - y) >= minD)) break;
       }
-      group.push({ p, x, y, r: p.featured ? (wide ? 12 : 9) : (wide ? 6.5 : 5) });
+      group.push({ p, x, y, r: (p.featured ? (wide ? 12 : 9) : (wide ? 6.5 : 5)) * k });
     }
     // Constellation figure: a nearest-neighbour walk from the leftmost star.
     const left = [...group].sort((u, v) => u.x - v.x);
@@ -125,7 +127,7 @@ function renderConstellation() {
     if (walk.length > 1) lines.append(svg("path", { d: "M" + walk.map((g) => `${g.x.toFixed(1)},${g.y.toFixed(1)}`).join("L"), class: "link-line", style: `--c:${k}` }));
     placed.push(...group);
 
-    const label = svg("text", { x: cx, y: row * cellH + cellH - 8, "text-anchor": "middle", class: "cluster-label", tabindex: 0, role: "button", "aria-label": `Show ${a.label} projects` }, a.label);
+    const label = svg("text", { x: cx, y: row * cellH + cellH - 8 * k, "text-anchor": "middle", class: "cluster-label", tabindex: 0, role: "button", "aria-label": `Show ${a.label} projects` }, a.label);
     const pick = () => { setArea(a.id); document.getElementById("work-heading").closest("section").scrollIntoView({ block: "start" }); };
     label.addEventListener("click", pick);
     label.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(); } });
@@ -134,7 +136,7 @@ function renderConstellation() {
 
   [...placed].sort((u, v) => u.x - v.x).forEach((g, i) => {
     const star = svg("path", { d: starPath(g.x, g.y, g.r), class: "star", style: `--i:${i}` });
-    const hit = svg("circle", { cx: g.x, cy: g.y, r: Math.max(14, g.r + 6), class: "star-hit" });
+    const hit = svg("circle", { cx: g.x, cy: g.y, r: Math.max(14 * k, g.r + 6 * k), class: "star-hit" });
     hit.addEventListener("pointermove", (e) => { star.classList.add("on"); showTip(e, g.p.title, areaLabel(g.p.area)); });
     hit.addEventListener("pointerleave", () => { star.classList.remove("on"); hideTip(); });
     hit.addEventListener("click", () => { hideTip(); goToProject(g.p); });

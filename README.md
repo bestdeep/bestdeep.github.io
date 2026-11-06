@@ -15,6 +15,8 @@ The Lucky Star logo (`assets/logo-96.png`, favicons, `apple-touch-icon.png`, and
 
 The theme is a soft pink sky with light and dark modes. Behind the page (`assets/sky.js`), a slow current of stardust flows across, a large golden lucky star rides it once a minute with a glitter trail, and a shooting star passes now and then; it holds still for visitors who prefer reduced motion. Type is Archivo (Google Fonts), used across its width axis, with Fraunces italic for the poem.
 
+Sizes are in rem and the base size steps up on wide screens (1600, 2200, 2400 and 3200 px), so the page keeps its proportions on large monitors, including 32-inch QHD and 4K displays; the constellation and the sky canvas scale by the same factor.
+
 ## Editing
 
 | File | Purpose |
