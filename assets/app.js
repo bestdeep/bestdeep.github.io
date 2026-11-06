@@ -230,7 +230,7 @@ function renderPoem() {
   const poem = state.site.poem;
   const section = document.getElementById("poem");
   if (!poem) { section.hidden = true; return; }
-  document.getElementById("poem-title").textContent = poem.title;
+  section.setAttribute("aria-label", poem.title);
   document.getElementById("poem-text").replaceChildren(...poem.stanzas.map((stanza) => el("p", { class: "stanza" },
     stanza.map((line) => el("span", { class: "line" }, [el("span", { class: "initial", text: line[0] }), line.slice(1)])))));
 }

@@ -14,7 +14,7 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,600..700,100;1,9..144,400,100&display=swap">
   <script>
     try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
   </script>
@@ -38,6 +38,10 @@
           <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor"/></svg>
         </button>
       </div>
+
+      <section class="poem-top" id="poem" aria-label="Poem for the lucky star">
+        <div class="poem" id="poem-text"></div>
+      </section>
 
       <div class="intro-block">
         <h1 id="name">Lucky Star</h1>
@@ -95,11 +99,6 @@
       <h2>Toolbox</h2>
       <p class="note">What I reach for, from training runs to the dApp in front of them.</p>
       <dl class="skills" id="skills"></dl>
-    </section>
-
-    <section class="wrap section" id="poem" aria-labelledby="poem-title">
-      <h2 id="poem-title"></h2>
-      <div class="poem" id="poem-text"></div>
     </section>
   </main>
 

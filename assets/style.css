@@ -28,6 +28,7 @@
   --lucky-edge: #e39b1f;
 
   --sans: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
   --wrap: 1120px;
 }
 
@@ -130,7 +131,7 @@ h2 {
 }
 .theme-toggle:hover { color: var(--heading); border-color: var(--line); }
 
-.intro-block { padding-top: 64px; max-width: 820px; }
+.intro-block { padding-top: 56px; max-width: 820px; }
 #name {
   color: var(--heading);
   font-size: clamp(44px, 11.5vw, 124px);
@@ -240,10 +241,17 @@ h2 {
 .skills dd { color: var(--ink); font-size: 16px; line-height: 1.6; }
 
 /* Poem ------------------------------------------------------------------ */
-.poem { display: grid; gap: 30px; margin-top: 36px; }
-.stanza { display: grid; gap: 2px; font-size: 22px; line-height: 1.55; color: var(--ink); }
+/* The opening verse: centred as a block so its initials still line up and spell the name. */
+.poem-top { padding-top: 44px; }
+.poem { display: grid; gap: 22px; width: fit-content; max-width: 100%; margin: 0 auto; }
+.stanza {
+  display: grid; gap: 2px;
+  font-family: var(--serif); font-style: italic; font-weight: 400;
+  font-size: 23px; line-height: 1.5; color: var(--ink-2);
+  font-variation-settings: "opsz" 28, "SOFT" 100;
+}
 .stanza .line { display: block; padding-left: 1em; text-indent: -1em; }
-.stanza .initial { color: var(--heading); font-weight: 800; font-size: 1.12em; font-variation-settings: "wdth" 112; }
+.stanza .initial { font-style: normal; font-weight: 700; font-size: 1.14em; color: var(--heading); font-variation-settings: "opsz" 36, "SOFT" 100; }
 
 /* Contact --------------------------------------------------------------- */
 .contact { padding: 120px 0 40px; }
@@ -291,7 +299,8 @@ h2 {
   .contact-panel { padding: 32px 22px 36px; border-radius: 22px; }
   .channels { grid-template-columns: 1fr; gap: 20px; }
   .channels a { font-size: 21px; }
-  .stanza { font-size: 18px; }
+  .stanza { font-size: 16px; }
+  .poem-top { padding-top: 24px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .flash, .feature:target, .entry:target { animation: none; } }
 @media (forced-colors: active) { .sky-bg { display: none; } .area-row .bar-fill, .star { forced-color-adjust: none; } }

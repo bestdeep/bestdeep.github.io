@@ -6,13 +6,14 @@ A static page with no build step: `index.html`, `assets/`, and two content files
 
 ## What it shows
 
+- An opening poem to the lucky star, centred at the top in Fraunces italic, whose line initials spell LUCKY STAR
 - A header with a constellation of projects: each star is one project, grouped by area; selecting a star jumps to it
 - Projects by area (the area bars double as a filter), selected work, and every other project grouped by area, each described as a one-line idea, with search
-- Toolbox (skills), a short poem to the lucky star whose line initials spell LUCKY STAR, and contact links (email and Telegram)
+- Toolbox (skills) and contact links (email and Telegram)
 
 The Lucky Star logo (`assets/logo-96.png`, favicons, `apple-touch-icon.png`, and `og.jpg` for link previews) is cut from `luckystar.png` in the resource repo, cropped to a circle for use on the pink band.
 
-The theme is a soft pink sky with light and dark modes. Behind the page (`assets/sky.js`), a slow current of stardust flows across, a large golden lucky star rides it once a minute with a glitter trail, and a shooting star passes now and then; it holds still for visitors who prefer reduced motion. Type is Archivo (Google Fonts), used across its width axis.
+The theme is a soft pink sky with light and dark modes. Behind the page (`assets/sky.js`), a slow current of stardust flows across, a large golden lucky star rides it once a minute with a glitter trail, and a shooting star passes now and then; it holds still for visitors who prefer reduced motion. Type is Archivo (Google Fonts), used across its width axis, with Fraunces italic for the poem.
 
 ## Editing
 
