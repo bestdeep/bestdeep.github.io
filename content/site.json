@@ -1,0 +1,20 @@
+{
+  "login": "bestdeep",
+  "headline": "AI & Blockchain Engineer · Full-Stack Developer",
+  "intro": "I build at the intersection of machine learning and decentralized networks. Most of my recent work is on Bittensor subnets: miners, validators, and the agents, models and data pipelines behind them, plus the full-stack pieces around them: APIs, dashboards, bots and dApps.",
+  "skills": [
+    {"group": "Languages", "items": ["Python", "TypeScript", "JavaScript", "Rust", "Solidity", "Bash"]},
+    {"group": "AI / ML", "items": ["PyTorch", "Hugging Face", "vLLM", "SGLang", "DeepSpeed", "LLaMA-Factory", "OpenCV", "FFmpeg"]},
+    {"group": "Training", "items": ["LoRA / QLoRA", "SFT", "DPO", "GRPO", "Distillation", "Offline RL"]},
+    {"group": "Blockchain", "items": ["Bittensor", "Sui", "Ethereum", "Bitcoin NFTs", "DeFi"]},
+    {"group": "Web & infra", "items": ["React", "Node.js", "FastAPI", "MySQL", "Docker", "Telegram bots", "Linux"]}
+  ],
+  "areas": [
+    {"id": "vision", "label": "Computer vision & video"},
+    {"id": "llm", "label": "LLM training & inference"},
+    {"id": "agents", "label": "LLM agents & RL"},
+    {"id": "subnets", "label": "Subnet mining & tooling"},
+    {"id": "web3", "label": "Web3, dApps & bots"},
+    {"id": "misc", "label": "Profile & resources"}
+  ]
+}

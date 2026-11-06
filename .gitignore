@@ -1,0 +1,4 @@
+# Private-repo and private-org mapping: names must never be published.
+content/private.local.json
+__pycache__/
+.DS_Store

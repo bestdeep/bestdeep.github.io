@@ -1,0 +1,3324 @@
+{
+ "generated_at": "2026-11-06T10:10:47Z",
+ "profile": {
+  "login": "bestdeep",
+  "name": "BestDeep",
+  "bio": "AI & Blockchain\r\nFrontend & Backend developer",
+  "location": "United States",
+  "avatar_url": "https://avatars.githubusercontent.com/u/191052085?u=3ab31aba2842aae37a5fa8cc27693ead759c6328&v=4",
+  "url": "https://github.com/bestdeep",
+  "created_at": "2024-12-08",
+  "followers": 1,
+  "following": 2,
+  "hireable": true,
+  "headline": "AI & Blockchain Engineer · Full-Stack Developer",
+  "intro": "I build at the intersection of machine learning and decentralized networks. Most of my recent work is on Bittensor subnets: miners, validators, and the agents, models and data pipelines behind them, plus the full-stack pieces around them: APIs, dashboards, bots and dApps."
+ },
+ "skills": [
+  {
+   "group": "Languages",
+   "items": [
+    "Python",
+    "TypeScript",
+    "JavaScript",
+    "Rust",
+    "Solidity",
+    "Bash"
+   ]
+  },
+  {
+   "group": "AI / ML",
+   "items": [
+    "PyTorch",
+    "Hugging Face",
+    "vLLM",
+    "SGLang",
+    "DeepSpeed",
+    "LLaMA-Factory",
+    "OpenCV",
+    "FFmpeg"
+   ]
+  },
+  {
+   "group": "Training",
+   "items": [
+    "LoRA / QLoRA",
+    "SFT",
+    "DPO",
+    "GRPO",
+    "Distillation",
+    "Offline RL"
+   ]
+  },
+  {
+   "group": "Blockchain",
+   "items": [
+    "Bittensor",
+    "Sui",
+    "Ethereum",
+    "Bitcoin NFTs",
+    "DeFi"
+   ]
+  },
+  {
+   "group": "Web & infra",
+   "items": [
+    "React",
+    "Node.js",
+    "FastAPI",
+    "MySQL",
+    "Docker",
+    "Telegram bots",
+    "Linux"
+   ]
+  }
+ ],
+ "totals": {
+  "repos": 52,
+  "public": 25,
+  "private": 27,
+  "forks": 8,
+  "stars": 2,
+  "commits_authored": 1680,
+  "contributions_last_year": 1590,
+  "contributions_all_time": 1725,
+  "orgs": 4,
+  "team_repos": 60,
+  "languages": 11
+ },
+ "years": [
+  {
+   "year": 2024,
+   "total": 1,
+   "public_commits": 0,
+   "private": 0,
+   "pull_requests": 0,
+   "repos_created": 0
+  },
+  {
+   "year": 2025,
+   "total": 419,
+   "public_commits": 245,
+   "private": 154,
+   "pull_requests": 1,
+   "repos_created": 19
+  },
+  {
+   "year": 2026,
+   "total": 1305,
+   "public_commits": 26,
+   "private": 1271,
+   "pull_requests": 1,
+   "repos_created": 6
+  }
+ ],
+ "calendar": [
+  {
+   "date": "2025-11-02",
+   "count": 5
+  },
+  {
+   "date": "2025-11-03",
+   "count": 6
+  },
+  {
+   "date": "2025-11-04",
+   "count": 3
+  },
+  {
+   "date": "2025-11-05",
+   "count": 13
+  },
+  {
+   "date": "2025-11-06",
+   "count": 3
+  },
+  {
+   "date": "2025-11-07",
+   "count": 3
+  },
+  {
+   "date": "2025-11-08",
+   "count": 1
+  },
+  {
+   "date": "2025-11-09",
+   "count": 7
+  },
+  {
+   "date": "2025-11-10",
+   "count": 5
+  },
+  {
+   "date": "2025-11-11",
+   "count": 12
+  },
+  {
+   "date": "2025-11-12",
+   "count": 9
+  },
+  {
+   "date": "2025-11-13",
+   "count": 4
+  },
+  {
+   "date": "2025-11-14",
+   "count": 7
+  },
+  {
+   "date": "2025-11-15",
+   "count": 1
+  },
+  {
+   "date": "2025-11-16",
+   "count": 5
+  },
+  {
+   "date": "2025-11-17",
+   "count": 7
+  },
+  {
+   "date": "2025-11-18",
+   "count": 9
+  },
+  {
+   "date": "2025-11-19",
+   "count": 2
+  },
+  {
+   "date": "2025-11-20",
+   "count": 11
+  },
+  {
+   "date": "2025-11-21",
+   "count": 13
+  },
+  {
+   "date": "2025-11-22",
+   "count": 10
+  },
+  {
+   "date": "2025-11-23",
+   "count": 7
+  },
+  {
+   "date": "2025-11-24",
+   "count": 1
+  },
+  {
+   "date": "2025-11-25",
+   "count": 0
+  },
+  {
+   "date": "2025-11-26",
+   "count": 4
+  },
+  {
+   "date": "2025-11-27",
+   "count": 1
+  },
+  {
+   "date": "2025-11-28",
+   "count": 0
+  },
+  {
+   "date": "2025-11-29",
+   "count": 3
+  },
+  {
+   "date": "2025-11-30",
+   "count": 1
+  },
+  {
+   "date": "2025-12-01",
+   "count": 6
+  },
+  {
+   "date": "2025-12-02",
+   "count": 2
+  },
+  {
+   "date": "2025-12-03",
+   "count": 2
+  },
+  {
+   "date": "2025-12-04",
+   "count": 3
+  },
+  {
+   "date": "2025-12-05",
+   "count": 1
+  },
+  {
+   "date": "2025-12-06",
+   "count": 0
+  },
+  {
+   "date": "2025-12-07",
+   "count": 1
+  },
+  {
+   "date": "2025-12-08",
+   "count": 32
+  },
+  {
+   "date": "2025-12-09",
+   "count": 13
+  },
+  {
+   "date": "2025-12-10",
+   "count": 7
+  },
+  {
+   "date": "2025-12-11",
+   "count": 2
+  },
+  {
+   "date": "2025-12-12",
+   "count": 6
+  },
+  {
+   "date": "2025-12-13",
+   "count": 1
+  },
+  {
+   "date": "2025-12-14",
+   "count": 0
+  },
+  {
+   "date": "2025-12-15",
+   "count": 4
+  },
+  {
+   "date": "2025-12-16",
+   "count": 9
+  },
+  {
+   "date": "2025-12-17",
+   "count": 1
+  },
+  {
+   "date": "2025-12-18",
+   "count": 2
+  },
+  {
+   "date": "2025-12-19",
+   "count": 14
+  },
+  {
+   "date": "2025-12-20",
+   "count": 0
+  },
+  {
+   "date": "2025-12-21",
+   "count": 14
+  },
+  {
+   "date": "2025-12-22",
+   "count": 4
+  },
+  {
+   "date": "2025-12-23",
+   "count": 0
+  },
+  {
+   "date": "2025-12-24",
+   "count": 0
+  },
+  {
+   "date": "2025-12-25",
+   "count": 1
+  },
+  {
+   "date": "2025-12-26",
+   "count": 7
+  },
+  {
+   "date": "2025-12-27",
+   "count": 0
+  },
+  {
+   "date": "2025-12-28",
+   "count": 0
+  },
+  {
+   "date": "2025-12-29",
+   "count": 0
+  },
+  {
+   "date": "2025-12-30",
+   "count": 0
+  },
+  {
+   "date": "2025-12-31",
+   "count": 0
+  },
+  {
+   "date": "2026-01-01",
+   "count": 0
+  },
+  {
+   "date": "2026-01-02",
+   "count": 0
+  },
+  {
+   "date": "2026-01-03",
+   "count": 0
+  },
+  {
+   "date": "2026-01-04",
+   "count": 0
+  },
+  {
+   "date": "2026-01-05",
+   "count": 0
+  },
+  {
+   "date": "2026-01-06",
+   "count": 3
+  },
+  {
+   "date": "2026-01-07",
+   "count": 3
+  },
+  {
+   "date": "2026-01-08",
+   "count": 1
+  },
+  {
+   "date": "2026-01-09",
+   "count": 2
+  },
+  {
+   "date": "2026-01-10",
+   "count": 0
+  },
+  {
+   "date": "2026-01-11",
+   "count": 6
+  },
+  {
+   "date": "2026-01-12",
+   "count": 1
+  },
+  {
+   "date": "2026-01-13",
+   "count": 0
+  },
+  {
+   "date": "2026-01-14",
+   "count": 2
+  },
+  {
+   "date": "2026-01-15",
+   "count": 0
+  },
+  {
+   "date": "2026-01-16",
+   "count": 0
+  },
+  {
+   "date": "2026-01-17",
+   "count": 0
+  },
+  {
+   "date": "2026-01-18",
+   "count": 0
+  },
+  {
+   "date": "2026-01-19",
+   "count": 0
+  },
+  {
+   "date": "2026-01-20",
+   "count": 0
+  },
+  {
+   "date": "2026-01-21",
+   "count": 1
+  },
+  {
+   "date": "2026-01-22",
+   "count": 0
+  },
+  {
+   "date": "2026-01-23",
+   "count": 0
+  },
+  {
+   "date": "2026-01-24",
+   "count": 0
+  },
+  {
+   "date": "2026-01-25",
+   "count": 0
+  },
+  {
+   "date": "2026-01-26",
+   "count": 10
+  },
+  {
+   "date": "2026-01-27",
+   "count": 0
+  },
+  {
+   "date": "2026-01-28",
+   "count": 0
+  },
+  {
+   "date": "2026-01-29",
+   "count": 1
+  },
+  {
+   "date": "2026-01-30",
+   "count": 0
+  },
+  {
+   "date": "2026-01-31",
+   "count": 0
+  },
+  {
+   "date": "2026-02-01",
+   "count": 5
+  },
+  {
+   "date": "2026-02-02",
+   "count": 10
+  },
+  {
+   "date": "2026-02-03",
+   "count": 6
+  },
+  {
+   "date": "2026-02-04",
+   "count": 0
+  },
+  {
+   "date": "2026-02-05",
+   "count": 6
+  },
+  {
+   "date": "2026-02-06",
+   "count": 7
+  },
+  {
+   "date": "2026-02-07",
+   "count": 0
+  },
+  {
+   "date": "2026-02-08",
+   "count": 0
+  },
+  {
+   "date": "2026-02-09",
+   "count": 1
+  },
+  {
+   "date": "2026-02-10",
+   "count": 0
+  },
+  {
+   "date": "2026-02-11",
+   "count": 0
+  },
+  {
+   "date": "2026-02-12",
+   "count": 7
+  },
+  {
+   "date": "2026-02-13",
+   "count": 5
+  },
+  {
+   "date": "2026-02-14",
+   "count": 0
+  },
+  {
+   "date": "2026-02-15",
+   "count": 2
+  },
+  {
+   "date": "2026-02-16",
+   "count": 0
+  },
+  {
+   "date": "2026-02-17",
+   "count": 3
+  },
+  {
+   "date": "2026-02-18",
+   "count": 5
+  },
+  {
+   "date": "2026-02-19",
+   "count": 3
+  },
+  {
+   "date": "2026-02-20",
+   "count": 1
+  },
+  {
+   "date": "2026-02-21",
+   "count": 1
+  },
+  {
+   "date": "2026-02-22",
+   "count": 0
+  },
+  {
+   "date": "2026-02-23",
+   "count": 0
+  },
+  {
+   "date": "2026-02-24",
+   "count": 0
+  },
+  {
+   "date": "2026-02-25",
+   "count": 0
+  },
+  {
+   "date": "2026-02-26",
+   "count": 0
+  },
+  {
+   "date": "2026-02-27",
+   "count": 0
+  },
+  {
+   "date": "2026-02-28",
+   "count": 0
+  },
+  {
+   "date": "2026-03-01",
+   "count": 1
+  },
+  {
+   "date": "2026-03-02",
+   "count": 0
+  },
+  {
+   "date": "2026-03-03",
+   "count": 0
+  },
+  {
+   "date": "2026-03-04",
+   "count": 0
+  },
+  {
+   "date": "2026-03-05",
+   "count": 0
+  },
+  {
+   "date": "2026-03-06",
+   "count": 0
+  },
+  {
+   "date": "2026-03-07",
+   "count": 0
+  },
+  {
+   "date": "2026-03-08",
+   "count": 0
+  },
+  {
+   "date": "2026-03-09",
+   "count": 0
+  },
+  {
+   "date": "2026-03-10",
+   "count": 2
+  },
+  {
+   "date": "2026-03-11",
+   "count": 0
+  },
+  {
+   "date": "2026-03-12",
+   "count": 0
+  },
+  {
+   "date": "2026-03-13",
+   "count": 3
+  },
+  {
+   "date": "2026-03-14",
+   "count": 0
+  },
+  {
+   "date": "2026-03-15",
+   "count": 3
+  },
+  {
+   "date": "2026-03-16",
+   "count": 0
+  },
+  {
+   "date": "2026-03-17",
+   "count": 1
+  },
+  {
+   "date": "2026-03-18",
+   "count": 0
+  },
+  {
+   "date": "2026-03-19",
+   "count": 1
+  },
+  {
+   "date": "2026-03-20",
+   "count": 1
+  },
+  {
+   "date": "2026-03-21",
+   "count": 0
+  },
+  {
+   "date": "2026-03-22",
+   "count": 0
+  },
+  {
+   "date": "2026-03-23",
+   "count": 0
+  },
+  {
+   "date": "2026-03-24",
+   "count": 0
+  },
+  {
+   "date": "2026-03-25",
+   "count": 0
+  },
+  {
+   "date": "2026-03-26",
+   "count": 0
+  },
+  {
+   "date": "2026-03-27",
+   "count": 0
+  },
+  {
+   "date": "2026-03-28",
+   "count": 0
+  },
+  {
+   "date": "2026-03-29",
+   "count": 1
+  },
+  {
+   "date": "2026-03-30",
+   "count": 0
+  },
+  {
+   "date": "2026-03-31",
+   "count": 2
+  },
+  {
+   "date": "2026-04-01",
+   "count": 0
+  },
+  {
+   "date": "2026-04-02",
+   "count": 1
+  },
+  {
+   "date": "2026-04-03",
+   "count": 0
+  },
+  {
+   "date": "2026-04-04",
+   "count": 0
+  },
+  {
+   "date": "2026-04-05",
+   "count": 1
+  },
+  {
+   "date": "2026-04-06",
+   "count": 2
+  },
+  {
+   "date": "2026-04-07",
+   "count": 4
+  },
+  {
+   "date": "2026-04-08",
+   "count": 0
+  },
+  {
+   "date": "2026-04-09",
+   "count": 0
+  },
+  {
+   "date": "2026-04-10",
+   "count": 0
+  },
+  {
+   "date": "2026-04-11",
+   "count": 0
+  },
+  {
+   "date": "2026-04-12",
+   "count": 0
+  },
+  {
+   "date": "2026-04-13",
+   "count": 0
+  },
+  {
+   "date": "2026-04-14",
+   "count": 0
+  },
+  {
+   "date": "2026-04-15",
+   "count": 1
+  },
+  {
+   "date": "2026-04-16",
+   "count": 0
+  },
+  {
+   "date": "2026-04-17",
+   "count": 0
+  },
+  {
+   "date": "2026-04-18",
+   "count": 0
+  },
+  {
+   "date": "2026-04-19",
+   "count": 0
+  },
+  {
+   "date": "2026-04-20",
+   "count": 0
+  },
+  {
+   "date": "2026-04-21",
+   "count": 0
+  },
+  {
+   "date": "2026-04-22",
+   "count": 0
+  },
+  {
+   "date": "2026-04-23",
+   "count": 0
+  },
+  {
+   "date": "2026-04-24",
+   "count": 0
+  },
+  {
+   "date": "2026-04-25",
+   "count": 0
+  },
+  {
+   "date": "2026-04-26",
+   "count": 0
+  },
+  {
+   "date": "2026-04-27",
+   "count": 0
+  },
+  {
+   "date": "2026-04-28",
+   "count": 0
+  },
+  {
+   "date": "2026-04-29",
+   "count": 0
+  },
+  {
+   "date": "2026-04-30",
+   "count": 0
+  },
+  {
+   "date": "2026-05-01",
+   "count": 0
+  },
+  {
+   "date": "2026-05-02",
+   "count": 0
+  },
+  {
+   "date": "2026-05-03",
+   "count": 1
+  },
+  {
+   "date": "2026-05-04",
+   "count": 3
+  },
+  {
+   "date": "2026-05-05",
+   "count": 9
+  },
+  {
+   "date": "2026-05-06",
+   "count": 10
+  },
+  {
+   "date": "2026-05-07",
+   "count": 5
+  },
+  {
+   "date": "2026-05-08",
+   "count": 4
+  },
+  {
+   "date": "2026-05-09",
+   "count": 6
+  },
+  {
+   "date": "2026-05-10",
+   "count": 1
+  },
+  {
+   "date": "2026-05-11",
+   "count": 10
+  },
+  {
+   "date": "2026-05-12",
+   "count": 6
+  },
+  {
+   "date": "2026-05-13",
+   "count": 7
+  },
+  {
+   "date": "2026-05-14",
+   "count": 6
+  },
+  {
+   "date": "2026-05-15",
+   "count": 0
+  },
+  {
+   "date": "2026-05-16",
+   "count": 2
+  },
+  {
+   "date": "2026-05-17",
+   "count": 0
+  },
+  {
+   "date": "2026-05-18",
+   "count": 0
+  },
+  {
+   "date": "2026-05-19",
+   "count": 1
+  },
+  {
+   "date": "2026-05-20",
+   "count": 0
+  },
+  {
+   "date": "2026-05-21",
+   "count": 0
+  },
+  {
+   "date": "2026-05-22",
+   "count": 0
+  },
+  {
+   "date": "2026-05-23",
+   "count": 1
+  },
+  {
+   "date": "2026-05-24",
+   "count": 0
+  },
+  {
+   "date": "2026-05-25",
+   "count": 0
+  },
+  {
+   "date": "2026-05-26",
+   "count": 0
+  },
+  {
+   "date": "2026-05-27",
+   "count": 0
+  },
+  {
+   "date": "2026-05-28",
+   "count": 0
+  },
+  {
+   "date": "2026-05-29",
+   "count": 0
+  },
+  {
+   "date": "2026-05-30",
+   "count": 0
+  },
+  {
+   "date": "2026-05-31",
+   "count": 0
+  },
+  {
+   "date": "2026-06-01",
+   "count": 0
+  },
+  {
+   "date": "2026-06-02",
+   "count": 0
+  },
+  {
+   "date": "2026-06-03",
+   "count": 0
+  },
+  {
+   "date": "2026-06-04",
+   "count": 0
+  },
+  {
+   "date": "2026-06-05",
+   "count": 0
+  },
+  {
+   "date": "2026-06-06",
+   "count": 0
+  },
+  {
+   "date": "2026-06-07",
+   "count": 0
+  },
+  {
+   "date": "2026-06-08",
+   "count": 0
+  },
+  {
+   "date": "2026-06-09",
+   "count": 0
+  },
+  {
+   "date": "2026-06-10",
+   "count": 0
+  },
+  {
+   "date": "2026-06-11",
+   "count": 0
+  },
+  {
+   "date": "2026-06-12",
+   "count": 0
+  },
+  {
+   "date": "2026-06-13",
+   "count": 0
+  },
+  {
+   "date": "2026-06-14",
+   "count": 0
+  },
+  {
+   "date": "2026-06-15",
+   "count": 0
+  },
+  {
+   "date": "2026-06-16",
+   "count": 0
+  },
+  {
+   "date": "2026-06-17",
+   "count": 0
+  },
+  {
+   "date": "2026-06-18",
+   "count": 0
+  },
+  {
+   "date": "2026-06-19",
+   "count": 0
+  },
+  {
+   "date": "2026-06-20",
+   "count": 0
+  },
+  {
+   "date": "2026-06-21",
+   "count": 0
+  },
+  {
+   "date": "2026-06-22",
+   "count": 0
+  },
+  {
+   "date": "2026-06-23",
+   "count": 0
+  },
+  {
+   "date": "2026-06-24",
+   "count": 0
+  },
+  {
+   "date": "2026-06-25",
+   "count": 0
+  },
+  {
+   "date": "2026-06-26",
+   "count": 0
+  },
+  {
+   "date": "2026-06-27",
+   "count": 0
+  },
+  {
+   "date": "2026-06-28",
+   "count": 0
+  },
+  {
+   "date": "2026-06-29",
+   "count": 9
+  },
+  {
+   "date": "2026-06-30",
+   "count": 5
+  },
+  {
+   "date": "2026-07-01",
+   "count": 11
+  },
+  {
+   "date": "2026-07-02",
+   "count": 28
+  },
+  {
+   "date": "2026-07-03",
+   "count": 32
+  },
+  {
+   "date": "2026-07-04",
+   "count": 9
+  },
+  {
+   "date": "2026-07-05",
+   "count": 10
+  },
+  {
+   "date": "2026-07-06",
+   "count": 9
+  },
+  {
+   "date": "2026-07-07",
+   "count": 7
+  },
+  {
+   "date": "2026-07-08",
+   "count": 20
+  },
+  {
+   "date": "2026-07-09",
+   "count": 5
+  },
+  {
+   "date": "2026-07-10",
+   "count": 14
+  },
+  {
+   "date": "2026-07-11",
+   "count": 0
+  },
+  {
+   "date": "2026-07-12",
+   "count": 4
+  },
+  {
+   "date": "2026-07-13",
+   "count": 4
+  },
+  {
+   "date": "2026-07-14",
+   "count": 6
+  },
+  {
+   "date": "2026-07-15",
+   "count": 10
+  },
+  {
+   "date": "2026-07-16",
+   "count": 4
+  },
+  {
+   "date": "2026-07-17",
+   "count": 21
+  },
+  {
+   "date": "2026-07-18",
+   "count": 0
+  },
+  {
+   "date": "2026-07-19",
+   "count": 0
+  },
+  {
+   "date": "2026-07-20",
+   "count": 4
+  },
+  {
+   "date": "2026-07-21",
+   "count": 4
+  },
+  {
+   "date": "2026-07-22",
+   "count": 15
+  },
+  {
+   "date": "2026-07-23",
+   "count": 0
+  },
+  {
+   "date": "2026-07-24",
+   "count": 38
+  },
+  {
+   "date": "2026-07-25",
+   "count": 0
+  },
+  {
+   "date": "2026-07-26",
+   "count": 12
+  },
+  {
+   "date": "2026-07-27",
+   "count": 4
+  },
+  {
+   "date": "2026-07-28",
+   "count": 32
+  },
+  {
+   "date": "2026-07-29",
+   "count": 13
+  },
+  {
+   "date": "2026-07-30",
+   "count": 20
+  },
+  {
+   "date": "2026-07-31",
+   "count": 20
+  },
+  {
+   "date": "2026-08-01",
+   "count": 1
+  },
+  {
+   "date": "2026-08-02",
+   "count": 4
+  },
+  {
+   "date": "2026-08-03",
+   "count": 11
+  },
+  {
+   "date": "2026-08-04",
+   "count": 8
+  },
+  {
+   "date": "2026-08-05",
+   "count": 2
+  },
+  {
+   "date": "2026-08-06",
+   "count": 25
+  },
+  {
+   "date": "2026-08-07",
+   "count": 10
+  },
+  {
+   "date": "2026-08-08",
+   "count": 1
+  },
+  {
+   "date": "2026-08-09",
+   "count": 7
+  },
+  {
+   "date": "2026-08-10",
+   "count": 17
+  },
+  {
+   "date": "2026-08-11",
+   "count": 2
+  },
+  {
+   "date": "2026-08-12",
+   "count": 6
+  },
+  {
+   "date": "2026-08-13",
+   "count": 5
+  },
+  {
+   "date": "2026-08-14",
+   "count": 0
+  },
+  {
+   "date": "2026-08-15",
+   "count": 1
+  },
+  {
+   "date": "2026-08-16",
+   "count": 4
+  },
+  {
+   "date": "2026-08-17",
+   "count": 3
+  },
+  {
+   "date": "2026-08-18",
+   "count": 3
+  },
+  {
+   "date": "2026-08-19",
+   "count": 5
+  },
+  {
+   "date": "2026-08-20",
+   "count": 21
+  },
+  {
+   "date": "2026-08-21",
+   "count": 4
+  },
+  {
+   "date": "2026-08-22",
+   "count": 0
+  },
+  {
+   "date": "2026-08-23",
+   "count": 3
+  },
+  {
+   "date": "2026-08-24",
+   "count": 5
+  },
+  {
+   "date": "2026-08-25",
+   "count": 2
+  },
+  {
+   "date": "2026-08-26",
+   "count": 5
+  },
+  {
+   "date": "2026-08-27",
+   "count": 3
+  },
+  {
+   "date": "2026-08-28",
+   "count": 0
+  },
+  {
+   "date": "2026-08-29",
+   "count": 0
+  },
+  {
+   "date": "2026-08-30",
+   "count": 0
+  },
+  {
+   "date": "2026-08-31",
+   "count": 0
+  },
+  {
+   "date": "2026-09-01",
+   "count": 0
+  },
+  {
+   "date": "2026-09-02",
+   "count": 0
+  },
+  {
+   "date": "2026-09-03",
+   "count": 1
+  },
+  {
+   "date": "2026-09-04",
+   "count": 0
+  },
+  {
+   "date": "2026-09-05",
+   "count": 0
+  },
+  {
+   "date": "2026-09-06",
+   "count": 0
+  },
+  {
+   "date": "2026-09-07",
+   "count": 2
+  },
+  {
+   "date": "2026-09-08",
+   "count": 14
+  },
+  {
+   "date": "2026-09-09",
+   "count": 4
+  },
+  {
+   "date": "2026-09-10",
+   "count": 1
+  },
+  {
+   "date": "2026-09-11",
+   "count": 3
+  },
+  {
+   "date": "2026-09-12",
+   "count": 0
+  },
+  {
+   "date": "2026-09-13",
+   "count": 1
+  },
+  {
+   "date": "2026-09-14",
+   "count": 0
+  },
+  {
+   "date": "2026-09-15",
+   "count": 1
+  },
+  {
+   "date": "2026-09-16",
+   "count": 0
+  },
+  {
+   "date": "2026-09-17",
+   "count": 2
+  },
+  {
+   "date": "2026-09-18",
+   "count": 0
+  },
+  {
+   "date": "2026-09-19",
+   "count": 0
+  },
+  {
+   "date": "2026-09-20",
+   "count": 0
+  },
+  {
+   "date": "2026-09-21",
+   "count": 10
+  },
+  {
+   "date": "2026-09-22",
+   "count": 7
+  },
+  {
+   "date": "2026-09-23",
+   "count": 10
+  },
+  {
+   "date": "2026-09-24",
+   "count": 7
+  },
+  {
+   "date": "2026-09-25",
+   "count": 0
+  },
+  {
+   "date": "2026-09-26",
+   "count": 4
+  },
+  {
+   "date": "2026-09-27",
+   "count": 8
+  },
+  {
+   "date": "2026-09-28",
+   "count": 22
+  },
+  {
+   "date": "2026-09-29",
+   "count": 8
+  },
+  {
+   "date": "2026-09-30",
+   "count": 18
+  },
+  {
+   "date": "2026-10-01",
+   "count": 26
+  },
+  {
+   "date": "2026-10-02",
+   "count": 21
+  },
+  {
+   "date": "2026-10-03",
+   "count": 10
+  },
+  {
+   "date": "2026-10-04",
+   "count": 4
+  },
+  {
+   "date": "2026-10-05",
+   "count": 8
+  },
+  {
+   "date": "2026-10-06",
+   "count": 23
+  },
+  {
+   "date": "2026-10-07",
+   "count": 21
+  },
+  {
+   "date": "2026-10-08",
+   "count": 6
+  },
+  {
+   "date": "2026-10-09",
+   "count": 12
+  },
+  {
+   "date": "2026-10-10",
+   "count": 5
+  },
+  {
+   "date": "2026-10-11",
+   "count": 13
+  },
+  {
+   "date": "2026-10-12",
+   "count": 12
+  },
+  {
+   "date": "2026-10-13",
+   "count": 10
+  },
+  {
+   "date": "2026-10-14",
+   "count": 21
+  },
+  {
+   "date": "2026-10-15",
+   "count": 20
+  },
+  {
+   "date": "2026-10-16",
+   "count": 5
+  },
+  {
+   "date": "2026-10-17",
+   "count": 1
+  },
+  {
+   "date": "2026-10-18",
+   "count": 0
+  },
+  {
+   "date": "2026-10-19",
+   "count": 26
+  },
+  {
+   "date": "2026-10-20",
+   "count": 10
+  },
+  {
+   "date": "2026-10-21",
+   "count": 3
+  },
+  {
+   "date": "2026-10-22",
+   "count": 1
+  },
+  {
+   "date": "2026-10-23",
+   "count": 2
+  },
+  {
+   "date": "2026-10-24",
+   "count": 0
+  },
+  {
+   "date": "2026-10-25",
+   "count": 1
+  },
+  {
+   "date": "2026-10-26",
+   "count": 2
+  },
+  {
+   "date": "2026-10-27",
+   "count": 43
+  },
+  {
+   "date": "2026-10-28",
+   "count": 3
+  },
+  {
+   "date": "2026-10-29",
+   "count": 28
+  },
+  {
+   "date": "2026-10-30",
+   "count": 21
+  },
+  {
+   "date": "2026-10-31",
+   "count": 0
+  },
+  {
+   "date": "2026-11-01",
+   "count": 19
+  },
+  {
+   "date": "2026-11-02",
+   "count": 19
+  },
+  {
+   "date": "2026-11-03",
+   "count": 14
+  },
+  {
+   "date": "2026-11-04",
+   "count": 19
+  },
+  {
+   "date": "2026-11-05",
+   "count": 26
+  },
+  {
+   "date": "2026-11-06",
+   "count": 11
+  }
+ ],
+ "monthly": [
+  {
+   "month": "2024-12",
+   "count": 1
+  },
+  {
+   "month": "2025-01",
+   "count": 0
+  },
+  {
+   "month": "2025-02",
+   "count": 0
+  },
+  {
+   "month": "2025-03",
+   "count": 0
+  },
+  {
+   "month": "2025-04",
+   "count": 0
+  },
+  {
+   "month": "2025-05",
+   "count": 0
+  },
+  {
+   "month": "2025-06",
+   "count": 0
+  },
+  {
+   "month": "2025-07",
+   "count": 6
+  },
+  {
+   "month": "2025-08",
+   "count": 14
+  },
+  {
+   "month": "2025-09",
+   "count": 6
+  },
+  {
+   "month": "2025-10",
+   "count": 108
+  },
+  {
+   "month": "2025-11",
+   "count": 153
+  },
+  {
+   "month": "2025-12",
+   "count": 132
+  },
+  {
+   "month": "2026-01",
+   "count": 30
+  },
+  {
+   "month": "2026-02",
+   "count": 62
+  },
+  {
+   "month": "2026-03",
+   "count": 15
+  },
+  {
+   "month": "2026-04",
+   "count": 9
+  },
+  {
+   "month": "2026-05",
+   "count": 72
+  },
+  {
+   "month": "2026-06",
+   "count": 14
+  },
+  {
+   "month": "2026-07",
+   "count": 356
+  },
+  {
+   "month": "2026-08",
+   "count": 158
+  },
+  {
+   "month": "2026-09",
+   "count": 123
+  },
+  {
+   "month": "2026-10",
+   "count": 358
+  },
+  {
+   "month": "2026-11",
+   "count": 108
+  }
+ ],
+ "languages": [
+  {
+   "name": "Python",
+   "repos": 40,
+   "share": 0.7129
+  },
+  {
+   "name": "Shell",
+   "repos": 6,
+   "share": 0.0462
+  },
+  {
+   "name": "TypeScript",
+   "repos": 4,
+   "share": 0.0165
+  },
+  {
+   "name": "JavaScript",
+   "repos": 3,
+   "share": 0.0007
+  },
+  {
+   "name": "HTML",
+   "repos": 3,
+   "share": 0.2218
+  },
+  {
+   "name": "Jinja",
+   "repos": 2,
+   "share": 0.001
+  },
+  {
+   "name": "Rust",
+   "repos": 1,
+   "share": 0.0002
+  },
+  {
+   "name": "CSS",
+   "repos": 1,
+   "share": 0.0002
+  },
+  {
+   "name": "Makefile",
+   "repos": 1,
+   "share": 0.0001
+  },
+  {
+   "name": "Jupyter Notebook",
+   "repos": 1,
+   "share": 0.0
+  }
+ ],
+ "areas": [
+  {
+   "id": "vision",
+   "label": "Computer vision & video",
+   "public": 4,
+   "private": 8
+  },
+  {
+   "id": "llm",
+   "label": "LLM training & inference",
+   "public": 2,
+   "private": 7
+  },
+  {
+   "id": "agents",
+   "label": "LLM agents & RL",
+   "public": 7,
+   "private": 2
+  },
+  {
+   "id": "subnets",
+   "label": "Subnet mining & tooling",
+   "public": 5,
+   "private": 6
+  },
+  {
+   "id": "web3",
+   "label": "Web3, dApps & bots",
+   "public": 3,
+   "private": 4
+  },
+  {
+   "id": "misc",
+   "label": "Profile & resources",
+   "public": 4,
+   "private": 0
+  }
+ ],
+ "projects": [
+  {
+   "kind": "private",
+   "title": "Autonomous multi-agent ML engineering loop",
+   "url": null,
+   "area": "agents",
+   "summary": "A team of autonomous Claude Code agents running endless headless sessions across several machines and coordinating only through git. Planner, builder, reviewer, explorer and janitor roles; git task locks; a gated landing flow with a sealed holdout and a bit-exact replica of the validator's scorer; content-addressed cached evaluation; and a supervisor dashboard for machines, jobs and the live scoreboard.",
+   "tags": [
+    "Claude Code",
+    "Multi-agent",
+    "Eval harness"
+   ],
+   "featured": true,
+   "languages": [
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": null,
+   "forks": null,
+   "commits": 541,
+   "repos": 3,
+   "first_active": "2026-09",
+   "last_active": "2026-11"
+  },
+  {
+   "kind": "private",
+   "title": "Cricket delivery ball-tracking (Bittensor SN44)",
+   "url": null,
+   "area": "vision",
+   "summary": "Broadcast cricket clip in; bounce point, stump crossing, swing, deviation, speed, release and impact out. GPU perception feeds cached observations into pure-CPU geometry and a learned residual corrector. Includes a standalone multi-miner axon that routes requests by hotkey and races primary and fallback GPU backends against the deadline.",
+   "tags": [
+    "Tracking",
+    "Geometry",
+    "GPU serving"
+   ],
+   "featured": true,
+   "languages": [
+    "Python",
+    "HTML",
+    "Shell"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": null,
+   "forks": null,
+   "commits": 367,
+   "repos": 3,
+   "first_active": "2026-07",
+   "last_active": "2026-10"
+  },
+  {
+   "kind": "public",
+   "title": "vidaio-subnet",
+   "url": "https://github.com/bestdeep/vidaio-subnet",
+   "area": "vision",
+   "summary": "Vidaio subnet (SN85): decentralized AI video upscaling and compression, with miners and validators scored on perceptual quality.",
+   "tags": [
+    "Bittensor",
+    "Video"
+   ],
+   "featured": true,
+   "languages": [
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": 0,
+   "forks": 0,
+   "commits": 118,
+   "repos": 1,
+   "first_active": "2025-10",
+   "last_active": "2025-11-26"
+  },
+  {
+   "kind": "private",
+   "title": "Football action spotting (Bittensor SN44)",
+   "url": null,
+   "area": "vision",
+   "summary": "30-second broadcast clip in, timestamped events over 15 weighted action classes out. T-DEED-style spotter with Gate-Shift-Fuse and an SGP temporal encoder initialized from a SoccerNet-Ball checkpoint, optical-flow camera-motion features, overlapping-window inference with displacement voting, and per-class thresholds tuned on an exact replica of the validator score.",
+   "tags": [
+    "Action spotting",
+    "Video models"
+   ],
+   "featured": true,
+   "languages": [
+    "Python",
+    "Shell"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": null,
+   "forks": null,
+   "commits": 30,
+   "repos": 2,
+   "first_active": "2026-10",
+   "last_active": "2026-11"
+  },
+  {
+   "kind": "private",
+   "title": "Large-scale model distillation",
+   "url": null,
+   "area": "llm",
+   "summary": "Competitive model distillation on a Bittensor subnet: compressing a 1T-parameter MoE teacher into students of at most 33B, scored on a 25+ axis composite covering math, code, reasoning, long context and honesty.",
+   "tags": [
+    "Distillation",
+    "MoE"
+   ],
+   "featured": true,
+   "languages": [
+    "Python",
+    "TypeScript"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": null,
+   "forks": null,
+   "commits": 26,
+   "repos": 1,
+   "first_active": "2026-05",
+   "last_active": "2026-05"
+  },
+  {
+   "kind": "private",
+   "title": "Bittensor monitoring bot",
+   "url": null,
+   "area": "web3",
+   "summary": "Telegram bot for real-time Bittensor monitoring: subnet parameter changes, registrations and costs, unstaking, stake thresholds and wallet activity, plus miner and validator registration from chat.",
+   "tags": [
+    "TypeScript",
+    "Telegram"
+   ],
+   "featured": true,
+   "languages": [
+    "TypeScript"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": null,
+   "forks": null,
+   "commits": 20,
+   "repos": 1,
+   "first_active": "2025-12",
+   "last_active": "2026-07"
+  },
+  {
+   "kind": "public",
+   "title": "liveweb_arena",
+   "url": "https://github.com/bestdeep/liveweb_arena",
+   "area": "agents",
+   "summary": "Real-time evaluation framework for LLM browser agents on live websites (CoinGecko, Taostats, Stooq, weather), plus SFT dataset generation aligned with the benchmark.",
+   "tags": [
+    "Browser agents",
+    "Benchmark"
+   ],
+   "featured": true,
+   "languages": [
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": 0,
+   "forks": 0,
+   "commits": 9,
+   "repos": 1,
+   "first_active": "2026-02",
+   "last_active": "2026-02-15"
+  },
+  {
+   "kind": "public",
+   "title": "swe_agent",
+   "url": "https://github.com/bestdeep/swe_agent",
+   "area": "agents",
+   "summary": "GitHub-native patch agent: reads an issue or /patch comment, locates relevant files, generates edits with an LLM, commits a valid patch on a branch and opens a PR with CI checks.",
+   "tags": [
+    "SWE-bench",
+    "GitHub Actions"
+   ],
+   "featured": true,
+   "languages": [
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": 0,
+   "forks": 0,
+   "commits": 8,
+   "repos": 1,
+   "first_active": "2025-08",
+   "last_active": "2025-10-01"
+  },
+  {
+   "kind": "private",
+   "title": "LLM-judge data pipeline",
+   "url": null,
+   "area": "llm",
+   "summary": "End-to-end data pipeline: vLLM generation of king and challenger replies, LLM-judge scoring, and SFT/DPO/GRPO/RFT dataset building on a MySQL-backed store with read-only-by-default tooling.",
+   "tags": [
+    "vLLM",
+    "LLM-as-judge",
+    "MySQL"
+   ],
+   "featured": false,
+   "languages": [
+    "Python",
+    "Shell"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": null,
+   "forks": null,
+   "commits": 139,
+   "repos": 1,
+   "first_active": "2026-07",
+   "last_active": "2026-07"
+  },
+  {
+   "kind": "private",
+   "title": "Agent evaluation framework",
+   "url": null,
+   "area": "agents",
+   "summary": "Evaluation and training framework for AgentGym-style benchmarks: logic-reasoning dataset generation, QLoRA/SFT/MoE-routing training, prompt policies for game environments, and SWE, live-web and game environments.",
+   "tags": [
+    "AgentGym",
+    "QLoRA",
+    "Benchmarks"
+   ],
+   "featured": false,
+   "languages": [
+    "Python",
+    "Shell",
+    "Jinja"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": null,
+   "forks": null,
+   "commits": 74,
+   "repos": 2,
+   "first_active": "2025-12",
+   "last_active": "2026-04"
+  },
+  {
+   "kind": "private",
+   "title": "LLM fine-tune & OpenAI-compatible serving",
+   "url": null,
+   "area": "llm",
+   "summary": "Fetches and cleans agent conversation data into ShareGPT format, fine-tunes with LLaMA-Factory, and serves the result behind an OpenAI-compatible chat-completions API.",
+   "tags": [
+    "FastAPI",
+    "ShareGPT",
+    "LLaMA-Factory"
+   ],
+   "featured": false,
+   "languages": [
+    "Python",
+    "Jinja"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": null,
+   "forks": null,
+   "commits": 61,
+   "repos": 1,
+   "first_active": "2025-12",
+   "last_active": "2026-02"
+  },
+  {
+   "kind": "private",
+   "title": "MoE fine-tuning toolkit",
+   "url": null,
+   "area": "llm",
+   "summary": "Fine-tuning toolkit for DeepSeek-V3-architecture MoE models (Moonlight-16B-A3B): LoRA/QLoRA, full SFT, DPO with DeepSpeed ZeRO-2, and forward-KL distillation from a local or logprob-cached teacher, served with SGLang.",
+   "tags": [
+    "LoRA / QLoRA",
+    "DPO",
+    "DeepSpeed",
+    "SGLang"
+   ],
+   "featured": false,
+   "languages": [
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": null,
+   "forks": null,
+   "commits": 58,
+   "repos": 1,
+   "first_active": "2026-03",
+   "last_active": "2026-05"
+  },
+  {
+   "kind": "public",
+   "title": "natix_classifer",
+   "url": "https://github.com/bestdeep/natix_classifer",
+   "area": "vision",
+   "summary": "Image classifier training for the Natix network: multi-backbone runs (ConvNeXt, EfficientNet, ViT, Swin) over real and synthetic roadwork data.",
+   "tags": [
+    "Bittensor",
+    "Classification"
+   ],
+   "featured": false,
+   "languages": [
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": 0,
+   "forks": 0,
+   "commits": 26,
+   "repos": 1,
+   "first_active": "2025-10",
+   "last_active": "2025-11-29"
+  },
+  {
+   "kind": "private",
+   "title": "Token presale dApp",
+   "url": null,
+   "area": "web3",
+   "summary": "Token presale dApp: React + Vite + Tailwind frontend with its smart contract.",
+   "tags": [
+    "React",
+    "Vite",
+    "Solidity"
+   ],
+   "featured": false,
+   "languages": [
+    "TypeScript",
+    "JavaScript",
+    "Solidity"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": null,
+   "forks": null,
+   "commits": 26,
+   "repos": 1,
+   "first_active": "2025-10",
+   "last_active": "2025-11"
+  },
+  {
+   "kind": "public",
+   "title": "mantis_miner",
+   "url": "https://github.com/bestdeep/mantis_miner",
+   "area": "subnets",
+   "summary": "Miner for MANTIS (SN123): embeddings that help predict one-hour moves of financial instruments.",
+   "tags": [
+    "Bittensor",
+    "Forecasting"
+   ],
+   "featured": false,
+   "languages": [
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": 0,
+   "forks": 0,
+   "commits": 25,
+   "repos": 1,
+   "first_active": "2025-10",
+   "last_active": "2025-11-21"
+  },
+  {
+   "kind": "private",
+   "title": "Offline reward replica & RL training",
+   "url": null,
+   "area": "llm",
+   "summary": "Offline replica of a subnet's three-judge evaluation reward, used to answer \"would this model win?\" before spending an on-chain upload, with SFT, DPO, self-play and online/offline GRPO trainers.",
+   "tags": [
+    "GRPO",
+    "Self-play",
+    "Evaluation"
+   ],
+   "featured": false,
+   "languages": [
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": null,
+   "forks": null,
+   "commits": 16,
+   "repos": 1,
+   "first_active": "2026-06",
+   "last_active": "2026-07"
+  },
+  {
+   "kind": "public",
+   "title": "agents_collection",
+   "url": "https://github.com/bestdeep/agents_collection",
+   "area": "agents",
+   "summary": "LLM-driven and hand-written agents for AgentGym environments (SciWorld, TextCraft and more) on OpenAI-compatible APIs.",
+   "tags": [
+    "AgentGym"
+   ],
+   "featured": false,
+   "languages": [
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": 1,
+   "forks": 0,
+   "commits": 15,
+   "repos": 1,
+   "first_active": "2025-12",
+   "last_active": "2025-12-16"
+  },
+  {
+   "kind": "public",
+   "title": "bitsec_subnet",
+   "url": "https://github.com/bestdeep/bitsec_subnet",
+   "area": "subnets",
+   "summary": "BitSec: AI-powered vulnerability detection for subnet codebases and smart contracts, with backend.",
+   "tags": [
+    "Bittensor",
+    "Security"
+   ],
+   "featured": false,
+   "languages": [
+    "Python",
+    "Shell"
+   ],
+   "fork": true,
+   "upstream": "Bitsec-AI/subnet",
+   "upstream_url": "https://github.com/Bitsec-AI/subnet",
+   "stars": 0,
+   "forks": 0,
+   "commits": 14,
+   "repos": 1,
+   "first_active": "2025-10",
+   "last_active": "2025-10-16"
+  },
+  {
+   "kind": "private",
+   "title": "Time-series generator tooling",
+   "url": null,
+   "area": "subnets",
+   "summary": "Measurement and cost-aware A/B sweep suite for time-series generator development on a Bittensor subnet, built on the subnet's real evaluation pool, plus the resulting model variants.",
+   "tags": [
+    "Forecasting",
+    "A/B sweeps"
+   ],
+   "featured": false,
+   "languages": [
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": null,
+   "forks": null,
+   "commits": 11,
+   "repos": 2,
+   "first_active": "2026-07",
+   "last_active": "2026-08"
+  },
+  {
+   "kind": "private",
+   "title": "ML data & deployment utilities",
+   "url": null,
+   "area": "subnets",
+   "summary": "Small services around the training loop: a Hugging Face dataset watcher that pulls, unpacks and triggers training on new revisions; a FastAPI patch server for SWE-bench Pro; an upload/download bucket server; and deployment scripts for serving large models on Chutes.",
+   "tags": [
+    "FastAPI",
+    "Hugging Face"
+   ],
+   "featured": false,
+   "languages": [
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": null,
+   "forks": null,
+   "commits": 10,
+   "repos": 4,
+   "first_active": "2025-11",
+   "last_active": "2026-02"
+  },
+  {
+   "kind": "public",
+   "title": "llm_agent_bitquant",
+   "url": "https://github.com/bestdeep/llm_agent_bitquant",
+   "area": "agents",
+   "summary": "Crypto-analysis LLM agent API that classifies queries into six categories (portfolio, yield farming, trading and more) and routes each to specialized tools.",
+   "tags": [
+    "Crypto",
+    "Tool use"
+   ],
+   "featured": false,
+   "languages": [
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": 0,
+   "forks": 0,
+   "commits": 9,
+   "repos": 1,
+   "first_active": "2025-08",
+   "last_active": "2025-09-02"
+  },
+  {
+   "kind": "public",
+   "title": "miid",
+   "url": "https://github.com/bestdeep/miid",
+   "area": "subnets",
+   "summary": "Backend for MIID (SN54), the identity-testing subnet.",
+   "tags": [
+    "Bittensor",
+    "Identity"
+   ],
+   "featured": false,
+   "languages": [
+    "Python",
+    "Shell"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": 0,
+   "forks": 0,
+   "commits": 8,
+   "repos": 1,
+   "first_active": "2025-10",
+   "last_active": "2025-11-03"
+  },
+  {
+   "kind": "public",
+   "title": "east_world",
+   "url": "https://github.com/bestdeep/east_world",
+   "area": "agents",
+   "summary": "Eastworld (SN94): gyms for evaluating and training embodied, generally capable AI agents in an open virtual world.",
+   "tags": [
+    "Bittensor",
+    "Embodied AI"
+   ],
+   "featured": false,
+   "languages": [
+    "Python",
+    "Shell"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": 0,
+   "forks": 0,
+   "commits": 8,
+   "repos": 1,
+   "first_active": "2025-10",
+   "last_active": "2025-11-18"
+  },
+  {
+   "kind": "public",
+   "title": "mini_swe_agent_rl",
+   "url": "https://github.com/bestdeep/mini_swe_agent_rl",
+   "area": "agents",
+   "summary": "Extension of mini-swe-agent, the 100-line SWE agent, for reinforcement learning from human and dataset trajectories.",
+   "tags": [
+    "SWE-bench",
+    "RL"
+   ],
+   "featured": false,
+   "languages": [
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": 0,
+   "forks": 0,
+   "commits": 8,
+   "repos": 1,
+   "first_active": "2025-12",
+   "last_active": "2025-12-21"
+  },
+  {
+   "kind": "public",
+   "title": "compress",
+   "url": "https://github.com/bestdeep/compress",
+   "area": "vision",
+   "summary": "Video compression toolkit: encoder wrapper, VMAF quality scoring, scene classification and a learned image-quality model.",
+   "tags": [
+    "Video",
+    "VMAF"
+   ],
+   "featured": false,
+   "languages": [
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": 0,
+   "forks": 0,
+   "commits": 7,
+   "repos": 1,
+   "first_active": "2025-11",
+   "last_active": "2025-11-03"
+  },
+  {
+   "kind": "private",
+   "title": "Token-efficient reasoning trainer",
+   "url": null,
+   "area": "llm",
+   "summary": "GRPO LoRA training whose reward calls the validator's own scoring function, rewarding correct answers that use fewer tokens than the base model across math, multiple-choice and long-context evidence-selection benchmarks.",
+   "tags": [
+    "GRPO",
+    "LoRA",
+    "Reasoning"
+   ],
+   "featured": false,
+   "languages": [
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": null,
+   "forks": null,
+   "commits": 6,
+   "repos": 1,
+   "first_active": "2026-07",
+   "last_active": "2026-07"
+  },
+  {
+   "kind": "public",
+   "title": "kinitro-agent",
+   "url": "https://github.com/bestdeep/kinitro-agent",
+   "area": "agents",
+   "summary": "Multi-task RL agent template for the Kinitro embodied-AI subnet: offline TD3+BC and online RL on MetaWorld MT50.",
+   "tags": [
+    "Embodied AI",
+    "Offline RL"
+   ],
+   "featured": false,
+   "languages": [
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": 0,
+   "forks": 0,
+   "commits": 5,
+   "repos": 1,
+   "first_active": "2026-01",
+   "last_active": "2026-01-26"
+  },
+  {
+   "kind": "private",
+   "title": "72B inference optimization",
+   "url": null,
+   "area": "llm",
+   "summary": "Optimized Qwen2.5-72B serving image for a Bittensor inference subnet on 4×H200, tuned for time-to-first-token and throughput under a strict logprob-correctness gate, with a local copy of the validator for scoring.",
+   "tags": [
+    "Inference",
+    "H200",
+    "Docker"
+   ],
+   "featured": false,
+   "languages": [
+    "Python",
+    "Shell",
+    "Makefile",
+    "Dockerfile"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": null,
+   "forks": null,
+   "commits": 5,
+   "repos": 1,
+   "first_active": "2026-05",
+   "last_active": "2026-05"
+  },
+  {
+   "kind": "public",
+   "title": "DefiLlama-Adapters",
+   "url": "https://github.com/bestdeep/DefiLlama-Adapters",
+   "area": "web3",
+   "summary": "DeFiLlama TVL adapter for the HyperLoan protocol.",
+   "tags": [
+    "DeFi",
+    "TVL"
+   ],
+   "featured": false,
+   "languages": [
+    "JavaScript"
+   ],
+   "fork": true,
+   "upstream": "DefiLlama/DefiLlama-Adapters",
+   "upstream_url": "https://github.com/DefiLlama/DefiLlama-Adapters",
+   "stars": 0,
+   "forks": 0,
+   "commits": 4,
+   "repos": 1,
+   "first_active": "2025-11",
+   "last_active": "2025-11-10"
+  },
+  {
+   "kind": "public",
+   "title": "Connito-AI",
+   "url": "https://github.com/bestdeep/Connito-AI",
+   "area": "llm",
+   "summary": "Subnet 102: collaborative, decentralized training of Mixture-of-Experts LLMs with expert groups spread across miners.",
+   "tags": [
+    "Bittensor",
+    "MoE"
+   ],
+   "featured": false,
+   "languages": [
+    "Jupyter Notebook",
+    "Python"
+   ],
+   "fork": true,
+   "upstream": "Connito-AI/Connito",
+   "upstream_url": "https://github.com/Connito-AI/Connito",
+   "stars": 0,
+   "forks": 0,
+   "commits": 4,
+   "repos": 1,
+   "first_active": "2026-05",
+   "last_active": "2026-05-16"
+  },
+  {
+   "kind": "public",
+   "title": "checkerchain_endpoint",
+   "url": "https://github.com/bestdeep/checkerchain_endpoint",
+   "area": "subnets",
+   "summary": "Scoring endpoint service for the CheckerChain subnet.",
+   "tags": [
+    "Bittensor",
+    "API"
+   ],
+   "featured": false,
+   "languages": [
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": 0,
+   "forks": 0,
+   "commits": 2,
+   "repos": 1,
+   "first_active": "2025-09",
+   "last_active": "2025-09-05"
+  },
+  {
+   "kind": "public",
+   "title": "affine-dashboard",
+   "url": "https://github.com/bestdeep/affine-dashboard",
+   "area": "subnets",
+   "summary": "React + Node/Express dashboard for Affine (SN120) mining: sortable and filterable miner tables, auto-refresh and personal hotkey tracking.",
+   "tags": [
+    "Bittensor",
+    "React",
+    "Dashboard"
+   ],
+   "featured": false,
+   "languages": [
+    "Python",
+    "JavaScript",
+    "CSS"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": 0,
+   "forks": 0,
+   "commits": 2,
+   "repos": 1,
+   "first_active": "2026-01",
+   "last_active": "2026-02-06"
+  },
+  {
+   "kind": "private",
+   "title": "Fast on-chain registration CLI",
+   "url": null,
+   "area": "web3",
+   "summary": "Rust CLI for Bittensor subnet registration that fans out across several RPC endpoints, submits on new block heads and raises the tip over replace-by-fee rounds.",
+   "tags": [
+    "Rust",
+    "Substrate"
+   ],
+   "featured": false,
+   "languages": [
+    "Rust",
+    "Python"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": null,
+   "forks": null,
+   "commits": 2,
+   "repos": 1,
+   "first_active": "2025-10",
+   "last_active": "2025-10"
+  },
+  {
+   "kind": "public",
+   "title": "bsty_extension",
+   "url": "https://github.com/bestdeep/bsty_extension",
+   "area": "web3",
+   "summary": "Open-source browser-extension wallet for Bitcoin NFTs.",
+   "tags": [
+    "Bitcoin",
+    "Wallet"
+   ],
+   "featured": false,
+   "languages": [
+    "TypeScript"
+   ],
+   "fork": true,
+   "upstream": "unisat-wallet/extension",
+   "upstream_url": "https://github.com/unisat-wallet/extension",
+   "stars": 0,
+   "forks": 0,
+   "commits": 1,
+   "repos": 1,
+   "first_active": "2025-10",
+   "last_active": "2025-10-07"
+  },
+  {
+   "kind": "public",
+   "title": "ai",
+   "url": "https://github.com/bestdeep/ai",
+   "area": "vision",
+   "summary": "Docs and demos for face and fingerprint recognition, image captioning and encrypted face recognition.",
+   "tags": [
+    "Biometrics",
+    "Docs"
+   ],
+   "featured": false,
+   "languages": [
+    "HTML"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": 0,
+   "forks": 0,
+   "commits": 1,
+   "repos": 1,
+   "first_active": "2025-11",
+   "last_active": "2025-11-12"
+  },
+  {
+   "kind": "public",
+   "title": "LLaMA-Factory",
+   "url": "https://github.com/bestdeep/LLaMA-Factory",
+   "area": "llm",
+   "summary": "Fork of the unified fine-tuning framework for 100+ LLMs and VLMs, used for my SFT and LoRA runs.",
+   "tags": [
+    "Fine-tuning"
+   ],
+   "featured": false,
+   "languages": [
+    "Python"
+   ],
+   "fork": true,
+   "upstream": "hiyouga/LlamaFactory",
+   "upstream_url": "https://github.com/hiyouga/LlamaFactory",
+   "stars": 0,
+   "forks": 0,
+   "commits": 0,
+   "repos": 1,
+   "first_active": "2025-12",
+   "last_active": "2026-02-09"
+  },
+  {
+   "kind": "private",
+   "title": "Sui trading bot",
+   "url": null,
+   "area": "web3",
+   "summary": "TypeScript sniper and trading bot for meme coins on the Sui blockchain.",
+   "tags": [
+    "TypeScript",
+    "Sui"
+   ],
+   "featured": false,
+   "languages": [
+    "TypeScript"
+   ],
+   "fork": false,
+   "upstream": null,
+   "upstream_url": null,
+   "stars": null,
+   "forks": null,
+   "commits": 0,
+   "repos": 1,
+   "first_active": "2026-09",
+   "last_active": "2026-09"
+  }
+ ],
+ "repositories": [
+  {
+   "name": null,
+   "private": true,
+   "area": "vision",
+   "card": "Autonomous multi-agent ML engineering loop",
+   "language": "Python",
+   "fork": false,
+   "commits": 420,
+   "updated": "2026-11",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "vision",
+   "card": "Autonomous multi-agent ML engineering loop",
+   "language": "Python",
+   "fork": false,
+   "commits": 75,
+   "updated": "2026-11",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "vision",
+   "card": "Football action spotting (Bittensor SN44)",
+   "language": "Python",
+   "fork": false,
+   "commits": 13,
+   "updated": "2026-11",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "vision",
+   "card": "Cricket delivery ball-tracking (Bittensor SN44)",
+   "language": "Python",
+   "fork": true,
+   "commits": 82,
+   "updated": "2026-10",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "vision",
+   "card": "Football action spotting (Bittensor SN44)",
+   "language": "Python",
+   "fork": false,
+   "commits": 17,
+   "updated": "2026-10",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "vision",
+   "card": "Cricket delivery ball-tracking (Bittensor SN44)",
+   "language": "Python",
+   "fork": false,
+   "commits": 9,
+   "updated": "2026-10",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "vision",
+   "card": "Cricket delivery ball-tracking (Bittensor SN44)",
+   "language": "Python",
+   "fork": false,
+   "commits": 276,
+   "updated": "2026-09",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "web3",
+   "card": "Sui trading bot",
+   "language": "TypeScript",
+   "fork": false,
+   "commits": 0,
+   "updated": "2026-09",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "vision",
+   "card": "Autonomous multi-agent ML engineering loop",
+   "language": "Python",
+   "fork": false,
+   "commits": 46,
+   "updated": "2026-09",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "subnets",
+   "card": "Time-series generator tooling",
+   "language": "Python",
+   "fork": false,
+   "commits": 7,
+   "updated": "2026-08",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "subnets",
+   "card": "Time-series generator tooling",
+   "language": "Python",
+   "fork": false,
+   "commits": 4,
+   "updated": "2026-08",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "web3",
+   "card": "Bittensor monitoring bot",
+   "language": "TypeScript",
+   "fork": false,
+   "commits": 20,
+   "updated": "2026-07",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "llm",
+   "card": "Offline reward replica & RL training",
+   "language": "Python",
+   "fork": false,
+   "commits": 16,
+   "updated": "2026-07",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "llm",
+   "card": "LLM-judge data pipeline",
+   "language": "Python",
+   "fork": false,
+   "commits": 139,
+   "updated": "2026-07",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "llm",
+   "card": "Token-efficient reasoning trainer",
+   "language": "Python",
+   "fork": false,
+   "commits": 6,
+   "updated": "2026-07",
+   "url": null
+  },
+  {
+   "name": "Connito-AI",
+   "private": false,
+   "area": "llm",
+   "card": null,
+   "language": "Jupyter Notebook",
+   "fork": true,
+   "commits": 4,
+   "updated": "2026-05-16",
+   "url": "https://github.com/bestdeep/Connito-AI",
+   "stars": 0
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "llm",
+   "card": "MoE fine-tuning toolkit",
+   "language": "Python",
+   "fork": false,
+   "commits": 58,
+   "updated": "2026-05",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "llm",
+   "card": "Large-scale model distillation",
+   "language": "Python",
+   "fork": false,
+   "commits": 26,
+   "updated": "2026-05",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "llm",
+   "card": "72B inference optimization",
+   "language": "Python",
+   "fork": false,
+   "commits": 5,
+   "updated": "2026-05",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "agents",
+   "card": "Agent evaluation framework",
+   "language": "Jinja",
+   "fork": true,
+   "commits": 27,
+   "updated": "2026-04",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "agents",
+   "card": "Agent evaluation framework",
+   "language": "Python",
+   "fork": false,
+   "commits": 47,
+   "updated": "2026-03",
+   "url": null
+  },
+  {
+   "name": "liveweb_arena",
+   "private": false,
+   "area": "agents",
+   "card": null,
+   "language": "Python",
+   "fork": false,
+   "commits": 9,
+   "updated": "2026-02-15",
+   "url": "https://github.com/bestdeep/liveweb_arena",
+   "stars": 0
+  },
+  {
+   "name": "LLaMA-Factory",
+   "private": false,
+   "area": "llm",
+   "card": null,
+   "language": "Python",
+   "fork": true,
+   "commits": 0,
+   "updated": "2026-02-09",
+   "url": "https://github.com/bestdeep/LLaMA-Factory",
+   "stars": 0
+  },
+  {
+   "name": "affine-dashboard",
+   "private": false,
+   "area": "subnets",
+   "card": null,
+   "language": "Python",
+   "fork": false,
+   "commits": 2,
+   "updated": "2026-02-06",
+   "url": "https://github.com/bestdeep/affine-dashboard",
+   "stars": 0
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "llm",
+   "card": "LLM fine-tune & OpenAI-compatible serving",
+   "language": "Python",
+   "fork": false,
+   "commits": 61,
+   "updated": "2026-02",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "subnets",
+   "card": "ML data & deployment utilities",
+   "language": "Python",
+   "fork": false,
+   "commits": 4,
+   "updated": "2026-02",
+   "url": null
+  },
+  {
+   "name": "kinitro-agent",
+   "private": false,
+   "area": "agents",
+   "card": null,
+   "language": "Python",
+   "fork": false,
+   "commits": 5,
+   "updated": "2026-01-26",
+   "url": "https://github.com/bestdeep/kinitro-agent",
+   "stars": 0
+  },
+  {
+   "name": "mini_swe_agent_rl",
+   "private": false,
+   "area": "agents",
+   "card": null,
+   "language": "Python",
+   "fork": false,
+   "commits": 8,
+   "updated": "2025-12-21",
+   "url": "https://github.com/bestdeep/mini_swe_agent_rl",
+   "stars": 0
+  },
+  {
+   "name": "agents_collection",
+   "private": false,
+   "area": "agents",
+   "card": null,
+   "language": "Python",
+   "fork": false,
+   "commits": 15,
+   "updated": "2025-12-16",
+   "url": "https://github.com/bestdeep/agents_collection",
+   "stars": 1
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "subnets",
+   "card": "ML data & deployment utilities",
+   "language": "Python",
+   "fork": false,
+   "commits": 1,
+   "updated": "2025-12",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "subnets",
+   "card": "ML data & deployment utilities",
+   "language": "Python",
+   "fork": false,
+   "commits": 2,
+   "updated": "2025-12",
+   "url": null
+  },
+  {
+   "name": "natix_classifer",
+   "private": false,
+   "area": "vision",
+   "card": null,
+   "language": "Python",
+   "fork": false,
+   "commits": 26,
+   "updated": "2025-11-29",
+   "url": "https://github.com/bestdeep/natix_classifer",
+   "stars": 0
+  },
+  {
+   "name": "vidaio-subnet",
+   "private": false,
+   "area": "vision",
+   "card": null,
+   "language": "Python",
+   "fork": false,
+   "commits": 118,
+   "updated": "2025-11-26",
+   "url": "https://github.com/bestdeep/vidaio-subnet",
+   "stars": 0
+  },
+  {
+   "name": "mantis_miner",
+   "private": false,
+   "area": "subnets",
+   "card": null,
+   "language": "Python",
+   "fork": false,
+   "commits": 25,
+   "updated": "2025-11-21",
+   "url": "https://github.com/bestdeep/mantis_miner",
+   "stars": 0
+  },
+  {
+   "name": "east_world",
+   "private": false,
+   "area": "agents",
+   "card": null,
+   "language": "Python",
+   "fork": false,
+   "commits": 8,
+   "updated": "2025-11-18",
+   "url": "https://github.com/bestdeep/east_world",
+   "stars": 0
+  },
+  {
+   "name": "ai",
+   "private": false,
+   "area": "vision",
+   "card": null,
+   "language": "HTML",
+   "fork": false,
+   "commits": 1,
+   "updated": "2025-11-12",
+   "url": "https://github.com/bestdeep/ai",
+   "stars": 0
+  },
+  {
+   "name": "DefiLlama-Adapters",
+   "private": false,
+   "area": "web3",
+   "card": null,
+   "language": "JavaScript",
+   "fork": true,
+   "commits": 4,
+   "updated": "2025-11-10",
+   "url": "https://github.com/bestdeep/DefiLlama-Adapters",
+   "stars": 0
+  },
+  {
+   "name": "miid",
+   "private": false,
+   "area": "subnets",
+   "card": null,
+   "language": "Python",
+   "fork": false,
+   "commits": 8,
+   "updated": "2025-11-03",
+   "url": "https://github.com/bestdeep/miid",
+   "stars": 0
+  },
+  {
+   "name": "compress",
+   "private": false,
+   "area": "vision",
+   "card": null,
+   "language": "Python",
+   "fork": false,
+   "commits": 7,
+   "updated": "2025-11-03",
+   "url": "https://github.com/bestdeep/compress",
+   "stars": 0
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "web3",
+   "card": "Token presale dApp",
+   "language": "TypeScript",
+   "fork": true,
+   "commits": 26,
+   "updated": "2025-11",
+   "url": null
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "subnets",
+   "card": "ML data & deployment utilities",
+   "language": "Python",
+   "fork": false,
+   "commits": 3,
+   "updated": "2025-11",
+   "url": null
+  },
+  {
+   "name": "bitsec_subnet",
+   "private": false,
+   "area": "subnets",
+   "card": null,
+   "language": "Python",
+   "fork": true,
+   "commits": 14,
+   "updated": "2025-10-16",
+   "url": "https://github.com/bestdeep/bitsec_subnet",
+   "stars": 0
+  },
+  {
+   "name": "bsty_extension",
+   "private": false,
+   "area": "web3",
+   "card": null,
+   "language": "TypeScript",
+   "fork": true,
+   "commits": 1,
+   "updated": "2025-10-07",
+   "url": "https://github.com/bestdeep/bsty_extension",
+   "stars": 0
+  },
+  {
+   "name": "swe_agent",
+   "private": false,
+   "area": "agents",
+   "card": null,
+   "language": "Python",
+   "fork": false,
+   "commits": 8,
+   "updated": "2025-10-01",
+   "url": "https://github.com/bestdeep/swe_agent",
+   "stars": 0
+  },
+  {
+   "name": null,
+   "private": true,
+   "area": "web3",
+   "card": "Fast on-chain registration CLI",
+   "language": "Rust",
+   "fork": false,
+   "commits": 2,
+   "updated": "2025-10",
+   "url": null
+  },
+  {
+   "name": "checkerchain_endpoint",
+   "private": false,
+   "area": "subnets",
+   "card": null,
+   "language": "Python",
+   "fork": false,
+   "commits": 2,
+   "updated": "2025-09-05",
+   "url": "https://github.com/bestdeep/checkerchain_endpoint",
+   "stars": 0
+  },
+  {
+   "name": "llm_agent_bitquant",
+   "private": false,
+   "area": "agents",
+   "card": null,
+   "language": "Python",
+   "fork": false,
+   "commits": 9,
+   "updated": "2025-09-02",
+   "url": "https://github.com/bestdeep/llm_agent_bitquant",
+   "stars": 0
+  }
+ ],
+ "teams": [
+  {
+   "label": "Bittensor mining team",
+   "url": null,
+   "blurb": "Miners, GPU endpoints, dashboards and registration tooling across 15+ Bittensor subnets.",
+   "repos": 29,
+   "private_repos": 28,
+   "languages": [
+    "Python",
+    "TypeScript",
+    "C++",
+    "Jupyter Notebook"
+   ],
+   "last_active": "2026-02",
+   "public": []
+  },
+  {
+   "label": "Collaborations",
+   "url": null,
+   "blurb": "Repositories owned by other developers where I am a collaborator.",
+   "repos": 13,
+   "private_repos": 13,
+   "languages": [
+    "Python",
+    "TypeScript",
+    "Jinja"
+   ],
+   "last_active": "2026-11",
+   "public": []
+  },
+  {
+   "label": "Stablechain platform (client)",
+   "url": null,
+   "blurb": "Stablecoin chain, cross-chain bridge, block explorer, admin console and lock/bridge contracts.",
+   "repos": 11,
+   "private_repos": 10,
+   "languages": [
+    "TypeScript",
+    "Solidity",
+    "Go",
+    "Elixir",
+    "Kotlin"
+   ],
+   "last_active": "2026-06",
+   "public": []
+  },
+  {
+   "label": "Subnet research team",
+   "url": null,
+   "blurb": "Approach and strategy projects for several Bittensor subnets.",
+   "repos": 5,
+   "private_repos": 5,
+   "languages": [],
+   "last_active": "2026-04",
+   "public": []
+  },
+  {
+   "label": "affineinsai",
+   "url": "https://github.com/affineinsai",
+   "blurb": "Face-liveness detection with Vision Transformers.",
+   "repos": 2,
+   "private_repos": 0,
+   "languages": [
+    "Python"
+   ],
+   "last_active": "2026-01",
+   "public": [
+    {
+     "name": ".github",
+     "url": "https://github.com/affineinsai/.github",
+     "description": "Organization Overview"
+    },
+    {
+     "name": "face-liveness-vit",
+     "url": "https://github.com/affineinsai/face-liveness-vit",
+     "description": ""
+    }
+   ]
+  }
+ ]
+}
