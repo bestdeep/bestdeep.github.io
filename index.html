@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lucky Star, AI and blockchain engineer</title>
-  <meta name="description" content="Portfolio of Lucky Star (github.com/bestdeep): Bittensor subnets, sports video tracking, LLM training, LLM agents and Web3.">
+  <meta name="description" content="Portfolio of Lucky Star, AI and blockchain engineer: Bittensor subnets, LLM training, LLM agents, computer vision and Web3.">
   <meta property="og:title" content="Lucky Star, AI and blockchain engineer">
-  <meta property="og:description" content="Bittensor subnets, sports video tracking, LLM training, LLM agents and Web3.">
-  <meta name="theme-color" content="#1f2a6b">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f2a6b'/%3E%3Cpath d='M16 5l3.2 7 7.6.8-5.7 5.1 1.6 7.5L16 21.6 9.3 25.4l1.6-7.5L5.2 12.8l7.6-.8z' fill='%23ffc94a'/%3E%3C/svg%3E">
+  <meta property="og:description" content="Bittensor subnets, LLM training, LLM agents, computer vision and Web3.">
+  <meta name="theme-color" content="#c2255c">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c2255c'/%3E%3Cpath d='M16 5l3.2 7 7.6.8-5.7 5.1 1.6 7.5L16 21.6 9.3 25.4l1.6-7.5L5.2 12.8l7.6-.8z' fill='%23ffffff'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
@@ -20,14 +20,13 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="sky" id="top">
+  <header class="band" id="top">
     <div class="wrap">
       <div class="bar">
         <a class="brand" href="#top">Lucky Star</a>
         <nav aria-label="Sections">
           <a href="#work">Work</a>
-          <a href="#activity">Activity</a>
-          <a href="#repositories">Repositories</a>
+          <a href="#toolbox">Toolbox</a>
           <a href="#contact">Contact</a>
         </nav>
         <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
@@ -42,10 +41,9 @@
         <div class="actions" id="hero-actions"></div>
       </div>
 
-      <figure class="track" aria-labelledby="track-caption">
-        <div class="readout" id="readout"></div>
-        <div id="trajectory" class="chart"></div>
-        <figcaption id="track-caption" class="sr-only">Contributions per month since the account was created. The full numbers are in the monthly table in the Activity section.</figcaption>
+      <figure class="sky">
+        <div id="constellation" class="chart"></div>
+        <figcaption class="sky-caption">Each star is a project, grouped by area. Select a star to jump to it.</figcaption>
       </figure>
     </div>
   </header>
@@ -56,7 +54,7 @@
     </section>
 
     <section class="wrap build" id="work">
-      <div class="build-text">
+      <div>
         <h2>What I build</h2>
         <p class="note">Projects by area. Select an area to filter the list below.</p>
       </div>
@@ -70,17 +68,9 @@
           <span>Area</span>
           <select id="area-filter"></select>
         </label>
-        <label class="field">
-          <span>Show</span>
-          <select id="kind-filter">
-            <option value="all">All projects</option>
-            <option value="public">With public code</option>
-            <option value="idea">Ideas</option>
-          </select>
-        </label>
         <label class="field grow">
           <span>Search</span>
-          <input id="search" type="search" placeholder="Project, tag or language">
+          <input id="search" type="search" placeholder="Project, tag or technology">
         </label>
         <p class="count" id="project-count" aria-live="polite"></p>
       </div>
@@ -96,67 +86,19 @@
       <p class="empty" id="empty" hidden>No projects match. Clear the search or pick another area.</p>
     </section>
 
-    <section class="wrap section" id="activity">
-      <h2>Activity</h2>
-      <p class="note">Every contribution GitHub counts over the last 12 months.</p>
-      <div class="heat-head">
-        <div class="heat-legend" id="heat-legend" aria-hidden="true"></div>
-      </div>
-      <div class="heatmap-scroll"><div id="heatmap" class="chart"></div></div>
-      <div class="activity-tables">
-        <table class="data" id="years-table">
-          <caption>By year</caption>
-          <thead><tr><th scope="col">Year</th><th scope="col" class="num">Contributions</th></tr></thead>
-          <tbody></tbody>
-        </table>
-        <details class="table-toggle">
-          <summary>Show contributions per month</summary>
-          <div class="table-scroll">
-            <table class="data" id="monthly-table">
-              <thead><tr><th scope="col">Month</th><th scope="col" class="num">Contributions</th></tr></thead>
-              <tbody></tbody>
-            </table>
-          </div>
-        </details>
-      </div>
-    </section>
-
-    <section class="wrap section toolbox" id="toolbox">
-      <div>
-        <h2>Toolbox</h2>
-        <p class="note">Languages, counted by the public repositories I commit to that use each one.</p>
-        <div id="languages" class="chart"></div>
-      </div>
+    <section class="wrap section" id="toolbox">
+      <h2>Toolbox</h2>
+      <p class="note">What I reach for, from training runs to the dApp in front of them.</p>
       <dl class="skills" id="skills"></dl>
-    </section>
-
-    <section class="wrap section" id="repositories">
-      <h2>Public repositories</h2>
-      <p class="note">Everything here links to its source on GitHub.</p>
-      <div class="table-scroll">
-        <table class="data" id="repo-table">
-          <thead>
-            <tr>
-              <th scope="col"><button type="button" data-sort="name">Repository</button></th>
-              <th scope="col"><button type="button" data-sort="area">Area</button></th>
-              <th scope="col"><button type="button" data-sort="language">Language</button></th>
-              <th scope="col" class="num"><button type="button" data-sort="commits">My commits</button></th>
-              <th scope="col" class="num"><button type="button" data-sort="updated">Last push</button></th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-      <div id="orgs"></div>
     </section>
   </main>
 
-  <footer class="sky contact" id="contact">
+  <footer class="band contact" id="contact">
     <div class="wrap">
       <h2>Contact</h2>
       <p class="pitch" id="pitch"></p>
       <ul class="channels" id="channels"></ul>
-      <p class="generated" id="generated"></p>
+      <p class="copyright" id="copyright"></p>
     </div>
   </footer>
 

@@ -1,189 +1,351 @@
-{
-  "_comment": "Curation for PUBLIC repositories, keyed by repo name. Unlisted public repos still appear in the repository table with area 'misc'; hide removes a repo from the site.",
-  "vidaio-subnet": {
+[
+  {
+    "title": "Autonomous multi-agent ML engineering loop",
+    "area": "agents",
+    "featured": true,
+    "tags": [
+      "Claude Code",
+      "Multi-agent",
+      "Eval harness"
+    ],
+    "summary": "A team of autonomous Claude Code agents running endless headless sessions across several machines and coordinating only through git. Planner, builder, reviewer, explorer and janitor roles; git task locks; a gated landing flow with a sealed holdout and a bit-exact replica of the validator's scorer; content-addressed cached evaluation; and a supervisor dashboard for machines, jobs and the live scoreboard."
+  },
+  {
+    "title": "Large-scale model distillation",
+    "area": "llm",
+    "featured": true,
+    "tags": [
+      "Distillation",
+      "MoE"
+    ],
+    "summary": "Competitive model distillation on a Bittensor subnet: compressing a 1T-parameter MoE teacher into students of at most 33B, scored on a 25+ axis composite covering math, code, reasoning, long context and honesty."
+  },
+  {
+    "title": "Video upscaling and compression subnet",
     "area": "vision",
     "featured": true,
     "tags": [
       "Bittensor",
       "Video"
     ],
-    "blurb": "Vidaio subnet (SN85): decentralized AI video upscaling and compression, with miners and validators scored on perceptual quality."
+    "summary": "Vidaio (SN85): decentralized AI video upscaling and compression, with miners and validators scored on perceptual quality."
   },
-  "compress": {
-    "area": "vision",
-    "tags": [
-      "Video",
-      "VMAF"
-    ],
-    "blurb": "Video compression toolkit: encoder wrapper, VMAF quality scoring, scene classification and a learned image-quality model."
-  },
-  "natix_classifer": {
-    "area": "vision",
-    "tags": [
-      "Bittensor",
-      "Classification"
-    ],
-    "blurb": "Image classifier training for the Natix network: multi-backbone runs (ConvNeXt, EfficientNet, ViT, Swin) over real and synthetic roadwork data."
-  },
-  "ai": {
-    "area": "vision",
-    "tags": [
-      "Biometrics",
-      "Docs"
-    ],
-    "blurb": "Docs and demos for face and fingerprint recognition, image captioning and encrypted face recognition."
-  },
-  "liveweb_arena": {
+  {
+    "title": "Live-web agent benchmark",
     "area": "agents",
     "featured": true,
     "tags": [
       "Browser agents",
       "Benchmark"
     ],
-    "blurb": "Real-time evaluation framework for LLM browser agents on live websites (CoinGecko, Taostats, Stooq, weather), plus SFT dataset generation aligned with the benchmark."
+    "summary": "Real-time evaluation framework for LLM browser agents on live websites (CoinGecko, Taostats, Stooq, weather), plus SFT dataset generation aligned with the benchmark."
   },
-  "swe_agent": {
+  {
+    "title": "Issue-to-pull-request coding agent",
     "area": "agents",
     "featured": true,
     "tags": [
       "SWE-bench",
-      "GitHub Actions"
+      "CI"
     ],
-    "blurb": "GitHub-native patch agent: reads an issue or /patch comment, locates relevant files, generates edits with an LLM, commits a valid patch on a branch and opens a PR with CI checks."
+    "summary": "Reads a problem description from an issue or a /patch comment, finds the relevant files, generates edits with an LLM, commits a valid patch on a new branch and opens a pull request with tests and linters run in CI."
   },
-  "mini_swe_agent_rl": {
-    "area": "agents",
+  {
+    "title": "Bittensor monitoring bot",
+    "area": "web3",
+    "featured": true,
     "tags": [
-      "SWE-bench",
-      "RL"
+      "TypeScript",
+      "Telegram"
     ],
-    "blurb": "Extension of mini-swe-agent, the 100-line SWE agent, for reinforcement learning from human and dataset trajectories."
+    "summary": "Telegram bot for real-time Bittensor monitoring: subnet parameter changes, registrations and costs, unstaking, stake thresholds and wallet activity, plus miner and validator registration from chat."
   },
-  "agents_collection": {
-    "area": "agents",
+  {
+    "title": "Video compression toolkit",
+    "area": "vision",
+    "featured": false,
     "tags": [
-      "AgentGym"
+      "Video",
+      "VMAF"
     ],
-    "blurb": "LLM-driven and hand-written agents for AgentGym environments (SciWorld, TextCraft and more) on OpenAI-compatible APIs."
+    "summary": "Encoder wrapper, VMAF quality scoring, scene classification and a learned image-quality model for compressing video without visible loss."
   },
-  "llm_agent_bitquant": {
-    "area": "agents",
+  {
+    "title": "Roadwork image classifier",
+    "area": "vision",
+    "featured": false,
     "tags": [
-      "Crypto",
-      "Tool use"
+      "Classification",
+      "Bittensor"
     ],
-    "blurb": "Crypto-analysis LLM agent API that classifies queries into six categories (portfolio, yield farming, trading and more) and routes each to specialized tools."
+    "summary": "Classifier training for the Natix network: multi-backbone runs (ConvNeXt, EfficientNet, ViT, Swin) over real and synthetic roadwork images."
   },
-  "kinitro-agent": {
-    "area": "agents",
+  {
+    "title": "Biometrics and captioning demos",
+    "area": "vision",
+    "featured": false,
     "tags": [
-      "Embodied AI",
-      "Offline RL"
+      "Biometrics",
+      "Docs"
     ],
-    "blurb": "Multi-task RL agent template for the Kinitro embodied-AI subnet: offline TD3+BC and online RL on MetaWorld MT50."
+    "summary": "Documentation and demos for face and fingerprint recognition, image captioning and encrypted face recognition."
   },
-  "east_world": {
-    "area": "agents",
-    "tags": [
-      "Bittensor",
-      "Embodied AI"
-    ],
-    "blurb": "Eastworld (SN94): gyms for evaluating and training embodied, generally capable AI agents in an open virtual world."
-  },
-  "mantis_miner": {
-    "area": "subnets",
-    "tags": [
-      "Bittensor",
-      "Forecasting"
-    ],
-    "blurb": "Miner for MANTIS (SN123): embeddings that help predict one-hour moves of financial instruments."
-  },
-  "miid": {
-    "area": "subnets",
-    "tags": [
-      "Bittensor",
-      "Identity"
-    ],
-    "blurb": "Backend for MIID (SN54), the identity-testing subnet."
-  },
-  "bitsec_subnet": {
-    "area": "subnets",
-    "tags": [
-      "Bittensor",
-      "Security"
-    ],
-    "blurb": "BitSec: AI-powered vulnerability detection for subnet codebases and smart contracts, with backend."
-  },
-  "checkerchain_endpoint": {
-    "area": "subnets",
-    "tags": [
-      "Bittensor",
-      "API"
-    ],
-    "blurb": "Scoring endpoint service for the CheckerChain subnet."
-  },
-  "affine-dashboard": {
-    "area": "subnets",
-    "tags": [
-      "Bittensor",
-      "React",
-      "Dashboard"
-    ],
-    "blurb": "React + Node/Express dashboard for Affine (SN120) mining: sortable and filterable miner tables, auto-refresh and personal hotkey tracking."
-  },
-  "Connito-AI": {
+  {
+    "title": "MoE fine-tuning toolkit",
     "area": "llm",
+    "featured": false,
+    "tags": [
+      "LoRA / QLoRA",
+      "DPO",
+      "DeepSpeed",
+      "SGLang"
+    ],
+    "summary": "Fine-tuning toolkit for DeepSeek-V3-architecture MoE models (Moonlight-16B-A3B): LoRA/QLoRA, full SFT, DPO with DeepSpeed ZeRO-2, and forward-KL distillation from a local or logprob-cached teacher, served with SGLang."
+  },
+  {
+    "title": "LLM-judge data pipeline",
+    "area": "llm",
+    "featured": false,
+    "tags": [
+      "vLLM",
+      "LLM-as-judge",
+      "MySQL"
+    ],
+    "summary": "End-to-end data pipeline: vLLM generation of king and challenger replies, LLM-judge scoring, and SFT/DPO/GRPO/RFT dataset building on a MySQL-backed store with read-only-by-default tooling."
+  },
+  {
+    "title": "Offline reward replica & RL training",
+    "area": "llm",
+    "featured": false,
+    "tags": [
+      "GRPO",
+      "Self-play",
+      "Evaluation"
+    ],
+    "summary": "Offline replica of a subnet's three-judge evaluation reward, used to answer \"would this model win?\" before spending an on-chain upload, with SFT, DPO, self-play and online/offline GRPO trainers."
+  },
+  {
+    "title": "Token-efficient reasoning trainer",
+    "area": "llm",
+    "featured": false,
+    "tags": [
+      "GRPO",
+      "LoRA",
+      "Reasoning"
+    ],
+    "summary": "GRPO LoRA training whose reward calls the validator's own scoring function, rewarding correct answers that use fewer tokens than the base model across math, multiple-choice and long-context evidence-selection benchmarks."
+  },
+  {
+    "title": "72B inference optimization",
+    "area": "llm",
+    "featured": false,
+    "tags": [
+      "Inference",
+      "H200",
+      "Docker"
+    ],
+    "summary": "Optimized Qwen2.5-72B serving image for a Bittensor inference subnet on 4×H200, tuned for time-to-first-token and throughput under a strict logprob-correctness gate, with a local copy of the validator for scoring."
+  },
+  {
+    "title": "LLM fine-tune & OpenAI-compatible serving",
+    "area": "llm",
+    "featured": false,
+    "tags": [
+      "FastAPI",
+      "ShareGPT",
+      "LLaMA-Factory"
+    ],
+    "summary": "Fetches and cleans agent conversation data into ShareGPT format, fine-tunes with LLaMA-Factory, and serves the result behind an OpenAI-compatible chat-completions API."
+  },
+  {
+    "title": "Distributed MoE training subnet",
+    "area": "llm",
+    "featured": false,
     "tags": [
       "Bittensor",
       "MoE"
     ],
-    "blurb": "Subnet 102: collaborative, decentralized training of Mixture-of-Experts LLMs with expert groups spread across miners."
+    "summary": "Contributions to Subnet 102, which trains Mixture-of-Experts LLMs collaboratively, with expert groups spread across independent miners."
   },
-  "LLaMA-Factory": {
-    "area": "llm",
+  {
+    "title": "Agent evaluation framework",
+    "area": "agents",
+    "featured": false,
     "tags": [
-      "Fine-tuning"
+      "AgentGym",
+      "QLoRA",
+      "Benchmarks"
     ],
-    "blurb": "Fork of the unified fine-tuning framework for 100+ LLMs and VLMs, used for my SFT and LoRA runs."
+    "summary": "Evaluation and training framework for AgentGym-style benchmarks: logic-reasoning dataset generation, QLoRA/SFT/MoE-routing training, prompt policies for game environments, and SWE, live-web and game environments."
   },
-  "DefiLlama-Adapters": {
+  {
+    "title": "RL-trained SWE agent",
+    "area": "agents",
+    "featured": false,
+    "tags": [
+      "SWE-bench",
+      "RL"
+    ],
+    "summary": "Extension of mini-swe-agent, the 100-line software-engineering agent, for reinforcement learning from human and dataset trajectories."
+  },
+  {
+    "title": "AgentGym agent collection",
+    "area": "agents",
+    "featured": false,
+    "tags": [
+      "AgentGym"
+    ],
+    "summary": "LLM-driven and hand-written agents for AgentGym environments such as SciWorld and TextCraft, on OpenAI-compatible APIs."
+  },
+  {
+    "title": "Crypto analysis agent API",
+    "area": "agents",
+    "featured": false,
+    "tags": [
+      "Crypto",
+      "Tool use"
+    ],
+    "summary": "LLM agent that classifies crypto questions into six categories (portfolio, yield farming, trading and more) and routes each one to specialized tools."
+  },
+  {
+    "title": "Multi-task RL robot agent",
+    "area": "agents",
+    "featured": false,
+    "tags": [
+      "Embodied AI",
+      "Offline RL"
+    ],
+    "summary": "Agent template for the Kinitro embodied-AI subnet: offline TD3+BC and online RL on the MetaWorld MT50 robot-manipulation tasks."
+  },
+  {
+    "title": "Embodied-agent gym",
+    "area": "agents",
+    "featured": false,
+    "tags": [
+      "Bittensor",
+      "Embodied AI"
+    ],
+    "summary": "Eastworld (SN94): gyms for evaluating and training embodied, generally capable AI agents in an open virtual world."
+  },
+  {
+    "title": "Time-series generator tooling",
+    "area": "subnets",
+    "featured": false,
+    "tags": [
+      "Forecasting",
+      "A/B sweeps"
+    ],
+    "summary": "Measurement and cost-aware A/B sweep suite for time-series generator development on a Bittensor subnet, built on the subnet's real evaluation pool, plus the resulting model variants."
+  },
+  {
+    "title": "ML data & deployment utilities",
+    "area": "subnets",
+    "featured": false,
+    "tags": [
+      "FastAPI",
+      "Hugging Face"
+    ],
+    "summary": "Small services around the training loop: a Hugging Face dataset watcher that pulls, unpacks and triggers training on new revisions; a FastAPI patch server for SWE-bench Pro; an upload/download bucket server; and deployment scripts for serving large models on Chutes."
+  },
+  {
+    "title": "Market-signal embedding miner",
+    "area": "subnets",
+    "featured": false,
+    "tags": [
+      "Bittensor",
+      "Forecasting"
+    ],
+    "summary": "Miner for MANTIS (SN123): embeddings that help predict one-hour moves of financial instruments."
+  },
+  {
+    "title": "Identity-testing subnet backend",
+    "area": "subnets",
+    "featured": false,
+    "tags": [
+      "Bittensor",
+      "Identity"
+    ],
+    "summary": "Backend for MIID (SN54), the identity-testing subnet."
+  },
+  {
+    "title": "AI vulnerability detection subnet",
+    "area": "subnets",
+    "featured": false,
+    "tags": [
+      "Bittensor",
+      "Security"
+    ],
+    "summary": "Contributions to BitSec, which uses AI to find and fix vulnerabilities in subnet codebases and smart contracts."
+  },
+  {
+    "title": "CheckerChain scoring endpoint",
+    "area": "subnets",
+    "featured": false,
+    "tags": [
+      "Bittensor",
+      "API"
+    ],
+    "summary": "Scoring endpoint service for the CheckerChain subnet."
+  },
+  {
+    "title": "Affine mining dashboard",
+    "area": "subnets",
+    "featured": false,
+    "tags": [
+      "React",
+      "Node.js"
+    ],
+    "summary": "Dashboard for Affine (SN120) mining: sortable and filterable miner tables, auto-refresh and personal hotkey tracking."
+  },
+  {
+    "title": "Fast on-chain registration CLI",
     "area": "web3",
+    "featured": false,
+    "tags": [
+      "Rust",
+      "Substrate"
+    ],
+    "summary": "Rust CLI for Bittensor subnet registration that fans out across several RPC endpoints, submits on new block heads and raises the tip over replace-by-fee rounds."
+  },
+  {
+    "title": "Sui trading bot",
+    "area": "web3",
+    "featured": false,
+    "tags": [
+      "TypeScript",
+      "Sui"
+    ],
+    "summary": "TypeScript sniper and trading bot for meme coins on the Sui blockchain."
+  },
+  {
+    "title": "Token presale dApp",
+    "area": "web3",
+    "featured": false,
+    "tags": [
+      "React",
+      "Vite",
+      "Solidity"
+    ],
+    "summary": "Token presale dApp: React + Vite + Tailwind frontend with its smart contract."
+  },
+  {
+    "title": "DeFi TVL adapter",
+    "area": "web3",
+    "featured": false,
     "tags": [
       "DeFi",
       "TVL"
     ],
-    "blurb": "DeFiLlama TVL adapter for the HyperLoan protocol."
+    "summary": "DeFiLlama adapter that reports total value locked for the HyperLoan protocol."
   },
-  "bsty_extension": {
+  {
+    "title": "Bitcoin NFT browser wallet",
     "area": "web3",
+    "featured": false,
     "tags": [
       "Bitcoin",
       "Wallet"
     ],
-    "blurb": "Open-source browser-extension wallet for Bitcoin NFTs."
-  },
-  "bestdeep": {
-    "area": "misc",
-    "hide": true
-  },
-  "resource": {
-    "area": "misc",
-    "hide": true
-  },
-  "dev_req": {
-    "area": "misc",
-    "hide": true
-  },
-  "nova_reply": {
-    "area": "misc",
-    "hide": true
-  },
-  "kingcyh_converter": {
-    "area": "web3",
-    "hide": true
-  },
-  "bestdeep.github.io": {
-    "area": "misc",
-    "hide": true
+    "summary": "Contributions to an open-source browser-extension wallet for Bitcoin NFTs."
   }
-}
+]

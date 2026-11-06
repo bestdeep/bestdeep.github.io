@@ -1,8 +1,25 @@
 {
-  "login": "bestdeep",
   "name": "Lucky Star",
   "headline": "AI & Blockchain Engineer, Full-Stack Developer",
   "intro": "I build at the intersection of machine learning and decentralized networks. Most of my recent work is on Bittensor subnets: miners, validators, and the agents, models and data pipelines behind them, plus the full-stack pieces around them: APIs, dashboards, bots and dApps.",
+  "open_to_work": true,
+  "contact": {
+    "pitch": "Open to Bittensor subnet work, AI and blockchain collaborations, and full-stack projects.",
+    "links": [
+      {
+        "kind": "email",
+        "label": "Email",
+        "value": "franklinjohntwo94@gmail.com",
+        "url": "mailto:franklinjohntwo94@gmail.com"
+      },
+      {
+        "kind": "telegram",
+        "label": "Telegram",
+        "value": "@kingAImaster",
+        "url": "https://t.me/kingAImaster"
+      }
+    ]
+  },
   "skills": [
     {
       "group": "Languages",
@@ -82,36 +99,6 @@
     {
       "id": "web3",
       "label": "Web3, dApps & bots"
-    },
-    {
-      "id": "misc",
-      "label": "Profile & resources"
     }
-  ],
-  "contact": {
-    "pitch": "Open to Bittensor subnet work, AI and blockchain collaborations, and full-stack projects.",
-    "links": [
-      {
-        "kind": "email",
-        "label": "Email",
-        "value": "franklinjohntwo94@gmail.com",
-        "url": "mailto:franklinjohntwo94@gmail.com"
-      },
-      {
-        "kind": "telegram",
-        "label": "Telegram",
-        "value": "@kingAImaster",
-        "url": "https://t.me/kingAImaster"
-      },
-      {
-        "kind": "github",
-        "label": "GitHub",
-        "value": "github.com/bestdeep",
-        "url": "https://github.com/bestdeep"
-      }
-    ]
-  },
-  "org_blurbs": {
-    "affineinsai": "Face-liveness detection with Vision Transformers."
-  }
+  ]
 }
