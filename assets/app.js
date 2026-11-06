@@ -225,6 +225,15 @@ function goToProject(p) {
 }
 
 // ---------- toolbox & contact ----------
+// The poem's first letters spell the name, so they get their own column.
+function renderPoem() {
+  const poem = state.site.poem;
+  const section = document.getElementById("poem");
+  if (!poem) { section.hidden = true; return; }
+  document.getElementById("poem-title").textContent = poem.title;
+  document.getElementById("poem-text").replaceChildren(...poem.stanzas.map((stanza) => el("p", { class: "stanza" },
+    stanza.map((line) => el("span", { class: "line" }, [el("span", { class: "initial", text: line[0] }), line.slice(1)])))));
+}
 function renderSkills() {
   document.getElementById("skills").replaceChildren(...state.site.skills.map((g) =>
     el("div", {}, [el("dt", { text: g.group }), el("dd", { text: g.items.join(", ") })])));
@@ -267,6 +276,7 @@ Promise.all([load("content/site.json"), load("content/projects.json")])
     renderAreas();
     renderProjects();
     renderSkills();
+    renderPoem();
     renderContact();
     initControls();
     const draw = () => renderConstellation();

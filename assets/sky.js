@@ -60,10 +60,10 @@
     ctx.closePath();
   }
 
-  // The lucky star crosses the upper sky once every 32 s on a soft wave.
+  // The lucky star crosses the upper sky once a minute on a soft wave.
   function luckyAt(t) {
-    const u = (t / 32000) % 1;
-    return [-60 + u * (W + 120), H * 0.24 + Math.sin(u * Math.PI * 3) * H * 0.07 + Math.sin(t * 0.0011) * 5];
+    const u = (t / 60000) % 1;
+    return [-90 + u * (W + 180), H * 0.24 + Math.sin(u * Math.PI * 3) * H * 0.07 + Math.sin(t * 0.0007) * 6];
   }
 
   function draw(t, dt) {
@@ -113,12 +113,12 @@
 
     const [lx, ly] = luckyAt(t);
     if (dt) {
-      trail.push({ x: lx + (Math.random() - 0.5) * 8, y: ly + (Math.random() - 0.5) * 8, r: 0.7 + Math.random() * 1.5, life: 1 });
-      if (trail.length > 180) trail.shift();
+      trail.push({ x: lx - 6 + (Math.random() - 0.5) * 16, y: ly + (Math.random() - 0.5) * 16, r: 0.8 + Math.random() * 1.8, life: 1 });
+      if (trail.length > 280) trail.shift();
     }
     ctx.fillStyle = colors.lucky;
     for (const s of trail) {
-      if (dt) { s.life -= dt / 2200; s.y += dt * 0.004; }
+      if (dt) { s.life -= dt / 4200; s.y += dt * 0.003; }
       if (s.life <= 0) continue;
       ctx.globalAlpha = s.life * 0.75 * calm;
       if (s.r > 1.8) sparkle(s.x, s.y, s.r * 0.6);
@@ -126,18 +126,19 @@
     }
     trail = trail.filter((s) => s.life > 0);
 
-    const glow = ctx.createRadialGradient(lx, ly, 0, lx, ly, 46);
+    const glow = ctx.createRadialGradient(lx, ly, 0, lx, ly, 76);
     glow.addColorStop(0, colors.glow);
     glow.addColorStop(1, "rgba(255, 255, 255, 0)");
     ctx.globalAlpha = calm;
     ctx.fillStyle = glow;
     ctx.beginPath();
-    ctx.arc(lx, ly, 46, 0, Math.PI * 2);
+    ctx.arc(lx, ly, 76, 0, Math.PI * 2);
     ctx.fill();
-    starPath(lx, ly, 12, t * 0.0005);
+    starPath(lx, ly, 22, t * 0.00022);
     ctx.fillStyle = colors.lucky;
     ctx.fill();
-    ctx.lineWidth = 1;
+    ctx.lineWidth = 1.4;
+    ctx.lineJoin = "round";
     ctx.strokeStyle = colors.edge;
     ctx.stroke();
     ctx.globalAlpha = 1;

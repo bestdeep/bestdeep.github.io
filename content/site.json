@@ -99,5 +99,23 @@
       "id": "web3",
       "label": "Web3, dApps & bots"
     }
-  ]
+  ],
+  "poem": {
+    "title": "For the lucky star",
+    "stanzas": [
+      [
+        "Little light that drifts across the evening blue,",
+        "Unhurried, gold, and humming soft and low,",
+        "Carry every wish I send up after you,",
+        "Keep them safe in all the places that you go.",
+        "Yonder, yet so near, you light my heart."
+      ],
+      [
+        "Shine on, small sun of second chances,",
+        "Tracing glitter where the shadows thin;",
+        "Answer every eye that upward glances,",
+        "Ride the sky and gather wishes in."
+      ]
+    ]
+  }
 }
