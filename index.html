@@ -3,176 +3,171 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BestDeep · AI & Blockchain Engineer</title>
-  <meta name="description" content="Portfolio dashboard of BestDeep (github.com/bestdeep): Bittensor subnets, LLM training, LLM agents, computer vision and Web3 work.">
-  <meta property="og:title" content="BestDeep · AI & Blockchain Engineer">
-  <meta property="og:description" content="Portfolio dashboard: Bittensor subnets, LLM training, LLM agents, computer vision and Web3.">
+  <title>BestDeep, AI and blockchain engineer</title>
+  <meta name="description" content="Portfolio of BestDeep (github.com/bestdeep): Bittensor subnets, sports video tracking, LLM training, LLM agents and Web3.">
+  <meta property="og:title" content="BestDeep, AI and blockchain engineer">
+  <meta property="og:description" content="Bittensor subnets, sports video tracking, LLM training, LLM agents and Web3.">
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/191052085?v=4">
+  <meta name="theme-color" content="#12352b">
   <link rel="icon" href="https://avatars.githubusercontent.com/u/191052085?s=64&v=4">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
   <script>
-    // Apply the saved theme before first paint.
     try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
   </script>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="topbar">
-    <div class="wrap topbar-inner">
-      <a class="brand" href="#top">bestdeep</a>
-      <nav aria-label="Sections">
-        <a href="#activity">Activity</a>
-        <a href="#focus">Focus</a>
-        <a href="#projects">Projects</a>
-        <a href="#repositories">Repositories</a>
-        <a href="#teams">Teams</a>
-      </nav>
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
-        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg>
-      </button>
-    </div>
-  </header>
 
-  <main id="main" class="wrap">
-    <section class="hero" id="top">
-      <img class="avatar" id="avatar" alt="" width="112" height="112">
-      <div class="hero-text">
-        <p class="eyebrow" id="location"></p>
+  <header class="pitch" id="top">
+    <div class="wrap">
+      <div class="bar">
+        <a class="brand" href="#top">bestdeep</a>
+        <nav aria-label="Sections">
+          <a href="#work">Work</a>
+          <a href="#activity">Activity</a>
+          <a href="#repositories">Repositories</a>
+          <a href="#teams">Teams</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor"/></svg>
+        </button>
+      </div>
+
+      <div class="intro-block">
         <h1 id="name">BestDeep</h1>
         <p class="headline" id="headline"></p>
         <p class="intro" id="intro"></p>
-        <div class="hero-actions">
-          <a class="btn primary" id="gh-link" href="https://github.com/bestdeep">
+        <div class="actions">
+          <a class="btn" id="gh-link" href="https://github.com/bestdeep">
             <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
-            github.com/bestdeep
+            View GitHub profile
           </a>
-          <span class="badge good" id="hireable" hidden>
-            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M6.4 11.2 3.2 8l-1.1 1.1 4.3 4.3 8-8-1.1-1.1Z"/></svg>
-            Open to work
-          </span>
+          <span class="status" id="hireable" hidden>Open to work</span>
+          <span class="where" id="where"></span>
         </div>
       </div>
+
+      <figure class="track" aria-labelledby="track-caption">
+        <div class="readout" id="readout"></div>
+        <div id="trajectory" class="chart"></div>
+        <figcaption id="track-caption" class="sr-only">Contributions per month since the account was created. The full numbers are in the monthly table in the Activity section.</figcaption>
+      </figure>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="wrap lede-block" aria-label="Summary">
+      <p class="lede" id="lede"></p>
     </section>
 
-    <section class="tiles" aria-label="Summary" id="tiles"></section>
-
-    <section class="section" id="activity">
-      <div class="section-head">
-        <h2>Activity</h2>
-        <p class="muted">Public and private contributions, from GitHub's contribution calendar.</p>
+    <section class="wrap build" id="work">
+      <div class="build-text">
+        <h2>What I build</h2>
+        <p class="note">Repositories I own, by area. Select an area to filter the projects below.</p>
+        <div class="legend" id="area-legend"></div>
       </div>
-      <div class="card">
-        <div class="card-head">
-          <h3>Contributions in the last 12 months</h3>
-          <div class="heat-legend" id="heat-legend" aria-hidden="true"></div>
-        </div>
-        <div class="heatmap-scroll"><div id="heatmap" class="chart"></div></div>
-      </div>
-      <div class="grid-2">
-        <div class="card">
-          <div class="card-head"><h3>Contributions per month</h3></div>
-          <div id="monthly" class="chart"></div>
-        </div>
-        <div class="card">
-          <div class="card-head"><h3>By year</h3></div>
-          <div class="table-wrap">
-            <table class="data" id="years-table">
-              <thead><tr><th scope="col">Year</th><th scope="col" class="num">Contributions</th><th scope="col" class="num">Private</th><th scope="col" class="num">Repos created</th></tr></thead>
-              <tbody></tbody>
-            </table>
-          </div>
-          <details class="table-toggle">
-            <summary>Monthly table</summary>
-            <div class="table-wrap">
-              <table class="data" id="monthly-table">
-                <thead><tr><th scope="col">Month</th><th scope="col" class="num">Contributions</th></tr></thead>
-                <tbody></tbody>
-              </table>
-            </div>
-          </details>
-        </div>
-      </div>
+      <div class="areas" id="areas" role="group" aria-label="Filter projects by area"></div>
     </section>
 
-    <section class="section" id="focus">
-      <div class="section-head">
-        <h2>Focus</h2>
-        <p class="muted">Where my own repositories sit, and the languages in the ones I commit to.</p>
-      </div>
-      <div class="grid-2">
-        <div class="card">
-          <div class="card-head">
-            <h3>Repositories by area</h3>
-            <div class="legend" id="area-legend"></div>
-          </div>
-          <div id="areas" class="chart"></div>
-        </div>
-        <div class="card">
-          <div class="card-head"><h3>Languages · repositories using each</h3></div>
-          <div id="languages" class="chart"></div>
-        </div>
-      </div>
-      <div class="card skills" id="skills"></div>
-    </section>
-
-    <section class="section" id="projects">
-      <div class="section-head">
-        <h2>Projects</h2>
-        <p class="muted">Public projects link to their repositories. Private work is described in summary only; the source stays private.</p>
-      </div>
+    <section class="wrap" aria-labelledby="work-heading">
       <div class="filters" role="group" aria-label="Filter projects">
-        <div class="chips" id="area-filter"></div>
-        <label class="select">
-          <span class="sr-only">Visibility</span>
+        <h2 id="work-heading" class="sr-only">Projects</h2>
+        <label class="field">
+          <span>Area</span>
+          <select id="area-filter"></select>
+        </label>
+        <label class="field">
+          <span>Source</span>
           <select id="vis-filter">
-            <option value="all">Public & private</option>
+            <option value="all">Public and private</option>
             <option value="public">Public only</option>
             <option value="private">Private only</option>
           </select>
         </label>
-        <label class="search">
-          <span class="sr-only">Search projects</span>
-          <input id="search" type="search" placeholder="Search projects, tags, languages">
+        <label class="field grow">
+          <span>Search</span>
+          <input id="search" type="search" placeholder="Project, tag or language">
         </label>
+        <p class="count" id="project-count" aria-live="polite"></p>
       </div>
-      <p class="muted count" id="project-count" aria-live="polite"></p>
-      <div class="cards" id="project-grid"></div>
+
+      <div id="featured-block">
+        <h3 class="block-title">Selected work</h3>
+        <div class="featured" id="featured"></div>
+      </div>
+      <div id="more-block">
+        <h3 class="block-title">More projects</h3>
+        <div id="groups"></div>
+      </div>
+      <p class="empty" id="empty" hidden>No projects match. Clear the search or pick another area.</p>
+      <p class="fineprint">Public projects link to their repositories. Private projects are described in summary only; their source stays private.</p>
     </section>
 
-    <section class="section" id="repositories">
-      <div class="section-head">
-        <h2>Repositories</h2>
-        <p class="muted">Repositories I own. Private rows are listed without their names; profile and scratch repos are left out.</p>
+    <section class="wrap section" id="activity">
+      <h2>Activity</h2>
+      <p class="note">Every contribution GitHub counts, public and private, over the last 12 months.</p>
+      <div class="heat-head">
+        <div class="heat-legend" id="heat-legend" aria-hidden="true"></div>
       </div>
-      <div class="card">
-        <div class="table-wrap">
-          <table class="data" id="repo-table">
-            <thead>
-              <tr>
-                <th scope="col"><button type="button" data-sort="name">Repository</button></th>
-                <th scope="col"><button type="button" data-sort="area">Area</button></th>
-                <th scope="col"><button type="button" data-sort="language">Language</button></th>
-                <th scope="col" class="num"><button type="button" data-sort="commits">My commits</button></th>
-                <th scope="col" class="num"><button type="button" data-sort="updated" aria-sort="descending">Last push</button></th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
+      <div class="heatmap-scroll"><div id="heatmap" class="chart"></div></div>
+      <div class="activity-tables">
+        <table class="data" id="years-table">
+          <caption>By year</caption>
+          <thead><tr><th scope="col">Year</th><th scope="col" class="num">Contributions</th><th scope="col" class="num">Private</th><th scope="col" class="num">Repos created</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        <details class="table-toggle">
+          <summary>Show contributions per month</summary>
+          <div class="table-scroll">
+            <table class="data" id="monthly-table">
+              <thead><tr><th scope="col">Month</th><th scope="col" class="num">Contributions</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </details>
       </div>
     </section>
 
-    <section class="section" id="teams">
-      <div class="section-head">
-        <h2>Teams & collaborations</h2>
-        <p class="muted">Organizations and other developers' repositories I work in. Names are shown only where the membership is public.</p>
+    <section class="wrap section toolbox" id="toolbox">
+      <div>
+        <h2>Toolbox</h2>
+        <p class="note">Languages, counted by the repositories I commit to that use each one.</p>
+        <div id="languages" class="chart"></div>
       </div>
-      <div class="cards teams" id="team-grid"></div>
+      <dl class="skills" id="skills"></dl>
+    </section>
+
+    <section class="wrap section" id="repositories">
+      <h2>Repositories</h2>
+      <p class="note">Repositories I own. Private ones are listed without their names; profile and scratch repos are left out.</p>
+      <div class="table-scroll">
+        <table class="data" id="repo-table">
+          <thead>
+            <tr>
+              <th scope="col"><button type="button" data-sort="name">Repository</button></th>
+              <th scope="col"><button type="button" data-sort="area">Area</button></th>
+              <th scope="col"><button type="button" data-sort="language">Language</button></th>
+              <th scope="col" class="num"><button type="button" data-sort="commits">My commits</button></th>
+              <th scope="col" class="num"><button type="button" data-sort="updated">Last push</button></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="wrap section" id="teams">
+      <h2>Teams and collaborations</h2>
+      <p class="note">Organizations and other developers' repositories I work in. An organization is named only where my membership is public.</p>
+      <div class="teams" id="team-list"></div>
     </section>
   </main>
 
   <footer class="wrap footer">
-    <p class="muted" id="generated"></p>
+    <p id="generated"></p>
   </footer>
 
   <div class="tooltip" id="tooltip" role="status" hidden></div>

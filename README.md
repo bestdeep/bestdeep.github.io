@@ -6,11 +6,13 @@ It is a static page with no build step: `index.html`, `assets/`, and a single da
 
 ## What it shows
 
-- Profile, headline stats and a 12-month contribution heatmap (public and private contributions)
-- Contributions per month and per year
-- Repositories by area (public vs private) and languages
-- Project cards with area, visibility and text filters
-- A table of owned repositories, plus team and collaboration summaries
+- A header that plots contributions per month as a tracked ball trajectory, with the 12-month total as a broadcast-style readout
+- Repositories by area (public vs private); the area bars double as the project filter
+- Selected work and all other projects grouped by area, with area, visibility and text filters
+- A 12-month contribution heatmap and yearly totals (public and private contributions)
+- Languages and skills, a table of owned repositories, and team and collaboration summaries
+
+The visual identity borrows from sports ball-tracking: a pitch-green field, chalk lines, and one leather-red ball. Type is Archivo (Google Fonts), used across its width axis.
 
 ## Privacy
 
