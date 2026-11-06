@@ -8,7 +8,7 @@
   <meta property="og:title" content="Lucky Star, AI and blockchain engineer">
   <meta property="og:description" content="LLM training, AI agents, computer vision, ML tools and Web3.">
   <meta property="og:image" content="https://bestdeep.github.io/assets/og.jpg">
-  <meta name="theme-color" content="#c2255c">
+  <meta name="theme-color" content="#fff6f9">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -22,8 +22,9 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+  <canvas class="sky-bg" id="sky-bg" aria-hidden="true"></canvas>
 
-  <header class="band" id="top">
+  <header class="top" id="top">
     <div class="wrap">
       <div class="bar">
         <a class="brand" href="#top"><img src="assets/logo-96.png" width="40" height="40" alt="">Lucky Star</a>
@@ -96,16 +97,19 @@
     </section>
   </main>
 
-  <footer class="band contact" id="contact">
+  <footer class="contact" id="contact">
     <div class="wrap">
-      <h2>Contact</h2>
-      <p class="pitch" id="pitch"></p>
-      <ul class="channels" id="channels"></ul>
+      <div class="contact-panel">
+        <h2>Contact</h2>
+        <p class="pitch" id="pitch"></p>
+        <ul class="channels" id="channels"></ul>
+      </div>
       <p class="copyright"><img src="assets/logo-96.png" width="32" height="32" alt=""><span id="copyright"></span></p>
     </div>
   </footer>
 
   <div class="tooltip" id="tooltip" role="status" hidden></div>
+  <script src="assets/sky.js" defer></script>
   <script src="assets/app.js" defer></script>
 </body>
 </html>
