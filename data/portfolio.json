@@ -1,18 +1,37 @@
 {
- "generated_at": "2026-11-06T10:10:47Z",
+ "generated_at": "2026-11-06T11:06:57Z",
  "profile": {
   "login": "bestdeep",
-  "name": "BestDeep",
-  "bio": "AI & Blockchain\r\nFrontend & Backend developer",
+  "name": "Lucky Star",
   "location": "United States",
-  "avatar_url": "https://avatars.githubusercontent.com/u/191052085?u=3ab31aba2842aae37a5fa8cc27693ead759c6328&v=4",
   "url": "https://github.com/bestdeep",
   "created_at": "2024-12-08",
-  "followers": 1,
-  "following": 2,
   "hireable": true,
-  "headline": "AI & Blockchain Engineer · Full-Stack Developer",
+  "headline": "AI & Blockchain Engineer, Full-Stack Developer",
   "intro": "I build at the intersection of machine learning and decentralized networks. Most of my recent work is on Bittensor subnets: miners, validators, and the agents, models and data pipelines behind them, plus the full-stack pieces around them: APIs, dashboards, bots and dApps."
+ },
+ "contact": {
+  "pitch": "Open to Bittensor subnet work, AI and blockchain collaborations, and full-stack projects.",
+  "links": [
+   {
+    "kind": "email",
+    "label": "Email",
+    "value": "franklinjohntwo94@gmail.com",
+    "url": "mailto:franklinjohntwo94@gmail.com"
+   },
+   {
+    "kind": "telegram",
+    "label": "Telegram",
+    "value": "@kingAImaster",
+    "url": "https://t.me/kingAImaster"
+   },
+   {
+    "kind": "github",
+    "label": "GitHub",
+    "value": "github.com/bestdeep",
+    "url": "https://github.com/bestdeep"
+   }
+  ]
  },
  "skills": [
   {
@@ -74,42 +93,26 @@
   }
  ],
  "totals": {
-  "repos": 52,
-  "public": 25,
-  "private": 27,
-  "forks": 8,
-  "stars": 2,
-  "commits_authored": 1680,
-  "contributions_last_year": 1590,
-  "contributions_all_time": 1725,
-  "orgs": 4,
-  "team_repos": 60,
-  "languages": 11
+  "public_repos": 20,
+  "commits_authored": 274,
+  "projects": 37,
+  "ideas": 17,
+  "contributions_last_year": 1594,
+  "contributions_all_time": 1729,
+  "languages": 7
  },
  "years": [
   {
    "year": 2024,
-   "total": 1,
-   "public_commits": 0,
-   "private": 0,
-   "pull_requests": 0,
-   "repos_created": 0
+   "total": 1
   },
   {
    "year": 2025,
-   "total": 419,
-   "public_commits": 245,
-   "private": 154,
-   "pull_requests": 1,
-   "repos_created": 19
+   "total": 419
   },
   {
    "year": 2026,
-   "total": 1305,
-   "public_commits": 26,
-   "private": 1271,
-   "pull_requests": 1,
-   "repos_created": 6
+   "total": 1309
   }
  ],
  "calendar": [
@@ -1591,7 +1594,7 @@
   },
   {
    "date": "2026-11-06",
-   "count": 11
+   "count": 15
   }
  ],
  "monthly": [
@@ -1689,102 +1692,74 @@
   },
   {
    "month": "2026-11",
-   "count": 108
+   "count": 112
   }
  ],
  "languages": [
   {
    "name": "Python",
-   "repos": 40,
-   "share": 0.7129
-  },
-  {
-   "name": "Shell",
-   "repos": 6,
-   "share": 0.0462
-  },
-  {
-   "name": "TypeScript",
-   "repos": 4,
-   "share": 0.0165
+   "repos": 16
   },
   {
    "name": "JavaScript",
-   "repos": 3,
-   "share": 0.0007
+   "repos": 2
+  },
+  {
+   "name": "TypeScript",
+   "repos": 1
+  },
+  {
+   "name": "Shell",
+   "repos": 1
   },
   {
    "name": "HTML",
-   "repos": 3,
-   "share": 0.2218
-  },
-  {
-   "name": "Jinja",
-   "repos": 2,
-   "share": 0.001
-  },
-  {
-   "name": "Rust",
-   "repos": 1,
-   "share": 0.0002
+   "repos": 1
   },
   {
    "name": "CSS",
-   "repos": 1,
-   "share": 0.0002
-  },
-  {
-   "name": "Makefile",
-   "repos": 1,
-   "share": 0.0001
+   "repos": 1
   },
   {
    "name": "Jupyter Notebook",
-   "repos": 1,
-   "share": 0.0
+   "repos": 1
   }
  ],
  "areas": [
   {
    "id": "vision",
    "label": "Computer vision & video",
-   "public": 4,
-   "private": 8
+   "projects": 6
   },
   {
    "id": "llm",
    "label": "LLM training & inference",
-   "public": 2,
-   "private": 7
+   "projects": 9
   },
   {
    "id": "agents",
    "label": "LLM agents & RL",
-   "public": 7,
-   "private": 2
+   "projects": 9
   },
   {
    "id": "subnets",
    "label": "Subnet mining & tooling",
-   "public": 5,
-   "private": 6
+   "projects": 7
   },
   {
    "id": "web3",
    "label": "Web3, dApps & bots",
-   "public": 3,
-   "private": 4
+   "projects": 6
   },
   {
    "id": "misc",
    "label": "Profile & resources",
-   "public": 4,
-   "private": 0
+   "projects": 0
   }
  ],
  "projects": [
   {
-   "kind": "private",
+   "kind": "idea",
    "title": "Autonomous multi-agent ML engineering loop",
    "url": null,
    "area": "agents",
@@ -1794,22 +1769,10 @@
     "Multi-agent",
     "Eval harness"
    ],
-   "featured": true,
-   "languages": [
-    "Python"
-   ],
-   "fork": false,
-   "upstream": null,
-   "upstream_url": null,
-   "stars": null,
-   "forks": null,
-   "commits": 541,
-   "repos": 3,
-   "first_active": "2026-09",
-   "last_active": "2026-11"
+   "featured": true
   },
   {
-   "kind": "private",
+   "kind": "idea",
    "title": "Cricket delivery ball-tracking (Bittensor SN44)",
    "url": null,
    "area": "vision",
@@ -1819,21 +1782,43 @@
     "Geometry",
     "GPU serving"
    ],
-   "featured": true,
-   "languages": [
-    "Python",
-    "HTML",
-    "Shell"
+   "featured": true
+  },
+  {
+   "kind": "idea",
+   "title": "Football action spotting (Bittensor SN44)",
+   "url": null,
+   "area": "vision",
+   "summary": "30-second broadcast clip in, timestamped events over 15 weighted action classes out. T-DEED-style spotter with Gate-Shift-Fuse and an SGP temporal encoder initialized from a SoccerNet-Ball checkpoint, optical-flow camera-motion features, overlapping-window inference with displacement voting, and per-class thresholds tuned on an exact replica of the validator score.",
+   "tags": [
+    "Action spotting",
+    "Video models"
    ],
-   "fork": false,
-   "upstream": null,
-   "upstream_url": null,
-   "stars": null,
-   "forks": null,
-   "commits": 367,
-   "repos": 3,
-   "first_active": "2026-07",
-   "last_active": "2026-10"
+   "featured": true
+  },
+  {
+   "kind": "idea",
+   "title": "Large-scale model distillation",
+   "url": null,
+   "area": "llm",
+   "summary": "Competitive model distillation on a Bittensor subnet: compressing a 1T-parameter MoE teacher into students of at most 33B, scored on a 25+ axis composite covering math, code, reasoning, long context and honesty.",
+   "tags": [
+    "Distillation",
+    "MoE"
+   ],
+   "featured": true
+  },
+  {
+   "kind": "idea",
+   "title": "Bittensor monitoring bot",
+   "url": null,
+   "area": "web3",
+   "summary": "Telegram bot for real-time Bittensor monitoring: subnet parameter changes, registrations and costs, unstaking, stake thresholds and wallet activity, plus miner and validator registration from chat.",
+   "tags": [
+    "TypeScript",
+    "Telegram"
+   ],
+   "featured": true
   },
   {
    "kind": "public",
@@ -1853,85 +1838,8 @@
    "upstream": null,
    "upstream_url": null,
    "stars": 0,
-   "forks": 0,
    "commits": 118,
-   "repos": 1,
-   "first_active": "2025-10",
    "last_active": "2025-11-26"
-  },
-  {
-   "kind": "private",
-   "title": "Football action spotting (Bittensor SN44)",
-   "url": null,
-   "area": "vision",
-   "summary": "30-second broadcast clip in, timestamped events over 15 weighted action classes out. T-DEED-style spotter with Gate-Shift-Fuse and an SGP temporal encoder initialized from a SoccerNet-Ball checkpoint, optical-flow camera-motion features, overlapping-window inference with displacement voting, and per-class thresholds tuned on an exact replica of the validator score.",
-   "tags": [
-    "Action spotting",
-    "Video models"
-   ],
-   "featured": true,
-   "languages": [
-    "Python",
-    "Shell"
-   ],
-   "fork": false,
-   "upstream": null,
-   "upstream_url": null,
-   "stars": null,
-   "forks": null,
-   "commits": 30,
-   "repos": 2,
-   "first_active": "2026-10",
-   "last_active": "2026-11"
-  },
-  {
-   "kind": "private",
-   "title": "Large-scale model distillation",
-   "url": null,
-   "area": "llm",
-   "summary": "Competitive model distillation on a Bittensor subnet: compressing a 1T-parameter MoE teacher into students of at most 33B, scored on a 25+ axis composite covering math, code, reasoning, long context and honesty.",
-   "tags": [
-    "Distillation",
-    "MoE"
-   ],
-   "featured": true,
-   "languages": [
-    "Python",
-    "TypeScript"
-   ],
-   "fork": false,
-   "upstream": null,
-   "upstream_url": null,
-   "stars": null,
-   "forks": null,
-   "commits": 26,
-   "repos": 1,
-   "first_active": "2026-05",
-   "last_active": "2026-05"
-  },
-  {
-   "kind": "private",
-   "title": "Bittensor monitoring bot",
-   "url": null,
-   "area": "web3",
-   "summary": "Telegram bot for real-time Bittensor monitoring: subnet parameter changes, registrations and costs, unstaking, stake thresholds and wallet activity, plus miner and validator registration from chat.",
-   "tags": [
-    "TypeScript",
-    "Telegram"
-   ],
-   "featured": true,
-   "languages": [
-    "TypeScript"
-   ],
-   "fork": false,
-   "upstream": null,
-   "upstream_url": null,
-   "stars": null,
-   "forks": null,
-   "commits": 20,
-   "repos": 1,
-   "first_active": "2025-12",
-   "last_active": "2026-07"
   },
   {
    "kind": "public",
@@ -1951,10 +1859,7 @@
    "upstream": null,
    "upstream_url": null,
    "stars": 0,
-   "forks": 0,
    "commits": 9,
-   "repos": 1,
-   "first_active": "2026-02",
    "last_active": "2026-02-15"
   },
   {
@@ -1975,93 +1880,11 @@
    "upstream": null,
    "upstream_url": null,
    "stars": 0,
-   "forks": 0,
    "commits": 8,
-   "repos": 1,
-   "first_active": "2025-08",
    "last_active": "2025-10-01"
   },
   {
-   "kind": "private",
-   "title": "LLM-judge data pipeline",
-   "url": null,
-   "area": "llm",
-   "summary": "End-to-end data pipeline: vLLM generation of king and challenger replies, LLM-judge scoring, and SFT/DPO/GRPO/RFT dataset building on a MySQL-backed store with read-only-by-default tooling.",
-   "tags": [
-    "vLLM",
-    "LLM-as-judge",
-    "MySQL"
-   ],
-   "featured": false,
-   "languages": [
-    "Python",
-    "Shell"
-   ],
-   "fork": false,
-   "upstream": null,
-   "upstream_url": null,
-   "stars": null,
-   "forks": null,
-   "commits": 139,
-   "repos": 1,
-   "first_active": "2026-07",
-   "last_active": "2026-07"
-  },
-  {
-   "kind": "private",
-   "title": "Agent evaluation framework",
-   "url": null,
-   "area": "agents",
-   "summary": "Evaluation and training framework for AgentGym-style benchmarks: logic-reasoning dataset generation, QLoRA/SFT/MoE-routing training, prompt policies for game environments, and SWE, live-web and game environments.",
-   "tags": [
-    "AgentGym",
-    "QLoRA",
-    "Benchmarks"
-   ],
-   "featured": false,
-   "languages": [
-    "Python",
-    "Shell",
-    "Jinja"
-   ],
-   "fork": false,
-   "upstream": null,
-   "upstream_url": null,
-   "stars": null,
-   "forks": null,
-   "commits": 74,
-   "repos": 2,
-   "first_active": "2025-12",
-   "last_active": "2026-04"
-  },
-  {
-   "kind": "private",
-   "title": "LLM fine-tune & OpenAI-compatible serving",
-   "url": null,
-   "area": "llm",
-   "summary": "Fetches and cleans agent conversation data into ShareGPT format, fine-tunes with LLaMA-Factory, and serves the result behind an OpenAI-compatible chat-completions API.",
-   "tags": [
-    "FastAPI",
-    "ShareGPT",
-    "LLaMA-Factory"
-   ],
-   "featured": false,
-   "languages": [
-    "Python",
-    "Jinja"
-   ],
-   "fork": false,
-   "upstream": null,
-   "upstream_url": null,
-   "stars": null,
-   "forks": null,
-   "commits": 61,
-   "repos": 1,
-   "first_active": "2025-12",
-   "last_active": "2026-02"
-  },
-  {
-   "kind": "private",
+   "kind": "idea",
    "title": "MoE fine-tuning toolkit",
    "url": null,
    "area": "llm",
@@ -2072,19 +1895,146 @@
     "DeepSpeed",
     "SGLang"
    ],
-   "featured": false,
-   "languages": [
-    "Python"
+   "featured": false
+  },
+  {
+   "kind": "idea",
+   "title": "LLM-judge data pipeline",
+   "url": null,
+   "area": "llm",
+   "summary": "End-to-end data pipeline: vLLM generation of king and challenger replies, LLM-judge scoring, and SFT/DPO/GRPO/RFT dataset building on a MySQL-backed store with read-only-by-default tooling.",
+   "tags": [
+    "vLLM",
+    "LLM-as-judge",
+    "MySQL"
    ],
-   "fork": false,
-   "upstream": null,
-   "upstream_url": null,
-   "stars": null,
-   "forks": null,
-   "commits": 58,
-   "repos": 1,
-   "first_active": "2026-03",
-   "last_active": "2026-05"
+   "featured": false
+  },
+  {
+   "kind": "idea",
+   "title": "Offline reward replica & RL training",
+   "url": null,
+   "area": "llm",
+   "summary": "Offline replica of a subnet's three-judge evaluation reward, used to answer \"would this model win?\" before spending an on-chain upload, with SFT, DPO, self-play and online/offline GRPO trainers.",
+   "tags": [
+    "GRPO",
+    "Self-play",
+    "Evaluation"
+   ],
+   "featured": false
+  },
+  {
+   "kind": "idea",
+   "title": "Token-efficient reasoning trainer",
+   "url": null,
+   "area": "llm",
+   "summary": "GRPO LoRA training whose reward calls the validator's own scoring function, rewarding correct answers that use fewer tokens than the base model across math, multiple-choice and long-context evidence-selection benchmarks.",
+   "tags": [
+    "GRPO",
+    "LoRA",
+    "Reasoning"
+   ],
+   "featured": false
+  },
+  {
+   "kind": "idea",
+   "title": "72B inference optimization",
+   "url": null,
+   "area": "llm",
+   "summary": "Optimized Qwen2.5-72B serving image for a Bittensor inference subnet on 4×H200, tuned for time-to-first-token and throughput under a strict logprob-correctness gate, with a local copy of the validator for scoring.",
+   "tags": [
+    "Inference",
+    "H200",
+    "Docker"
+   ],
+   "featured": false
+  },
+  {
+   "kind": "idea",
+   "title": "LLM fine-tune & OpenAI-compatible serving",
+   "url": null,
+   "area": "llm",
+   "summary": "Fetches and cleans agent conversation data into ShareGPT format, fine-tunes with LLaMA-Factory, and serves the result behind an OpenAI-compatible chat-completions API.",
+   "tags": [
+    "FastAPI",
+    "ShareGPT",
+    "LLaMA-Factory"
+   ],
+   "featured": false
+  },
+  {
+   "kind": "idea",
+   "title": "Agent evaluation framework",
+   "url": null,
+   "area": "agents",
+   "summary": "Evaluation and training framework for AgentGym-style benchmarks: logic-reasoning dataset generation, QLoRA/SFT/MoE-routing training, prompt policies for game environments, and SWE, live-web and game environments.",
+   "tags": [
+    "AgentGym",
+    "QLoRA",
+    "Benchmarks"
+   ],
+   "featured": false
+  },
+  {
+   "kind": "idea",
+   "title": "Time-series generator tooling",
+   "url": null,
+   "area": "subnets",
+   "summary": "Measurement and cost-aware A/B sweep suite for time-series generator development on a Bittensor subnet, built on the subnet's real evaluation pool, plus the resulting model variants.",
+   "tags": [
+    "Forecasting",
+    "A/B sweeps"
+   ],
+   "featured": false
+  },
+  {
+   "kind": "idea",
+   "title": "Fast on-chain registration CLI",
+   "url": null,
+   "area": "web3",
+   "summary": "Rust CLI for Bittensor subnet registration that fans out across several RPC endpoints, submits on new block heads and raises the tip over replace-by-fee rounds.",
+   "tags": [
+    "Rust",
+    "Substrate"
+   ],
+   "featured": false
+  },
+  {
+   "kind": "idea",
+   "title": "Sui trading bot",
+   "url": null,
+   "area": "web3",
+   "summary": "TypeScript sniper and trading bot for meme coins on the Sui blockchain.",
+   "tags": [
+    "TypeScript",
+    "Sui"
+   ],
+   "featured": false
+  },
+  {
+   "kind": "idea",
+   "title": "Token presale dApp",
+   "url": null,
+   "area": "web3",
+   "summary": "Token presale dApp: React + Vite + Tailwind frontend with its smart contract.",
+   "tags": [
+    "React",
+    "Vite",
+    "Solidity"
+   ],
+   "featured": false
+  },
+  {
+   "kind": "idea",
+   "title": "ML data & deployment utilities",
+   "url": null,
+   "area": "subnets",
+   "summary": "Small services around the training loop: a Hugging Face dataset watcher that pulls, unpacks and triggers training on new revisions; a FastAPI patch server for SWE-bench Pro; an upload/download bucket server; and deployment scripts for serving large models on Chutes.",
+   "tags": [
+    "FastAPI",
+    "Hugging Face"
+   ],
+   "featured": false
   },
   {
    "kind": "public",
@@ -2104,38 +2054,8 @@
    "upstream": null,
    "upstream_url": null,
    "stars": 0,
-   "forks": 0,
    "commits": 26,
-   "repos": 1,
-   "first_active": "2025-10",
    "last_active": "2025-11-29"
-  },
-  {
-   "kind": "private",
-   "title": "Token presale dApp",
-   "url": null,
-   "area": "web3",
-   "summary": "Token presale dApp: React + Vite + Tailwind frontend with its smart contract.",
-   "tags": [
-    "React",
-    "Vite",
-    "Solidity"
-   ],
-   "featured": false,
-   "languages": [
-    "TypeScript",
-    "JavaScript",
-    "Solidity"
-   ],
-   "fork": false,
-   "upstream": null,
-   "upstream_url": null,
-   "stars": null,
-   "forks": null,
-   "commits": 26,
-   "repos": 1,
-   "first_active": "2025-10",
-   "last_active": "2025-11"
   },
   {
    "kind": "public",
@@ -2155,36 +2075,8 @@
    "upstream": null,
    "upstream_url": null,
    "stars": 0,
-   "forks": 0,
    "commits": 25,
-   "repos": 1,
-   "first_active": "2025-10",
    "last_active": "2025-11-21"
-  },
-  {
-   "kind": "private",
-   "title": "Offline reward replica & RL training",
-   "url": null,
-   "area": "llm",
-   "summary": "Offline replica of a subnet's three-judge evaluation reward, used to answer \"would this model win?\" before spending an on-chain upload, with SFT, DPO, self-play and online/offline GRPO trainers.",
-   "tags": [
-    "GRPO",
-    "Self-play",
-    "Evaluation"
-   ],
-   "featured": false,
-   "languages": [
-    "Python"
-   ],
-   "fork": false,
-   "upstream": null,
-   "upstream_url": null,
-   "stars": null,
-   "forks": null,
-   "commits": 16,
-   "repos": 1,
-   "first_active": "2026-06",
-   "last_active": "2026-07"
   },
   {
    "kind": "public",
@@ -2203,10 +2095,7 @@
    "upstream": null,
    "upstream_url": null,
    "stars": 1,
-   "forks": 0,
    "commits": 15,
-   "repos": 1,
-   "first_active": "2025-12",
    "last_active": "2025-12-16"
   },
   {
@@ -2228,59 +2117,8 @@
    "upstream": "Bitsec-AI/subnet",
    "upstream_url": "https://github.com/Bitsec-AI/subnet",
    "stars": 0,
-   "forks": 0,
    "commits": 14,
-   "repos": 1,
-   "first_active": "2025-10",
    "last_active": "2025-10-16"
-  },
-  {
-   "kind": "private",
-   "title": "Time-series generator tooling",
-   "url": null,
-   "area": "subnets",
-   "summary": "Measurement and cost-aware A/B sweep suite for time-series generator development on a Bittensor subnet, built on the subnet's real evaluation pool, plus the resulting model variants.",
-   "tags": [
-    "Forecasting",
-    "A/B sweeps"
-   ],
-   "featured": false,
-   "languages": [
-    "Python"
-   ],
-   "fork": false,
-   "upstream": null,
-   "upstream_url": null,
-   "stars": null,
-   "forks": null,
-   "commits": 11,
-   "repos": 2,
-   "first_active": "2026-07",
-   "last_active": "2026-08"
-  },
-  {
-   "kind": "private",
-   "title": "ML data & deployment utilities",
-   "url": null,
-   "area": "subnets",
-   "summary": "Small services around the training loop: a Hugging Face dataset watcher that pulls, unpacks and triggers training on new revisions; a FastAPI patch server for SWE-bench Pro; an upload/download bucket server; and deployment scripts for serving large models on Chutes.",
-   "tags": [
-    "FastAPI",
-    "Hugging Face"
-   ],
-   "featured": false,
-   "languages": [
-    "Python"
-   ],
-   "fork": false,
-   "upstream": null,
-   "upstream_url": null,
-   "stars": null,
-   "forks": null,
-   "commits": 10,
-   "repos": 4,
-   "first_active": "2025-11",
-   "last_active": "2026-02"
   },
   {
    "kind": "public",
@@ -2300,10 +2138,7 @@
    "upstream": null,
    "upstream_url": null,
    "stars": 0,
-   "forks": 0,
    "commits": 9,
-   "repos": 1,
-   "first_active": "2025-08",
    "last_active": "2025-09-02"
   },
   {
@@ -2325,10 +2160,7 @@
    "upstream": null,
    "upstream_url": null,
    "stars": 0,
-   "forks": 0,
    "commits": 8,
-   "repos": 1,
-   "first_active": "2025-10",
    "last_active": "2025-11-03"
   },
   {
@@ -2350,10 +2182,7 @@
    "upstream": null,
    "upstream_url": null,
    "stars": 0,
-   "forks": 0,
    "commits": 8,
-   "repos": 1,
-   "first_active": "2025-10",
    "last_active": "2025-11-18"
   },
   {
@@ -2374,10 +2203,7 @@
    "upstream": null,
    "upstream_url": null,
    "stars": 0,
-   "forks": 0,
    "commits": 8,
-   "repos": 1,
-   "first_active": "2025-12",
    "last_active": "2025-12-21"
   },
   {
@@ -2398,36 +2224,8 @@
    "upstream": null,
    "upstream_url": null,
    "stars": 0,
-   "forks": 0,
    "commits": 7,
-   "repos": 1,
-   "first_active": "2025-11",
    "last_active": "2025-11-03"
-  },
-  {
-   "kind": "private",
-   "title": "Token-efficient reasoning trainer",
-   "url": null,
-   "area": "llm",
-   "summary": "GRPO LoRA training whose reward calls the validator's own scoring function, rewarding correct answers that use fewer tokens than the base model across math, multiple-choice and long-context evidence-selection benchmarks.",
-   "tags": [
-    "GRPO",
-    "LoRA",
-    "Reasoning"
-   ],
-   "featured": false,
-   "languages": [
-    "Python"
-   ],
-   "fork": false,
-   "upstream": null,
-   "upstream_url": null,
-   "stars": null,
-   "forks": null,
-   "commits": 6,
-   "repos": 1,
-   "first_active": "2026-07",
-   "last_active": "2026-07"
   },
   {
    "kind": "public",
@@ -2447,39 +2245,8 @@
    "upstream": null,
    "upstream_url": null,
    "stars": 0,
-   "forks": 0,
    "commits": 5,
-   "repos": 1,
-   "first_active": "2026-01",
    "last_active": "2026-01-26"
-  },
-  {
-   "kind": "private",
-   "title": "72B inference optimization",
-   "url": null,
-   "area": "llm",
-   "summary": "Optimized Qwen2.5-72B serving image for a Bittensor inference subnet on 4×H200, tuned for time-to-first-token and throughput under a strict logprob-correctness gate, with a local copy of the validator for scoring.",
-   "tags": [
-    "Inference",
-    "H200",
-    "Docker"
-   ],
-   "featured": false,
-   "languages": [
-    "Python",
-    "Shell",
-    "Makefile",
-    "Dockerfile"
-   ],
-   "fork": false,
-   "upstream": null,
-   "upstream_url": null,
-   "stars": null,
-   "forks": null,
-   "commits": 5,
-   "repos": 1,
-   "first_active": "2026-05",
-   "last_active": "2026-05"
   },
   {
    "kind": "public",
@@ -2499,10 +2266,7 @@
    "upstream": "DefiLlama/DefiLlama-Adapters",
    "upstream_url": "https://github.com/DefiLlama/DefiLlama-Adapters",
    "stars": 0,
-   "forks": 0,
    "commits": 4,
-   "repos": 1,
-   "first_active": "2025-11",
    "last_active": "2025-11-10"
   },
   {
@@ -2524,10 +2288,7 @@
    "upstream": "Connito-AI/Connito",
    "upstream_url": "https://github.com/Connito-AI/Connito",
    "stars": 0,
-   "forks": 0,
    "commits": 4,
-   "repos": 1,
-   "first_active": "2026-05",
    "last_active": "2026-05-16"
   },
   {
@@ -2548,10 +2309,7 @@
    "upstream": null,
    "upstream_url": null,
    "stars": 0,
-   "forks": 0,
    "commits": 2,
-   "repos": 1,
-   "first_active": "2025-09",
    "last_active": "2025-09-05"
   },
   {
@@ -2575,36 +2333,8 @@
    "upstream": null,
    "upstream_url": null,
    "stars": 0,
-   "forks": 0,
    "commits": 2,
-   "repos": 1,
-   "first_active": "2026-01",
    "last_active": "2026-02-06"
-  },
-  {
-   "kind": "private",
-   "title": "Fast on-chain registration CLI",
-   "url": null,
-   "area": "web3",
-   "summary": "Rust CLI for Bittensor subnet registration that fans out across several RPC endpoints, submits on new block heads and raises the tip over replace-by-fee rounds.",
-   "tags": [
-    "Rust",
-    "Substrate"
-   ],
-   "featured": false,
-   "languages": [
-    "Rust",
-    "Python"
-   ],
-   "fork": false,
-   "upstream": null,
-   "upstream_url": null,
-   "stars": null,
-   "forks": null,
-   "commits": 2,
-   "repos": 1,
-   "first_active": "2025-10",
-   "last_active": "2025-10"
   },
   {
    "kind": "public",
@@ -2624,10 +2354,7 @@
    "upstream": "unisat-wallet/extension",
    "upstream_url": "https://github.com/unisat-wallet/extension",
    "stars": 0,
-   "forks": 0,
    "commits": 1,
-   "repos": 1,
-   "first_active": "2025-10",
    "last_active": "2025-10-07"
   },
   {
@@ -2648,10 +2375,7 @@
    "upstream": null,
    "upstream_url": null,
    "stars": 0,
-   "forks": 0,
    "commits": 1,
-   "repos": 1,
-   "first_active": "2025-11",
    "last_active": "2025-11-12"
   },
   {
@@ -2671,648 +2395,218 @@
    "upstream": "hiyouga/LlamaFactory",
    "upstream_url": "https://github.com/hiyouga/LlamaFactory",
    "stars": 0,
-   "forks": 0,
    "commits": 0,
-   "repos": 1,
-   "first_active": "2025-12",
    "last_active": "2026-02-09"
-  },
-  {
-   "kind": "private",
-   "title": "Sui trading bot",
-   "url": null,
-   "area": "web3",
-   "summary": "TypeScript sniper and trading bot for meme coins on the Sui blockchain.",
-   "tags": [
-    "TypeScript",
-    "Sui"
-   ],
-   "featured": false,
-   "languages": [
-    "TypeScript"
-   ],
-   "fork": false,
-   "upstream": null,
-   "upstream_url": null,
-   "stars": null,
-   "forks": null,
-   "commits": 0,
-   "repos": 1,
-   "first_active": "2026-09",
-   "last_active": "2026-09"
   }
  ],
  "repositories": [
   {
-   "name": null,
-   "private": true,
-   "area": "vision",
-   "card": "Autonomous multi-agent ML engineering loop",
-   "language": "Python",
-   "fork": false,
-   "commits": 420,
-   "updated": "2026-11",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "vision",
-   "card": "Autonomous multi-agent ML engineering loop",
-   "language": "Python",
-   "fork": false,
-   "commits": 75,
-   "updated": "2026-11",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "vision",
-   "card": "Football action spotting (Bittensor SN44)",
-   "language": "Python",
-   "fork": false,
-   "commits": 13,
-   "updated": "2026-11",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "vision",
-   "card": "Cricket delivery ball-tracking (Bittensor SN44)",
-   "language": "Python",
-   "fork": true,
-   "commits": 82,
-   "updated": "2026-10",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "vision",
-   "card": "Football action spotting (Bittensor SN44)",
-   "language": "Python",
-   "fork": false,
-   "commits": 17,
-   "updated": "2026-10",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "vision",
-   "card": "Cricket delivery ball-tracking (Bittensor SN44)",
-   "language": "Python",
-   "fork": false,
-   "commits": 9,
-   "updated": "2026-10",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "vision",
-   "card": "Cricket delivery ball-tracking (Bittensor SN44)",
-   "language": "Python",
-   "fork": false,
-   "commits": 276,
-   "updated": "2026-09",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "web3",
-   "card": "Sui trading bot",
-   "language": "TypeScript",
-   "fork": false,
-   "commits": 0,
-   "updated": "2026-09",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "vision",
-   "card": "Autonomous multi-agent ML engineering loop",
-   "language": "Python",
-   "fork": false,
-   "commits": 46,
-   "updated": "2026-09",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "subnets",
-   "card": "Time-series generator tooling",
-   "language": "Python",
-   "fork": false,
-   "commits": 7,
-   "updated": "2026-08",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "subnets",
-   "card": "Time-series generator tooling",
-   "language": "Python",
-   "fork": false,
-   "commits": 4,
-   "updated": "2026-08",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "web3",
-   "card": "Bittensor monitoring bot",
-   "language": "TypeScript",
-   "fork": false,
-   "commits": 20,
-   "updated": "2026-07",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "llm",
-   "card": "Offline reward replica & RL training",
-   "language": "Python",
-   "fork": false,
-   "commits": 16,
-   "updated": "2026-07",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "llm",
-   "card": "LLM-judge data pipeline",
-   "language": "Python",
-   "fork": false,
-   "commits": 139,
-   "updated": "2026-07",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "llm",
-   "card": "Token-efficient reasoning trainer",
-   "language": "Python",
-   "fork": false,
-   "commits": 6,
-   "updated": "2026-07",
-   "url": null
-  },
-  {
    "name": "Connito-AI",
-   "private": false,
-   "area": "llm",
-   "card": null,
-   "language": "Jupyter Notebook",
-   "fork": true,
-   "commits": 4,
-   "updated": "2026-05-16",
    "url": "https://github.com/bestdeep/Connito-AI",
-   "stars": 0
-  },
-  {
-   "name": null,
-   "private": true,
    "area": "llm",
-   "card": "MoE fine-tuning toolkit",
-   "language": "Python",
-   "fork": false,
-   "commits": 58,
-   "updated": "2026-05",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "llm",
-   "card": "Large-scale model distillation",
-   "language": "Python",
-   "fork": false,
-   "commits": 26,
-   "updated": "2026-05",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "llm",
-   "card": "72B inference optimization",
-   "language": "Python",
-   "fork": false,
-   "commits": 5,
-   "updated": "2026-05",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "agents",
-   "card": "Agent evaluation framework",
-   "language": "Jinja",
    "fork": true,
-   "commits": 27,
-   "updated": "2026-04",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "agents",
-   "card": "Agent evaluation framework",
-   "language": "Python",
-   "fork": false,
-   "commits": 47,
-   "updated": "2026-03",
-   "url": null
+   "language": "Jupyter Notebook",
+   "commits": 4,
+   "stars": 0,
+   "updated": "2026-05-16"
   },
   {
    "name": "liveweb_arena",
-   "private": false,
-   "area": "agents",
-   "card": null,
-   "language": "Python",
-   "fork": false,
-   "commits": 9,
-   "updated": "2026-02-15",
    "url": "https://github.com/bestdeep/liveweb_arena",
-   "stars": 0
+   "area": "agents",
+   "fork": false,
+   "language": "Python",
+   "commits": 9,
+   "stars": 0,
+   "updated": "2026-02-15"
   },
   {
    "name": "LLaMA-Factory",
-   "private": false,
-   "area": "llm",
-   "card": null,
-   "language": "Python",
-   "fork": true,
-   "commits": 0,
-   "updated": "2026-02-09",
    "url": "https://github.com/bestdeep/LLaMA-Factory",
-   "stars": 0
+   "area": "llm",
+   "fork": true,
+   "language": "Python",
+   "commits": 0,
+   "stars": 0,
+   "updated": "2026-02-09"
   },
   {
    "name": "affine-dashboard",
-   "private": false,
-   "area": "subnets",
-   "card": null,
-   "language": "Python",
-   "fork": false,
-   "commits": 2,
-   "updated": "2026-02-06",
    "url": "https://github.com/bestdeep/affine-dashboard",
-   "stars": 0
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "llm",
-   "card": "LLM fine-tune & OpenAI-compatible serving",
-   "language": "Python",
-   "fork": false,
-   "commits": 61,
-   "updated": "2026-02",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
    "area": "subnets",
-   "card": "ML data & deployment utilities",
-   "language": "Python",
    "fork": false,
-   "commits": 4,
-   "updated": "2026-02",
-   "url": null
+   "language": "Python",
+   "commits": 2,
+   "stars": 0,
+   "updated": "2026-02-06"
   },
   {
    "name": "kinitro-agent",
-   "private": false,
-   "area": "agents",
-   "card": null,
-   "language": "Python",
-   "fork": false,
-   "commits": 5,
-   "updated": "2026-01-26",
    "url": "https://github.com/bestdeep/kinitro-agent",
-   "stars": 0
+   "area": "agents",
+   "fork": false,
+   "language": "Python",
+   "commits": 5,
+   "stars": 0,
+   "updated": "2026-01-26"
   },
   {
    "name": "mini_swe_agent_rl",
-   "private": false,
-   "area": "agents",
-   "card": null,
-   "language": "Python",
-   "fork": false,
-   "commits": 8,
-   "updated": "2025-12-21",
    "url": "https://github.com/bestdeep/mini_swe_agent_rl",
-   "stars": 0
+   "area": "agents",
+   "fork": false,
+   "language": "Python",
+   "commits": 8,
+   "stars": 0,
+   "updated": "2025-12-21"
   },
   {
    "name": "agents_collection",
-   "private": false,
-   "area": "agents",
-   "card": null,
-   "language": "Python",
-   "fork": false,
-   "commits": 15,
-   "updated": "2025-12-16",
    "url": "https://github.com/bestdeep/agents_collection",
-   "stars": 1
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "subnets",
-   "card": "ML data & deployment utilities",
-   "language": "Python",
+   "area": "agents",
    "fork": false,
-   "commits": 1,
-   "updated": "2025-12",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "subnets",
-   "card": "ML data & deployment utilities",
    "language": "Python",
-   "fork": false,
-   "commits": 2,
-   "updated": "2025-12",
-   "url": null
+   "commits": 15,
+   "stars": 1,
+   "updated": "2025-12-16"
   },
   {
    "name": "natix_classifer",
-   "private": false,
-   "area": "vision",
-   "card": null,
-   "language": "Python",
-   "fork": false,
-   "commits": 26,
-   "updated": "2025-11-29",
    "url": "https://github.com/bestdeep/natix_classifer",
-   "stars": 0
+   "area": "vision",
+   "fork": false,
+   "language": "Python",
+   "commits": 26,
+   "stars": 0,
+   "updated": "2025-11-29"
   },
   {
    "name": "vidaio-subnet",
-   "private": false,
-   "area": "vision",
-   "card": null,
-   "language": "Python",
-   "fork": false,
-   "commits": 118,
-   "updated": "2025-11-26",
    "url": "https://github.com/bestdeep/vidaio-subnet",
-   "stars": 0
+   "area": "vision",
+   "fork": false,
+   "language": "Python",
+   "commits": 118,
+   "stars": 0,
+   "updated": "2025-11-26"
   },
   {
    "name": "mantis_miner",
-   "private": false,
-   "area": "subnets",
-   "card": null,
-   "language": "Python",
-   "fork": false,
-   "commits": 25,
-   "updated": "2025-11-21",
    "url": "https://github.com/bestdeep/mantis_miner",
-   "stars": 0
+   "area": "subnets",
+   "fork": false,
+   "language": "Python",
+   "commits": 25,
+   "stars": 0,
+   "updated": "2025-11-21"
   },
   {
    "name": "east_world",
-   "private": false,
-   "area": "agents",
-   "card": null,
-   "language": "Python",
-   "fork": false,
-   "commits": 8,
-   "updated": "2025-11-18",
    "url": "https://github.com/bestdeep/east_world",
-   "stars": 0
+   "area": "agents",
+   "fork": false,
+   "language": "Python",
+   "commits": 8,
+   "stars": 0,
+   "updated": "2025-11-18"
   },
   {
    "name": "ai",
-   "private": false,
-   "area": "vision",
-   "card": null,
-   "language": "HTML",
-   "fork": false,
-   "commits": 1,
-   "updated": "2025-11-12",
    "url": "https://github.com/bestdeep/ai",
-   "stars": 0
+   "area": "vision",
+   "fork": false,
+   "language": "HTML",
+   "commits": 1,
+   "stars": 0,
+   "updated": "2025-11-12"
   },
   {
    "name": "DefiLlama-Adapters",
-   "private": false,
-   "area": "web3",
-   "card": null,
-   "language": "JavaScript",
-   "fork": true,
-   "commits": 4,
-   "updated": "2025-11-10",
    "url": "https://github.com/bestdeep/DefiLlama-Adapters",
-   "stars": 0
+   "area": "web3",
+   "fork": true,
+   "language": "JavaScript",
+   "commits": 4,
+   "stars": 0,
+   "updated": "2025-11-10"
   },
   {
    "name": "miid",
-   "private": false,
-   "area": "subnets",
-   "card": null,
-   "language": "Python",
-   "fork": false,
-   "commits": 8,
-   "updated": "2025-11-03",
    "url": "https://github.com/bestdeep/miid",
-   "stars": 0
+   "area": "subnets",
+   "fork": false,
+   "language": "Python",
+   "commits": 8,
+   "stars": 0,
+   "updated": "2025-11-03"
   },
   {
    "name": "compress",
-   "private": false,
-   "area": "vision",
-   "card": null,
-   "language": "Python",
-   "fork": false,
-   "commits": 7,
-   "updated": "2025-11-03",
    "url": "https://github.com/bestdeep/compress",
-   "stars": 0
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "web3",
-   "card": "Token presale dApp",
-   "language": "TypeScript",
-   "fork": true,
-   "commits": 26,
-   "updated": "2025-11",
-   "url": null
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "subnets",
-   "card": "ML data & deployment utilities",
-   "language": "Python",
+   "area": "vision",
    "fork": false,
-   "commits": 3,
-   "updated": "2025-11",
-   "url": null
+   "language": "Python",
+   "commits": 7,
+   "stars": 0,
+   "updated": "2025-11-03"
   },
   {
    "name": "bitsec_subnet",
-   "private": false,
-   "area": "subnets",
-   "card": null,
-   "language": "Python",
-   "fork": true,
-   "commits": 14,
-   "updated": "2025-10-16",
    "url": "https://github.com/bestdeep/bitsec_subnet",
-   "stars": 0
+   "area": "subnets",
+   "fork": true,
+   "language": "Python",
+   "commits": 14,
+   "stars": 0,
+   "updated": "2025-10-16"
   },
   {
    "name": "bsty_extension",
-   "private": false,
-   "area": "web3",
-   "card": null,
-   "language": "TypeScript",
-   "fork": true,
-   "commits": 1,
-   "updated": "2025-10-07",
    "url": "https://github.com/bestdeep/bsty_extension",
-   "stars": 0
+   "area": "web3",
+   "fork": true,
+   "language": "TypeScript",
+   "commits": 1,
+   "stars": 0,
+   "updated": "2025-10-07"
   },
   {
    "name": "swe_agent",
-   "private": false,
-   "area": "agents",
-   "card": null,
-   "language": "Python",
-   "fork": false,
-   "commits": 8,
-   "updated": "2025-10-01",
    "url": "https://github.com/bestdeep/swe_agent",
-   "stars": 0
-  },
-  {
-   "name": null,
-   "private": true,
-   "area": "web3",
-   "card": "Fast on-chain registration CLI",
-   "language": "Rust",
+   "area": "agents",
    "fork": false,
-   "commits": 2,
-   "updated": "2025-10",
-   "url": null
+   "language": "Python",
+   "commits": 8,
+   "stars": 0,
+   "updated": "2025-10-01"
   },
   {
    "name": "checkerchain_endpoint",
-   "private": false,
-   "area": "subnets",
-   "card": null,
-   "language": "Python",
-   "fork": false,
-   "commits": 2,
-   "updated": "2025-09-05",
    "url": "https://github.com/bestdeep/checkerchain_endpoint",
-   "stars": 0
+   "area": "subnets",
+   "fork": false,
+   "language": "Python",
+   "commits": 2,
+   "stars": 0,
+   "updated": "2025-09-05"
   },
   {
    "name": "llm_agent_bitquant",
-   "private": false,
-   "area": "agents",
-   "card": null,
-   "language": "Python",
-   "fork": false,
-   "commits": 9,
-   "updated": "2025-09-02",
    "url": "https://github.com/bestdeep/llm_agent_bitquant",
-   "stars": 0
+   "area": "agents",
+   "fork": false,
+   "language": "Python",
+   "commits": 9,
+   "stars": 0,
+   "updated": "2025-09-02"
   }
  ],
- "teams": [
+ "organizations": [
   {
-   "label": "Bittensor mining team",
-   "url": null,
-   "blurb": "Miners, GPU endpoints, dashboards and registration tooling across 15+ Bittensor subnets.",
-   "repos": 29,
-   "private_repos": 28,
-   "languages": [
-    "Python",
-    "TypeScript",
-    "C++",
-    "Jupyter Notebook"
-   ],
-   "last_active": "2026-02",
-   "public": []
-  },
-  {
-   "label": "Collaborations",
-   "url": null,
-   "blurb": "Repositories owned by other developers where I am a collaborator.",
-   "repos": 13,
-   "private_repos": 13,
-   "languages": [
-    "Python",
-    "TypeScript",
-    "Jinja"
-   ],
-   "last_active": "2026-11",
-   "public": []
-  },
-  {
-   "label": "Stablechain platform (client)",
-   "url": null,
-   "blurb": "Stablecoin chain, cross-chain bridge, block explorer, admin console and lock/bridge contracts.",
-   "repos": 11,
-   "private_repos": 10,
-   "languages": [
-    "TypeScript",
-    "Solidity",
-    "Go",
-    "Elixir",
-    "Kotlin"
-   ],
-   "last_active": "2026-06",
-   "public": []
-  },
-  {
-   "label": "Subnet research team",
-   "url": null,
-   "blurb": "Approach and strategy projects for several Bittensor subnets.",
-   "repos": 5,
-   "private_repos": 5,
-   "languages": [],
-   "last_active": "2026-04",
-   "public": []
-  },
-  {
-   "label": "affineinsai",
+   "name": "affineinsai",
    "url": "https://github.com/affineinsai",
    "blurb": "Face-liveness detection with Vision Transformers.",
-   "repos": 2,
-   "private_repos": 0,
-   "languages": [
-    "Python"
-   ],
-   "last_active": "2026-01",
-   "public": [
-    {
-     "name": ".github",
-     "url": "https://github.com/affineinsai/.github",
-     "description": "Organization Overview"
-    },
+   "repos": [
     {
      "name": "face-liveness-vit",
      "url": "https://github.com/affineinsai/face-liveness-vit",

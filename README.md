@@ -1,27 +1,25 @@
 # bestdeep.github.io
 
-Portfolio dashboard for [github.com/bestdeep](https://github.com/bestdeep), published with GitHub Pages at **https://bestdeep.github.io/**.
+Portfolio of **Lucky Star** ([github.com/bestdeep](https://github.com/bestdeep)), published with GitHub Pages at **https://bestdeep.github.io/**.
 
 It is a static page with no build step: `index.html`, `assets/`, and a single data file, `data/portfolio.json`, generated from the GitHub API.
 
 ## What it shows
 
-- A header that plots contributions per month as a tracked ball trajectory, with the 12-month total as a broadcast-style readout
-- Repositories by area (public vs private); the area bars double as the project filter
-- Selected work and all other projects grouped by area, with area, visibility and text filters
-- A 12-month contribution heatmap and yearly totals (public and private contributions)
-- Languages and skills, a table of owned repositories, and team and collaboration summaries
+- A header that plots contributions per month as a shooting star's trail, with the 12-month total beside it
+- Projects by area; the area bars double as the project filter
+- Selected work and all other projects grouped by area: public repositories with their stats, and ideas written up from work whose code isn't public
+- A 12-month contribution heatmap and yearly totals
+- Languages and skills, a table of public repositories, and contact links (email, Telegram, GitHub)
 
-The visual identity borrows from sports ball-tracking: a pitch-green field, chalk lines, and one leather-red ball. Type is Archivo (Google Fonts), used across its width axis.
+The visual identity is a twilight sky: ultramarine header and contact block, chalk lines, and one gold star marking the current month. Type is Archivo (Google Fonts), used across its width axis.
 
 ## Privacy
 
-Private work is published only as summaries:
-
-- Private repositories appear as anonymized project cards and table rows. Their names, URLs and code are never published.
-- Organizations are named only when the membership is public; others are shown under a descriptive label.
-- The mapping from private repo and org names to cards lives in `content/private.local.json`, which is gitignored.
-- `scripts/build_data.py` refuses to write `data/portfolio.json` if any private repo name, hidden org login or collaborator owner appears in it.
+- Only public repositories are published. Private repositories contribute nothing to the data: no rows, counts, commits or languages.
+- Ideas in `content/ideas.json` are plain text written for the site; no repository data is attached to them.
+- Organizations are named only when the membership is public.
+- `scripts/build_data.py` reads private repo names, hidden org logins and collaborator owners only to check that none of them appears in the output, and refuses to write `data/portfolio.json` if one does. Private names that are ordinary words (and so may appear in prose) can be listed in the gitignored `content/private.local.json` under `generic_names`.
 
 ## Updating the data
 
@@ -36,12 +34,9 @@ Edit the content without touching code:
 
 | File | Purpose |
 |---|---|
-| `content/site.json` | headline, intro, skills, area list |
+| `content/site.json` | name, headline, intro, contact links, skills, areas, public-org blurbs |
 | `content/projects.json` | public repos: area, tags, blurb, featured, hide |
-| `content/private_groups.json` | anonymized cards for private work |
-| `content/private.local.json` | gitignored: private repo → card, org → label |
-
-A private repo missing from `private.local.json` still counts in the totals and shows up as an anonymous table row.
+| `content/ideas.json` | ideas and write-ups without public code |
 
 ## Local preview
 

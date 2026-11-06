@@ -3,7 +3,7 @@
 const SVG_NS = "http://www.w3.org/2000/svg";
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const state = { data: null, area: "all", vis: "all", query: "", sort: { key: "updated", dir: -1 }, animated: false };
+const state = { data: null, area: "all", kind: "all", query: "", sort: { key: "updated", dir: -1 }, animated: false };
 
 // ---------- helpers ----------
 function el(tag, attrs = {}, children = []) {
@@ -40,15 +40,20 @@ function niceMax(v) {
   for (const m of [1, 2, 2.5, 4, 5, 10]) if (m * p >= v) return m * p;
   return 10 * p;
 }
-function lockIcon() {
-  const s = svg("svg", { viewBox: "0 0 16 16", width: 12, height: 12, "aria-hidden": "true" });
-  s.append(svg("path", { fill: "currentColor", d: "M4 7V5a4 4 0 1 1 8 0v2h1v8H3V7Zm2 0h4V5a2 2 0 1 0-4 0Z" }));
+function icon(name, size = 16) {
+  const paths = {
+    mail: "M2 4h20v16H2Zm2 2v.4l8 5.1 8-5.1V6Zm16 2.8-8 5.1-8-5.1V18h16Z",
+    telegram: "M21.9 4.3 18.7 19.5c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9-8.2c.4-.4-.1-.6-.6-.2L6.3 13.1l-4.8-1.5c-1-.3-1-1 .2-1.5L20.6 2.9c.9-.3 1.6.2 1.3 1.4Z",
+    github: "M12 1.5A10.5 10.5 0 0 0 8.7 22c.5.1.7-.2.7-.5v-1.8c-2.9.6-3.5-1.4-3.5-1.4-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.5 1.1 3.1.9.1-.7.4-1.1.7-1.4-2.3-.3-4.8-1.2-4.8-5.2 0-1.1.4-2.1 1.1-2.8-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.9 1.1a10 10 0 0 1 5.3 0c2-1.4 2.9-1.1 2.9-1.1.6 1.4.2 2.5.1 2.8.7.7 1.1 1.7 1.1 2.8 0 4-2.5 4.9-4.8 5.2.4.3.7 1 .7 2v3c0 .3.2.6.7.5A10.5 10.5 0 0 0 12 1.5Z",
+    star: "M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-6 3.4 1.4-6.7-5.1-4.6 6.8-.7z",
+  };
+  const s = svg("svg", { viewBox: "0 0 24 24", width: size, height: size, "aria-hidden": "true" });
+  s.append(svg("path", { fill: "currentColor", d: paths[name] }));
   return s;
 }
-const privateMark = () => el("span", { class: "lock" }, [lockIcon(), "Private"]);
 const areaLabel = (id) => state.data.areas.find((a) => a.id === id)?.label ?? id;
 
-// Monotone cubic (Fritsch–Carlson): a smooth trace that never overshoots the detections.
+// Monotone cubic (Fritsch–Carlson): a smooth trail that never overshoots the monthly points.
 function monotonePath(pts) {
   const n = pts.length;
   if (n < 2) return "";
@@ -71,6 +76,14 @@ function monotonePath(pts) {
   }
   return d;
 }
+function starPath(cx, cy, r) {
+  let d = "";
+  for (let i = 0; i < 10; i++) {
+    const a = -Math.PI / 2 + (i * Math.PI) / 5, rr = i % 2 ? r * 0.45 : r;
+    d += `${i ? "L" : "M"}${(cx + rr * Math.cos(a)).toFixed(2)},${(cy + rr * Math.sin(a)).toFixed(2)}`;
+  }
+  return d + "Z";
+}
 
 // ---------- tooltip ----------
 const tip = document.getElementById("tooltip");
@@ -89,24 +102,26 @@ function showTip(evt, value, label) {
 }
 const hideTip = () => { tip.hidden = true; };
 
-// ---------- pitch ----------
-function renderPitch(d) {
-  const p = d.profile, t = d.totals;
-  document.getElementById("name").textContent = p.name || p.login;
-  document.getElementById("headline").textContent = p.headline.replace(" · ", ", ");
+// ---------- header ----------
+function renderHeader(d) {
+  const p = d.profile, t = d.totals, links = d.contact.links || [];
+  document.getElementById("name").textContent = p.name;
+  document.getElementById("headline").textContent = p.headline;
   document.getElementById("intro").textContent = p.intro;
-  document.getElementById("gh-link").href = p.url;
-  document.getElementById("hireable").hidden = !p.hireable;
-  document.getElementById("where").textContent = [p.location, `on GitHub since ${monthName(p.created_at.slice(0, 7))}`].filter(Boolean).join(", ");
+  const email = links.find((c) => c.kind === "email"), telegram = links.find((c) => c.kind === "telegram"), github = links.find((c) => c.kind === "github");
+  document.getElementById("hero-actions").replaceChildren(
+    email ? el("a", { class: "btn primary", href: email.url }, [icon("mail"), "Email me"]) : null,
+    telegram ? el("a", { class: "btn", href: telegram.url, rel: "me noopener" }, [icon("telegram"), "Message on Telegram"]) : null,
+    github ? el("a", { class: "btn", href: github.url, rel: "me noopener" }, [icon("github"), "GitHub"]) : null,
+    p.hireable ? el("span", { class: "status", text: "Open to work" }) : null,
+  );
   document.getElementById("readout").replaceChildren(
     el("span", { class: "big", text: fmt(t.contributions_last_year) }),
     el("span", { class: "unit", text: `contributions in the last 12 months, ${fmt(t.contributions_all_time)} in total` }),
   );
   document.getElementById("lede").textContent =
-    `${fmt(t.repos)} repositories of my own, ${fmt(t.private)} of them private, with ${fmt(t.commits_authored)} commits. ` +
-    `Another ${fmt(t.team_repos)} repositories in team organizations and other developers' projects.`;
-  document.getElementById("generated").textContent =
-    `Data from the GitHub API, generated ${when(d.generated_at.slice(0, 10))}. Private repositories appear as summaries only.`;
+    `${fmt(t.projects)} projects across AI and blockchain: ${fmt(t.public_repos)} with public code on GitHub, ` +
+    `and ${fmt(t.ideas)} more written up as ideas from work whose code isn't public.`;
 }
 
 function renderTrajectory(d) {
@@ -115,12 +130,20 @@ function renderTrajectory(d) {
   const data = d.monthly;
   const W = Math.max(host.clientWidth, 300);
   const wide = W > 720;
-  const H = wide ? 250 : 190, m = { t: 18, r: wide ? 220 : 10, b: 28, l: 34 };
+  const H = wide ? 250 : 190, m = { t: 18, r: wide ? 220 : 24, b: 28, l: 34 };
   const pw = W - m.l - m.r, ph = H - m.t - m.b;
-  const max = niceMax(Math.max(...data.map((x) => x.count)));
+  const peak = Math.max(...data.map((v) => v.count));
+  const max = niceMax(peak);
   const x = (i) => m.l + (pw * i) / (data.length - 1);
   const y = (v) => m.t + ph - (v / max) * ph;
-  const s = svg("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": `Contributions per month from ${monthName(data[0].month)} to ${monthName(data.at(-1).month)}, peaking at ${fmt(Math.max(...data.map((v) => v.count)))}` });
+  const s = svg("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": `Contributions per month from ${monthName(data[0].month)} to ${monthName(data.at(-1).month)}, peaking at ${fmt(peak)}` });
+
+  // The trail brightens toward the present, like a shooting star's tail.
+  const grad = svg("linearGradient", { id: "trail", gradientUnits: "userSpaceOnUse", x1: m.l, x2: m.l + pw, y1: 0, y2: 0 });
+  grad.append(svg("stop", { offset: "0", "stop-color": "#f3f4fb", "stop-opacity": "0.3" }), svg("stop", { offset: "1", "stop-color": "#f3f4fb", "stop-opacity": "1" }));
+  const defs = svg("defs");
+  defs.append(grad);
+  s.append(defs);
 
   for (const v of [0, max / 2, max]) {
     const yy = Math.round(y(v)) + 0.5;
@@ -133,11 +156,13 @@ function renderTrajectory(d) {
   });
 
   const pts = data.map((pt, i) => [x(i), y(pt.count)]);
-  const trace = svg("path", { d: monotonePath(pts), class: "trace" });
+  const trace = svg("path", { d: monotonePath(pts), class: "trace", stroke: "url(#trail)" });
   s.append(trace);
-  pts.slice(0, -1).forEach(([px, py], i) => s.append(svg("circle", { cx: px, cy: py, r: 4, class: "det", style: `--i:${i}` })));
-  const [bx, by] = pts.at(-1);
-  s.append(svg("circle", { cx: bx, cy: by, r: 7, class: "ball" }));
+  pts.slice(0, -1).forEach(([px, py], i) => s.append(svg("circle", {
+    cx: px, cy: py, r: 4, class: "det", "fill-opacity": (0.35 + (0.65 * i) / (pts.length - 1)).toFixed(2), style: `--i:${i}`,
+  })));
+  const [sx, sy] = pts.at(-1);
+  s.append(svg("path", { d: starPath(sx, sy, 15), class: "star" }));
 
   const cross = svg("line", { y1: m.t, y2: m.t + ph, class: "crosshair", visibility: "hidden" });
   const hit = svg("rect", { x: m.l - 10, y: 0, width: pw + 20, height: H, class: "hit" });
@@ -145,10 +170,9 @@ function renderTrajectory(d) {
     const pt = s.createSVGPoint(); pt.x = e.clientX; pt.y = e.clientY;
     const local = pt.matrixTransform(s.getScreenCTM().inverse());
     const i = Math.max(0, Math.min(data.length - 1, Math.round(((local.x - m.l) / pw) * (data.length - 1))));
-    cross.setAttribute("x1", Math.round(x(i)) + 0.5); cross.setAttribute("x2", Math.round(x(i)) + 0.5);
-    cross.setAttribute("visibility", "visible");
-    const partial = i === data.length - 1 ? " (so far)" : "";
-    showTip(e, plural(data[i].count, "contribution"), monthName(data[i].month) + partial);
+    const cx = Math.round(x(i)) + 0.5;
+    cross.setAttribute("x1", cx); cross.setAttribute("x2", cx); cross.setAttribute("visibility", "visible");
+    showTip(e, plural(data[i].count, "contribution"), monthName(data[i].month) + (i === data.length - 1 ? " (so far)" : ""));
   });
   hit.addEventListener("pointerleave", () => { cross.setAttribute("visibility", "hidden"); hideTip(); });
   s.append(cross, hit);
@@ -165,29 +189,19 @@ function renderTrajectory(d) {
 
 // ---------- what I build ----------
 function renderAreas(d) {
-  const areas = d.areas.filter((a) => a.id !== "misc" && a.public + a.private > 0);
-  const max = Math.max(...areas.map((a) => a.public + a.private));
+  const areas = d.areas.filter((a) => a.projects > 0 && a.id !== "misc");
+  const max = Math.max(...areas.map((a) => a.projects));
   document.getElementById("areas").replaceChildren(...areas.map((a) => {
-    const total = a.public + a.private;
-    const bar = el("span", { class: "track-bar", style: `width:${(100 * total) / max}%` }, [
-      a.public ? el("span", { class: "seg pub", style: `flex:${a.public}` }) : null,
-      a.private ? el("span", { class: "seg priv", style: `flex:${a.private}` }) : null,
-    ]);
     const row = el("button", { type: "button", class: "area-row", "aria-pressed": String(state.area === a.id), "data-area": a.id }, [
       el("span", { class: "label", text: a.label }),
-      el("span", { class: "bar-cell" }, [bar]),
-      el("span", { class: "nums" }, [el("b", { text: String(total) }), `${a.public} public, ${a.private} private`]),
+      el("span", { class: "bar-cell" }, [el("span", { class: "bar-fill", style: `width:${(100 * a.projects) / max}%` })]),
+      el("span", { class: "nums" }, [el("b", { text: String(a.projects) }), a.projects === 1 ? "project" : "projects"]),
     ]);
     row.addEventListener("click", () => setArea(state.area === a.id ? "all" : a.id));
     return row;
   }));
-  document.getElementById("area-legend").replaceChildren(
-    el("span", {}, [el("i", { style: "background:var(--pub)" }), "Public"]),
-    el("span", {}, [el("i", { style: "background:var(--priv)" }), "Private"]),
-  );
-  const select = document.getElementById("area-filter");
-  select.replaceChildren(el("option", { value: "all", text: "All areas" }),
-    ...d.areas.filter((a) => d.projects.some((p) => p.area === a.id)).map((a) => el("option", { value: a.id, text: a.label })));
+  document.getElementById("area-filter").replaceChildren(el("option", { value: "all", text: "All areas" }),
+    ...areas.map((a) => el("option", { value: a.id, text: a.label })));
 }
 function setArea(id) {
   state.area = id;
@@ -199,27 +213,32 @@ function setArea(id) {
 // ---------- projects ----------
 function matches(p) {
   if (state.area !== "all" && p.area !== state.area) return false;
-  if (state.vis !== "all" && p.kind !== state.vis) return false;
+  if (state.kind !== "all" && p.kind !== state.kind) return false;
   if (!state.query) return true;
-  const hay = [p.title, p.summary, areaLabel(p.area), ...p.tags, ...p.languages].join(" ").toLowerCase();
+  const hay = [p.title, p.summary, areaLabel(p.area), ...p.tags, ...(p.languages || [])].join(" ").toLowerCase();
   return state.query.split(/\s+/).every((w) => hay.includes(w));
 }
 function meta(p) {
+  if (p.kind === "idea") return null;
   const out = [];
   if (p.languages.length) out.push(el("span", {}, [el("b", { text: p.languages.join(", ") })]));
   if (p.commits) out.push(el("span", { text: plural(p.commits, "commit") }));
-  if (p.repos > 1) out.push(el("span", { text: `${p.repos} repositories` }));
   if (p.stars) out.push(el("span", { text: plural(p.stars, "star") }));
   if (p.upstream) out.push(el("span", {}, ["Fork of ", el("a", { href: p.upstream_url, text: p.upstream })]));
   out.push(el("span", { text: `Active ${when(p.last_active)}` }));
   return el("div", { class: "meta" }, out);
+}
+function badge(p) {
+  if (p.kind === "idea") return el("span", { class: "badge" }, [icon("star", 13), "Idea"]);
+  if (p.fork) return el("span", { class: "badge", text: "Fork" });
+  return null;
 }
 function title(p) {
   return el("h4", {}, [p.url ? el("a", { href: p.url, text: p.title }) : p.title]);
 }
 function feature(p) {
   return el("article", { class: "feature" }, [
-    el("div", { class: "kicker" }, [el("span", { text: areaLabel(p.area) }), p.kind === "private" ? privateMark() : p.fork ? el("span", { text: "Fork" }) : null]),
+    el("div", { class: "kicker" }, [el("span", { text: areaLabel(p.area) }), badge(p)]),
     title(p),
     el("p", { class: "summary", text: p.summary }),
     p.tags.length ? el("p", { class: "tags", text: p.tags.join(", ") }) : null,
@@ -227,10 +246,12 @@ function feature(p) {
   ]);
 }
 function entry(p) {
+  const b = badge(p);
   return el("article", { class: "entry" }, [
     title(p),
-    p.kind === "private" ? el("div", { class: "kicker" }, [privateMark()]) : p.fork ? el("div", { class: "kicker", text: "Fork" }) : null,
+    b ? el("div", { class: "kicker" }, [b]) : null,
     el("p", { class: "summary", text: p.summary }),
+    p.kind === "idea" && p.tags.length ? el("p", { class: "tags", text: p.tags.join(", ") }) : null,
     meta(p),
   ]);
 }
@@ -248,8 +269,8 @@ function renderProjects() {
   ])));
   document.getElementById("more-block").hidden = !rest.length;
   document.getElementById("empty").hidden = list.length > 0;
-  const priv = list.filter((p) => p.kind === "private").length;
-  document.getElementById("project-count").textContent = `${plural(list.length, "project")}, ${list.length - priv} public and ${priv} private`;
+  const ideas = list.filter((p) => p.kind === "idea").length;
+  document.getElementById("project-count").textContent = `${plural(list.length, "project")}, ${list.length - ideas} with public code and ${plural(ideas, "idea")}`;
 }
 
 // ---------- activity ----------
@@ -293,7 +314,7 @@ function renderHeatmap(d) {
 }
 function renderTables(d) {
   document.querySelector("#years-table tbody").replaceChildren(...[...d.years].reverse().filter((x) => x.total).map((x) =>
-    el("tr", {}, [el("td", { text: String(x.year) }), el("td", { class: "num", text: fmt(x.total) }), el("td", { class: "num", text: fmt(x.private) }), el("td", { class: "num", text: fmt(x.repos_created) })])));
+    el("tr", {}, [el("td", { text: String(x.year) }), el("td", { class: "num", text: fmt(x.total) })])));
   document.querySelector("#monthly-table tbody").replaceChildren(...[...d.monthly].reverse().map((x) =>
     el("tr", {}, [el("td", { text: monthName(x.month) }), el("td", { class: "num", text: fmt(x.count) })])));
 }
@@ -304,14 +325,14 @@ function renderLanguages(d) {
   const top = d.languages.slice(0, 7).map((l) => ({ label: l.name, n: l.repos }));
   const rest = d.languages.slice(7).reduce((a, b) => a + b.repos, 0);
   if (rest) top.push({ label: "Other", n: rest });
-  const W = Math.max(host.clientWidth, 280), rowH = 32, barH = 14, labelW = 128, right = 36;
+  const W = Math.max(host.clientWidth, 280), rowH = 32, barH = 14, labelW = 136, right = 36;
   const max = Math.max(...top.map((r) => r.n));
-  const s = svg("svg", { viewBox: `0 0 ${W} ${top.length * rowH}`, role: "img", "aria-label": "Languages by number of repositories" });
+  const s = svg("svg", { viewBox: `0 0 ${W} ${top.length * rowH}`, role: "img", "aria-label": "Languages by number of public repositories" });
   top.forEach((r, i) => {
     const y0 = i * rowH, by = y0 + (rowH - barH) / 2, x1 = labelW + ((W - labelW - right) * r.n) / max;
     const rr = Math.min(4, x1 - labelW);
     s.append(svg("text", { x: 0, y: by + barH - 2, class: "val" }, r.label));
-    s.append(svg("path", { d: `M${labelW},${by}H${x1 - rr}Q${x1},${by} ${x1},${by + rr}V${by + barH - rr}Q${x1},${by + barH} ${x1 - rr},${by + barH}H${labelW}Z`, fill: "var(--pub)" }));
+    s.append(svg("path", { d: `M${labelW},${by}H${x1 - rr}Q${x1},${by} ${x1},${by + rr}V${by + barH - rr}Q${x1},${by + barH} ${x1 - rr},${by + barH}H${labelW}Z`, fill: "var(--series)" }));
     s.append(svg("text", { x: x1 + 8, y: by + barH - 2 }, String(r.n)));
     const hit = svg("rect", { x: 0, y: y0, width: W, height: rowH, class: "hit" });
     hit.addEventListener("pointermove", (e) => showTip(e, plural(r.n, "repository", "repositories"), r.label));
@@ -325,15 +346,13 @@ function renderLanguages(d) {
 // ---------- repositories ----------
 function renderRepos() {
   const { key, dir } = state.sort;
-  const val = (r) => (key === "name" ? r.name || "~" : key === "area" ? areaLabel(r.area) : key === "commits" ? r.commits : r[key] || "");
+  const val = (r) => (key === "area" ? areaLabel(r.area) : key === "commits" ? r.commits : r[key] || "");
   const rows = [...state.data.repositories].sort((a, b) => {
     const x = val(a), y = val(b);
     return (typeof x === "number" ? x - y : String(x).localeCompare(String(y))) * dir;
   });
   document.querySelector("#repo-table tbody").replaceChildren(...rows.map((r) => el("tr", {}, [
-    el("td", { class: "name" }, r.private
-      ? [el("span", { class: "lock" }, [lockIcon(), r.card ? `Private, ${r.card}` : "Private"])]
-      : [el("a", { href: r.url, text: r.name }), r.fork ? el("span", { class: "fork", text: "fork" }) : null]),
+    el("td", { class: "name" }, [el("a", { href: r.url, text: r.name }), r.fork ? el("span", { class: "fork", text: "fork" }) : null]),
     el("td", { text: areaLabel(r.area) }),
     el("td", { text: r.language || "—" }),
     el("td", { class: "num", text: fmt(r.commits) }),
@@ -344,25 +363,25 @@ function renderRepos() {
     else b.removeAttribute("aria-sort");
   });
 }
+function renderOrgs(d) {
+  document.getElementById("orgs").replaceChildren(...d.organizations.map((o) => el("p", { class: "orgs" }, [
+    "Also a member of ", el("a", { href: o.url, text: o.name }),
+    o.blurb ? `: ${o.blurb.replace(/\.$/, "")}` : "",
+    o.repos.length ? [" (", ...o.repos.flatMap((r, i) => [i ? ", " : "", el("a", { href: r.url, text: r.name })]), ")"] : "",
+    ".",
+  ].flat())));
+}
 
-// ---------- teams ----------
-function renderTeams(d) {
-  document.getElementById("team-list").replaceChildren(...d.teams.map((t) => el("article", { class: "team" }, [
-    el("div", { class: "who" }, [
-      el("h3", {}, [t.url ? el("a", { href: t.url, text: t.label }) : t.label]),
-      t.url ? el("span", { class: "lock", text: "Public organization" }) : privateMark(),
-    ]),
-    el("div", {}, [
-      t.blurb ? el("p", { text: t.blurb }) : null,
-      t.public.length ? el("ul", {}, t.public.map((r) => el("li", {}, [el("a", { href: r.url, text: r.name }), r.description ? `, ${r.description.toLowerCase()}` : ""]))) : null,
-      t.languages.length ? el("p", { class: "langs", text: t.languages.join(", ") }) : null,
-    ]),
-    el("div", { class: "figs" }, [
-      el("div", {}, [el("b", { text: fmt(t.repos) }), "repositories"]),
-      el("div", {}, [el("b", { text: fmt(t.private_repos) }), "private"]),
-      el("div", {}, [el("b", { text: when(t.last_active) }), "last active"]),
-    ]),
+// ---------- contact ----------
+function renderContact(d) {
+  const c = d.contact || {};
+  document.getElementById("pitch").textContent = c.pitch || "";
+  document.getElementById("channels").replaceChildren(...(c.links || []).map((l) => el("li", {}, [
+    el("span", { class: "label", text: l.label }),
+    el("a", { href: l.url, rel: l.kind === "email" ? null : "me noopener" }, [l.value]),
   ])));
+  document.getElementById("generated").textContent =
+    `Repository data from the GitHub API, generated ${when(d.generated_at.slice(0, 10))}.`;
 }
 
 // ---------- wiring ----------
@@ -373,7 +392,7 @@ function renderCharts() {
 }
 function initControls() {
   document.getElementById("area-filter").addEventListener("change", (e) => setArea(e.target.value));
-  document.getElementById("vis-filter").addEventListener("change", (e) => { state.vis = e.target.value; renderProjects(); });
+  document.getElementById("kind-filter").addEventListener("change", (e) => { state.kind = e.target.value; renderProjects(); });
   document.getElementById("search").addEventListener("input", (e) => { state.query = e.target.value.trim().toLowerCase(); renderProjects(); });
   document.querySelectorAll("#repo-table th button").forEach((b) => b.addEventListener("click", () => {
     const key = b.dataset.sort;
@@ -399,12 +418,13 @@ fetch("data/portfolio.json", { cache: "no-cache" })
   .then((r) => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
   .then((d) => {
     state.data = d;
-    renderPitch(d);
+    renderHeader(d);
     renderAreas(d);
     renderProjects();
     renderTables(d);
     renderRepos();
-    renderTeams(d);
+    renderOrgs(d);
+    renderContact(d);
     const go = () => { renderCharts(); initControls(); };
     document.fonts && document.fonts.ready ? document.fonts.ready.then(go) : go();
   })

@@ -1,105 +1,172 @@
 {
-  "_comment": "Anonymized cards for PRIVATE work. Which repos feed each card lives in content/private.local.json (gitignored), so repo names never reach the published site.",
+  "_comment": "Project ideas and write-ups without public code. Only the text here is published; no repository data is attached.",
   "agent-loop": {
     "title": "Autonomous multi-agent ML engineering loop",
-    "area": "agents", "featured": true,
-    "tags": ["Claude Code", "Multi-agent", "Eval harness"],
+    "area": "agents",
+    "featured": true,
+    "tags": [
+      "Claude Code",
+      "Multi-agent",
+      "Eval harness"
+    ],
     "summary": "A team of autonomous Claude Code agents running endless headless sessions across several machines and coordinating only through git. Planner, builder, reviewer, explorer and janitor roles; git task locks; a gated landing flow with a sealed holdout and a bit-exact replica of the validator's scorer; content-addressed cached evaluation; and a supervisor dashboard for machines, jobs and the live scoreboard."
   },
   "cricket": {
     "title": "Cricket delivery ball-tracking (Bittensor SN44)",
-    "area": "vision", "featured": true,
-    "tags": ["Tracking", "Geometry", "GPU serving"],
+    "area": "vision",
+    "featured": true,
+    "tags": [
+      "Tracking",
+      "Geometry",
+      "GPU serving"
+    ],
     "summary": "Broadcast cricket clip in; bounce point, stump crossing, swing, deviation, speed, release and impact out. GPU perception feeds cached observations into pure-CPU geometry and a learned residual corrector. Includes a standalone multi-miner axon that routes requests by hotkey and races primary and fallback GPU backends against the deadline."
   },
   "football-spotting": {
     "title": "Football action spotting (Bittensor SN44)",
-    "area": "vision", "featured": true,
-    "tags": ["Action spotting", "Video models"],
+    "area": "vision",
+    "featured": true,
+    "tags": [
+      "Action spotting",
+      "Video models"
+    ],
     "summary": "30-second broadcast clip in, timestamped events over 15 weighted action classes out. T-DEED-style spotter with Gate-Shift-Fuse and an SGP temporal encoder initialized from a SoccerNet-Ball checkpoint, optical-flow camera-motion features, overlapping-window inference with displacement voting, and per-class thresholds tuned on an exact replica of the validator score."
   },
   "distillation": {
     "title": "Large-scale model distillation",
-    "area": "llm", "featured": true,
-    "tags": ["Distillation", "MoE"],
+    "area": "llm",
+    "featured": true,
+    "tags": [
+      "Distillation",
+      "MoE"
+    ],
     "summary": "Competitive model distillation on a Bittensor subnet: compressing a 1T-parameter MoE teacher into students of at most 33B, scored on a 25+ axis composite covering math, code, reasoning, long context and honesty."
   },
   "moe-finetune": {
     "title": "MoE fine-tuning toolkit",
     "area": "llm",
-    "tags": ["LoRA / QLoRA", "DPO", "DeepSpeed", "SGLang"],
+    "tags": [
+      "LoRA / QLoRA",
+      "DPO",
+      "DeepSpeed",
+      "SGLang"
+    ],
     "summary": "Fine-tuning toolkit for DeepSeek-V3-architecture MoE models (Moonlight-16B-A3B): LoRA/QLoRA, full SFT, DPO with DeepSpeed ZeRO-2, and forward-KL distillation from a local or logprob-cached teacher, served with SGLang."
   },
   "judge-pipeline": {
     "title": "LLM-judge data pipeline",
     "area": "llm",
-    "tags": ["vLLM", "LLM-as-judge", "MySQL"],
+    "tags": [
+      "vLLM",
+      "LLM-as-judge",
+      "MySQL"
+    ],
     "summary": "End-to-end data pipeline: vLLM generation of king and challenger replies, LLM-judge scoring, and SFT/DPO/GRPO/RFT dataset building on a MySQL-backed store with read-only-by-default tooling."
   },
   "reward-replica": {
     "title": "Offline reward replica & RL training",
     "area": "llm",
-    "tags": ["GRPO", "Self-play", "Evaluation"],
+    "tags": [
+      "GRPO",
+      "Self-play",
+      "Evaluation"
+    ],
     "summary": "Offline replica of a subnet's three-judge evaluation reward, used to answer \"would this model win?\" before spending an on-chain upload, with SFT, DPO, self-play and online/offline GRPO trainers."
   },
   "token-efficient": {
     "title": "Token-efficient reasoning trainer",
     "area": "llm",
-    "tags": ["GRPO", "LoRA", "Reasoning"],
+    "tags": [
+      "GRPO",
+      "LoRA",
+      "Reasoning"
+    ],
     "summary": "GRPO LoRA training whose reward calls the validator's own scoring function, rewarding correct answers that use fewer tokens than the base model across math, multiple-choice and long-context evidence-selection benchmarks."
   },
   "inference-72b": {
     "title": "72B inference optimization",
     "area": "llm",
-    "tags": ["Inference", "H200", "Docker"],
+    "tags": [
+      "Inference",
+      "H200",
+      "Docker"
+    ],
     "summary": "Optimized Qwen2.5-72B serving image for a Bittensor inference subnet on 4×H200, tuned for time-to-first-token and throughput under a strict logprob-correctness gate, with a local copy of the validator for scoring."
   },
   "serving-pipeline": {
     "title": "LLM fine-tune & OpenAI-compatible serving",
     "area": "llm",
-    "tags": ["FastAPI", "ShareGPT", "LLaMA-Factory"],
+    "tags": [
+      "FastAPI",
+      "ShareGPT",
+      "LLaMA-Factory"
+    ],
     "summary": "Fetches and cleans agent conversation data into ShareGPT format, fine-tunes with LLaMA-Factory, and serves the result behind an OpenAI-compatible chat-completions API."
   },
   "agent-eval": {
     "title": "Agent evaluation framework",
     "area": "agents",
-    "tags": ["AgentGym", "QLoRA", "Benchmarks"],
+    "tags": [
+      "AgentGym",
+      "QLoRA",
+      "Benchmarks"
+    ],
     "summary": "Evaluation and training framework for AgentGym-style benchmarks: logic-reasoning dataset generation, QLoRA/SFT/MoE-routing training, prompt policies for game environments, and SWE, live-web and game environments."
   },
   "timeseries": {
     "title": "Time-series generator tooling",
     "area": "subnets",
-    "tags": ["Forecasting", "A/B sweeps"],
+    "tags": [
+      "Forecasting",
+      "A/B sweeps"
+    ],
     "summary": "Measurement and cost-aware A/B sweep suite for time-series generator development on a Bittensor subnet, built on the subnet's real evaluation pool, plus the resulting model variants."
   },
   "tao-alarm": {
     "title": "Bittensor monitoring bot",
-    "area": "web3", "featured": true,
-    "tags": ["TypeScript", "Telegram"],
+    "area": "web3",
+    "featured": true,
+    "tags": [
+      "TypeScript",
+      "Telegram"
+    ],
     "summary": "Telegram bot for real-time Bittensor monitoring: subnet parameter changes, registrations and costs, unstaking, stake thresholds and wallet activity, plus miner and validator registration from chat."
   },
   "register-cli": {
     "title": "Fast on-chain registration CLI",
     "area": "web3",
-    "tags": ["Rust", "Substrate"],
+    "tags": [
+      "Rust",
+      "Substrate"
+    ],
     "summary": "Rust CLI for Bittensor subnet registration that fans out across several RPC endpoints, submits on new block heads and raises the tip over replace-by-fee rounds."
   },
   "sui-bot": {
     "title": "Sui trading bot",
     "area": "web3",
-    "tags": ["TypeScript", "Sui"],
+    "tags": [
+      "TypeScript",
+      "Sui"
+    ],
     "summary": "TypeScript sniper and trading bot for meme coins on the Sui blockchain."
   },
   "presale": {
     "title": "Token presale dApp",
     "area": "web3",
-    "tags": ["React", "Vite", "Solidity"],
+    "tags": [
+      "React",
+      "Vite",
+      "Solidity"
+    ],
     "summary": "Token presale dApp: React + Vite + Tailwind frontend with its smart contract."
   },
   "ml-utils": {
     "title": "ML data & deployment utilities",
     "area": "subnets",
-    "tags": ["FastAPI", "Hugging Face"],
+    "tags": [
+      "FastAPI",
+      "Hugging Face"
+    ],
     "summary": "Small services around the training loop: a Hugging Face dataset watcher that pulls, unpacks and triggers training on new revisions; a FastAPI patch server for SWE-bench Pro; an upload/download bucket server; and deployment scripts for serving large models on Chutes."
   }
 }
