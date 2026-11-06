@@ -91,7 +91,9 @@ h2 {
 .band a { color: var(--band-ink); }
 header.band { padding-bottom: 32px; }
 .bar { display: flex; align-items: center; gap: 28px; height: 72px; }
-.brand { font-weight: 700; font-variation-settings: "wdth" 112; font-size: 18px; letter-spacing: -0.01em; }
+.brand { display: inline-flex; align-items: center; gap: 12px; font-weight: 700; font-variation-settings: "wdth" 112; font-size: 18px; letter-spacing: -0.01em; }
+.brand:hover { text-decoration: none; }
+.brand img, .copyright img { border-radius: 50%; box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.45); flex: none; }
 .bar nav { display: flex; gap: 24px; margin-left: auto; }
 .bar nav a { color: var(--band-ink-2); font-size: 15px; }
 .bar nav a:hover { color: var(--band-ink); }
@@ -219,7 +221,7 @@ header.band { padding-bottom: 32px; }
 .channels .label { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--band-ink-2); }
 .channels a { font-size: 26px; line-height: 1.2; font-weight: 650; font-variation-settings: "wdth" 104; overflow-wrap: anywhere; }
 .channels a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
-.copyright { margin-top: 88px; font-size: 13px; color: var(--band-ink-2); }
+.copyright { display: flex; align-items: center; gap: 10px; margin-top: 88px; font-size: 13px; color: var(--band-ink-2); }
 
 /* Tooltip --------------------------------------------------------------- */
 .tooltip {
