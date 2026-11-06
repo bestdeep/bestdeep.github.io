@@ -186,12 +186,11 @@ header.band { padding-bottom: 32px; }
 /* Projects -------------------------------------------------------------- */
 .block-title { margin: 48px 0 20px; font-size: 15px; font-weight: 650; color: var(--muted); }
 .featured { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.feature { display: flex; flex-direction: column; gap: 14px; padding: 28px 28px 26px; border-radius: 14px; background: var(--panel); }
+.feature { display: flex; flex-direction: column; gap: 12px; padding: 28px 28px 30px; border-radius: 14px; background: var(--panel); }
 .feature h4, .entry h4 { margin: 0; color: var(--heading); }
 .feature h4 { font-size: 24px; line-height: 1.2; font-weight: 720; font-variation-settings: "wdth" 108; letter-spacing: -0.01em; }
 .area-name { font-size: 14px; color: var(--muted); }
-.feature .summary { color: var(--ink-2); max-width: 62ch; }
-.tags { font-size: 14px; color: var(--muted); margin-top: auto; }
+.feature .summary { color: var(--ink-2); max-width: 46ch; font-size: 18px; line-height: 1.5; }
 
 .group { padding-top: 8px; }
 .group + .group { margin-top: 40px; }

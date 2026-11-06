@@ -84,8 +84,8 @@ function renderHeader() {
   );
   const areas = s.areas.filter((a) => state.projects.some((p) => p.area === a.id));
   document.getElementById("lede").textContent =
-    `${state.projects.length} projects across ${areas.length} areas: LLM training and agents, subnet mining, ` +
-    `computer vision, and the dApps and bots around them.`;
+    `${state.projects.length} projects across ${areas.length} areas: LLM training and agents, computer vision, ` +
+    `ML tools, and the dApps and bots around them.`;
 }
 
 function renderConstellation() {
@@ -180,7 +180,7 @@ function setArea(id) {
 function matches(p) {
   if (state.area !== "all" && p.area !== state.area) return false;
   if (!state.query) return true;
-  const hay = [p.title, p.summary, areaLabel(p.area), ...p.tags].join(" ").toLowerCase();
+  const hay = [p.title, p.summary, areaLabel(p.area)].join(" ").toLowerCase();
   return state.query.split(/\s+/).every((w) => hay.includes(w));
 }
 function feature(p) {
@@ -188,14 +188,12 @@ function feature(p) {
     el("span", { class: "area-name", text: areaLabel(p.area) }),
     el("h4", { text: p.title }),
     el("p", { class: "summary", text: p.summary }),
-    p.tags.length ? el("p", { class: "tags", text: p.tags.join(", ") }) : null,
   ]);
 }
 function entry(p) {
   return el("article", { class: "entry", id: p.id, tabindex: "-1" }, [
     el("h4", { text: p.title }),
     el("p", { class: "summary", text: p.summary }),
-    p.tags.length ? el("p", { class: "tags", text: p.tags.join(", ") }) : null,
   ]);
 }
 function renderProjects() {

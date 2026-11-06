@@ -1,10 +1,10 @@
 {
   "name": "Lucky Star",
   "headline": "AI & Blockchain Engineer, Full-Stack Developer",
-  "intro": "I build at the intersection of machine learning and decentralized networks. Most of my recent work is on Bittensor subnets: miners, validators, and the agents, models and data pipelines behind them, plus the full-stack pieces around them: APIs, dashboards, bots and dApps.",
+  "intro": "I build at the intersection of machine learning and decentralized networks: models, agents and data pipelines, and the full-stack pieces around them, from APIs and dashboards to bots and dApps.",
   "open_to_work": true,
   "contact": {
-    "pitch": "Open to Bittensor subnet work, AI and blockchain collaborations, and full-stack projects.",
+    "pitch": "Open to AI and blockchain collaborations and full-stack projects.",
     "links": [
       {
         "kind": "email",
@@ -59,7 +59,6 @@
     {
       "group": "Blockchain",
       "items": [
-        "Bittensor",
         "Sui",
         "Ethereum",
         "Bitcoin NFTs",
@@ -93,8 +92,8 @@
       "label": "LLM agents & RL"
     },
     {
-      "id": "subnets",
-      "label": "Subnet mining & tooling"
+      "id": "tools",
+      "label": "ML tools & services"
     },
     {
       "id": "web3",
